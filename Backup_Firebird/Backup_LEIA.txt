@@ -1,0 +1,30 @@
+///////////////////////////////////////////////////////////////////////////
+//                              Sol - SERVER ( Bakcup )
+//   Configure os caminhos do Banco de dados e do Backups
+//   dos arquivos ( Backup_Sol_SERVER.bat ) e ( Restaura_Backup_Sol_SERVER.bat )
+//   e ( Deleta_backups.bat )
+//   * Para editar oS arquivos ( Botao direito / Editar ) *
+//
+//////////////////////////////////////////////////////////////////////////
+
+
+Para Restaura um backup(.BKP) do Sol - SERVER
+
+você deve renomear o arquivo 
+
+C:\Controles_SQL\Backup\BANCOSQL.BKP__Data Hora
+para
+C:\Controles_SQL\Backup\BANCOSQL.BKP
+
+
+
+e Executar o ( Restaura_Backup_Sol_SERVER.bat )
+
+ele criará um arquivo
+
+SERVIDOR:C:\Controles_SQL\BANCOSQL_RENOMEI.FDB
+renomei ele para
+SERVIDOR:C:\Controles_SQL\BANCOSQL.FDB
+
+
+e pronto é so usar o programa.

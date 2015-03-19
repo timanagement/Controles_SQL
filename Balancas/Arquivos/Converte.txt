@@ -1,0 +1,336 @@
+****************************************************************************
+ ==================================
+ OPCAO DE CONVERSAO DE ARQUIVOS.
+ ==================================
+
+ Objetivo :
+ ---------
+ 1. Transformar um arquivo gerado em outro sistema,  denominado CADTXT.TXT,
+    no arquivo PRODUTOS.DBF, contido no diretorio PGR.
+ 2. Transformar   um  arquivo   gerado   em   outro  sistema,    denominado
+    SETORTXT.TXT, no arquivo SETOR.DBF, contido no diretorio PGR.
+
+    Os "novos" arquivos  irao  substituir  os  originais  gerados quando da
+  execucao do programa INSTALA. Tal procedimento  sera  automatico,  sempre
+  que  a  opcao  CONVERSAO,  no menu principal,  for acionada. Os  arquivos
+  originais  serao renomeados para PROD2.DBF e SETOR2.DBF.
+
+  IMPORTANTE:     Os arquivos  CADTXT.TXT e SETORTXT.TXT, embora gerados em
+  outro  sistema  que  nao  o  da  FILIZOLA,  deverao, obrigatoriamente ser
+  colocados no mesmo diretorio onde o aplicativo esta instalado.
+
+ Criacao :
+ -------
+
+ 1.Geral:
+  Os  arquivos  *.TXT   deverao ser elaborados atraves de qualquer programa
+  editor de  texto  que  crie   arquivos  com terminacao  ".TXT " ou de uma
+  linguagem de programacao.
+  O arquivo  CADTXT.TXT  contera   o  cadastro  de  todos  os itens a serem
+  comercializados,  via balancas, no  estabelecimento comercial do usuario.
+  O arquivo  SETORTXT.TXT fara a   distribuicao dos itens do cadastro acima
+  mencionado,  entre  os  varios  setores  em que serao comercializados, em
+  grupos de ate 699,1599 ou 3404 itens por setor. ( Depende do  modelo   de
+  balanca em utilizacao ).
+  Esses arquivos  nao  poderao  conter espa‡os  em branco no inicio e/ou no
+  fim, pois cada linha em branco constituira um  registro em branco.
+  No arquivo CADTXT.TXT as "strings" nao poderao ultrapassar 39 caracteres.
+  No arquivo SETORTXT.TXT as "strings" nao poderao ultrapassar 25  caracte-
+  res.
+
+  Obs.- Apos  a  edicao  de cada  item  (  linha ) deverao ser inseridos os
+      caracteres CR e LF. Nos editores de texto isso ocorre automaticamente
+      ao se digitar a tecla  < enter >.
+
+ 2.Estrutura :
+
+  Arquivo CADTXT.TXT
+  ------------------                                              EXEMPLO
+                                                                   ÚÄÄÄÄÄÄ¿
+  Codigo do Produto->..6 caracteres numericos..................... ³000500³
+                                                                   ÀÄÄÄÄÄÄÙ
+                                                                        ÚÄ¿
+  Tipo ------------->..1 caracter (P ou U)............................. ³U³
+                                                                        ÀÄÙ
+                                                   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+  Descricao -------->..22 caracteres alfanumericos ³QUEIJO FRESCO         ³
+                                                   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+                                                                  ÚÄÄÄÄÄÄÄ¿
+  Preco Unitario --->..7 caracteres numericos.................... ³0000950³
+                                                                  ÀÄÄÄÄÄÄÄÙ
+                                                                      ÚÄÄÄ¿
+  Prazo de validade->..3 caracteres numericos........................ ³008³
+                                                                      ÀÄÄÄÙ
+
+  A "string" do exemplo acima, montada, ficara assim :
+
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+  ³000500UQUEIJO FRESCO         0000950008³
+  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+  ou seja :
+
+  Trata-se de QUEIJO FRESCO, vendido por unidade (U), ao preco  de R$ 9,50
+  a unidade, cujo prazo de validade para consumo e de 8 dias. Caso o mesmo
+  produto seja comercializado pelo seu peso e nao por unidade, a  variavel
+  " Tipo ", assumira o caracter (P) e a variavel "Preco Unitario" assumira
+  o preco/kg do produto.
+
+
+  Arquivo SETORTXT.TXT
+  --------------------                                   EXEMPLO
+
+                                                       ÚÄÄÄÄÄÄÄÄÄ¿
+  Nome do Setor ---->..12 caracteres alfanumericos.... ³MERCEARIA³
+                                                       ÀÄÄÄÄÄÄÄÄÄÙ
+                                                          ÚÄÄÄÄÄÄ¿
+  Codigo do Produto->..6 caracteres numericos............ ³000500³
+                                                          ÀÄÄÄÄÄÄÙ
+                                                            ÚÄÄÄÄ¿
+  Indice ----------->..4 caracteres numericos.............. ³0001³
+                                                            ÀÄÄÄÄÙ
+                                                             ÚÄÄÄ¿
+  Tecla Associada--->..3 caracteres numericos............... ³001³
+                                                             ÀÄÄÄÙ
+
+  A "string" do exemplo acima, montada, ficara assim :
+
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+  ³MERCEARIA   0005000001001³
+  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+  ou seja:
+
+  "O produto de codigo  n§ 500 (QUEIJO FRESCO), esta especificado para ser
+   comercializado no  setor " MERCEARIA ",e sera acessado atraves da tecla
+   programada numero 01 daquele setor".
+
+
+  A variavel "Indice",  refere-se a posicao de memoria interna da balan‡a,
+  a ser ocupada pelos itens  do  cadastro de produtos associados ao setor,
+  apos a carga das balan‡as.   Tal  variavel  podera  adotar  valores, nao
+  repetidos, de "000" a  "699" para balancas  de  700 itens, de "0000" a
+  "1599", para balancas de 1600 itens ou   "0000"  a  "3404" para balancas
+  de 3400 itens,  nao  necessariamente  em ordem sequencial.
+
+  O valor "000" ou "0000"  para a vari vel " Indice "  tem  uso especifico
+  para acessar a opcao  de "Operacao por Preco", do  Menu  de Configuracao
+  do modo de Operacao  das balancas, contido  no programa PGR.EXE. Dessa
+  forma,  NAO  deve  ser  utilizado  para  um  produto comum, uma vez que,
+  quando solicitado,  exigira  a  digitacao  do  preco/kg  no  teclado  da
+  balanca.
+  Recomendamos associar  o indice "0000"  a um produto de nome "DIVERSOS",
+  Tipo (P), de Preco  Unitario  0000000, Prazo  de  Validade 000 e  Codigo
+  qualquer,  porem,  diferente  de  000000. Dessa  forma, toda  vez  que o
+  codigo  do " DIVERSOS "  for solicitado,  a  balanca  sera  colocada  em
+  "Operacao por Preco", registrando as operacoes efetuadas em "DIVERSOS".
+
+   As balancas  tambem  poderao  acessar  os  produtos  carregados  em sua
+  memoria  atraves da digitacao do "Indice"  ao  inves  do "Codigo", desde
+  que tal  possibilidade esteja  selecionada  no  Menu  de Configuracao do
+  Modo  de Operacao do programa PGR.EXE.
+
+   A variavel " Tecla Associada " podera adotar os valores:
+
+   - " 000 " a  " 056 ": para qualquer balanca.
+
+   - " 000 " a " 055 " e " 057 " a " 111 ": para  as  balancas  BCSA-R com
+                                            EPROM 141.xx e  CS-R com EPROM
+                                            146.xx, pois  elas  suportam o
+                                            uso   do   TA-56   com   SHIFT
+                                            ( segunda funcao ).
+   - "000"a "063", "065"a "127" e
+      "129"a "191"                        : para balancas PLATINA
+
+   O  valor  " 000 " indica  ao  programa PGR.EXE que nao queremos associar
+  aquele produto a nenhuma das teclas programadas naquele setor.
+
+   Os  valores das variaveis " Indice " e " Tecla Associada "   repetem-se
+  para todos os setores utilizados no arquivo " SETORTXT.TXT ", embora nao
+  seja necessario utilizar todos os  699, 1599 ou 3404 indices  ou   todas
+  as teclas  associadas.
+
+
+        ATENCAO:
+
+  1 - A partir da versao  1.3  do  programa  BCSAR.EXE, e todas as versoes
+  do programa PGR  tornou-se  "opcional"  a geracao   dos  campos:   PRAZO
+  DE  VALIDADE   no arquivo  CADTXT.TXT   e  TECLA  ASSOCIADA  no  arquivo
+  SETORTXT.TXT. Assim, se  tais  campos  NAO  forem  gerados      para
+  importacao, poderao ser  preenchidos  nos arquivos .DBF  correspondentes
+  atraves do proprio  programa PGR,  sem  que sejam  alterados pelas
+  importacoes subsequentes; porem, se nos arquivos .TXT os campos estiverem
+  presentes,  mesmo que zerados,  predominarao sobre os arquivos .DBF,
+  destruindo  qualquer  informacao  neles  introduzidas  pelo programa  PGR.   No caso  da  supressao  dos  campos mencionados,
+  ambos ou individualmente,  as " strings "  ficarao com  os     seguintes
+  tamanhos:
+
+           Arquivo CADTXT.TXT ------------>  36 caracteres
+           Arquivo SETORTXT.TXT:
+               ( indice =  4 digitos ) --->  22 caracteres
+
+
+  Obs.: Os  prazos  de  validade  zerados  cadastrados  que forem enviados
+        posteriormente  as  balancas  farao  com  que  estas pecam para os
+        operadores digitarem as datas de validade.
+
+
+  2 - A partir  da  versao 1.3  do  programa  BCSAR.EXE e todas as versoes
+  do programa PGR esta  prevista a  utilizacao  simultanea  de  balancas
+  para 700, 1600 E 3400 itens em  um mesmo setor ou rede.
+    O reconhecimento e automatico,porem, se o arquivo SETORTXT.TXT definir
+  indices superiores a capacidade maxima da balanca para alguns produtos,
+  somente as balan‡as que possuem tal capacidade irao receber a carga dos
+  produtos correspondentes. Para as balancas com capacidade inferior serao
+  carregados os produtos ate a sua capacidade maxima.
+
+
+- RECEITAS:
+==========
+
+ A  opcao  CONVERSAO - RECEITAS  do  aplicativo  PGR devera ser usada para
+converter: o arquivo RECEITAS.TXT, os arquivos usados pelo impressor TP30i
+( sistema SFGM ), e o arquivo REC_ASS.TXT ( com receitas associadas ).
+
+
+Obs.:
+
+
+ - As  receitas  pertencentes  aos  arquivos  do SFGM e ao RECEITAS.TXT que
+   forem convertidas serao ADICIONADAS as receitas ja existentes, mesmo que
+   estejam em duplicidade .
+
+ - Apesar da area de  receitas das balancas permitirem receitas de tamanhos
+   variaveis,  cada  balanca BCSA-R  com  eprom versao 141.xx e/ou CS-R com
+   eprom 146.xx podera armazenar, no maximo, ate 700 receitas  de  tamanhos
+   variaveis, perfazendo entre elas um total de no maximo 43.400 caracteres
+   ( contados do inicio do campo ate o caracter @ = 40H, inclusive )
+
+ - Os setores ( ex. PADARIA, ACOUGUE e etc ) configurados no aplicativo PGR
+   tem os mesmos limites que as balancas, ou seja comportam no  maximo 1600
+   plu's e 700 receitas.
+
+ - Atraves  do  aplicativo  PGR  podemos  configurar  varios parametros das
+   balancas entre eles o formato  das  etiquetas  a  serem  impressas  pelo
+   TP-80, esses formatos por exemplo podem ser os seguintes: A56 e B28.
+
+   O usuario precisa saber que no aplicativo PGR o  formato configurado A56
+   ou   B28  sera  separado  internamente  em  duas  informacoes :  formato
+   reconhecido pelo TP-80, formato A, B, ... e etc; e o numero  de  colunas
+   usado na edicao das receitas pelo aplicativo PGR, 56 ou 28.  Portanto  o
+   usuario  nao  pode  criar formatos com numeros de colunas diferentes dos
+   padroes porque elas  serao  usadas  apenas pelo aplicativo e  quando for
+   impressa  alguma  etiqueta  esta  sera,  por exemplo,  no formato A = 56
+   colunas ou B = 28 colunas.
+
+   O formato A56 e' o default usado tanto pelo impressor TP-80 quanto  pelo
+   aplicativo PGR e  com ele  o impressor TP-80 gera etiquetas com receitas
+   de  56 caracteres/linha. Neste formato cada caracter das  receitas  tera
+   1 mm de largura.
+
+   O formato B28, alem de ter um lay-out diferente do A56,  gera  etiquetas
+   com receitas de 28 caracteres/linha. Neste  formato  cada  caracter  das
+   receitas tera 2 mm de largura.
+
+
+Opcao RECEITAS ASSOC:
+--------------------
+
+ Esta  opcao  devera  ser  usada para  converter  as receitas  que  ja estao
+associadas a algum produto.
+
+
+ O formato do arquivo de conversao e o seguinte:
+
+
+SETOR        = 12C (qualquer caracter)                    Obs.: C = Caracter
+CODIGO PROD. =  6C ( numeros > 0 )
+CODIGO REC.  =  6C ( numeros > 0 )
+RECEITA      = variavel ( maximo 43 Kb POR BALANCA )
+
+
+
+Obs.:
+
+1) A  receita  e o setor podem ser compostos por qualquer caracter ASC entre
+   32D=20H e 126D=7EH ( exceto @=40H ).
+
+
+2) Para pular  linhas  dentro da receita ou marcar fim de paragrafo deve ser
+   usado o CR=0DH.
+
+
+3) A marcacao de fim de uma receita deve ser feita com @ = 40H
+
+
+4) Cada  linha  do  arquivo  pode  ter ate 43 Kb ( TAMANHO MAXIMO DA AREA DE
+   RECEITAS DE CADA BALANCA )
+
+5) Se o produto usar uma receita ja existente, esta  nao devera ser colocada
+   novamente no arquivo REC_ASS.TXT, ou seja o  registro  deve  ser composto
+   apenas  pelos  campos  SETOR,  CODIGO DO PRODUTO  e  CODIGO DA RECEITA. A
+   descricao da receita ja foi criada em outro registro.
+
+
+Exemplo:
+
+SETOR = PADARIA
+COD.PRODUTO=       1
+COD.RECEITA=       1
+RECEITA= AAAA(56)AAAA       Obs.: ( 56 ) = Numero de caracteres por linha da
+         BBBB(56)BBBB                      receita, ou seja para nao digitar
+         CCCC(56)CCCC                      todos  os  caracteres  do exemplo
+         DDDD.                             foi posto esta indicacao ( 56 ).
+         EEEE(56)EEEE
+
+
+No arquivo as linhas ficarao assim,
+
+
+SETOR       COD P COD R RECEITA VARIAVEL
+--------------------------------------------------------------------------
+
+PADARIA          1     1AAAA(56)AAAAA(0DH) BBBB(56)BBBB(0DH)
+CCCC(56)CCCC(0DH) DDDD.(0DH)EEEE(56)EEEE@(0DH)(0AH)
+PADARIA          2     2AAAA(56)AAAAA(0DH) BBBB(56)BBBB(0DH)
+CCCC(56)CCCC(0DH) DDDD.(0DH)
+EEEE(56)EEEE@(0DH)(0AH)
+ACOUGUE          1     3AAAA(56)AAAAA(0DH) BBBB(56)BBBB(0DH)
+CCCC(56)CCCC(0DH) DDDD.(0DH)
+EEEE(56)EEEE@(0DH)(0AH)
+ACOUGUE          2     1@(0DH)(0AH)
+
+
+Obs.:
+
+   - Se os  registros  acima  forem  visualizados  por um editor de texto, os
+     mesmos serao exibidos em sete linhas.( devido ao CR = 0DH )
+
+   - Se dentro da receita houver um CR, caracter  usado para pular linhas nas
+     receitas,  e o usuario visualizar o  arquivo REC_ASS.TXT,  atraves de um
+     editor de  textos( ne, edit e etc ),  ele  visualizara  um  registro que
+     ocupa mais de uma linha, ou seja comeca em uma linha e acaba na seguinte
+
+   - Se uma receita for usada em setores diferentes e estes  setores   usarem
+     formatos de etiquetas diferentes o formato que sera usado para alinhar a
+     receita  e  gravado  no  arquivo  de  receitas  sera  o  do ultimo setor
+     convertido.
+
+   - Se o registro estiver associado a um setor nao  cadastrado no aplicativo
+     PGR o formato usado na receita sera o default = A56.
+
+
+ O  programa PGR.EXE esta  sujeito  a  modificacoes  e melhorias determinadas
+pelo fabricante, sem que se caracterize a  necessidade  de notificacao previa
+aos usuarios.
+
+OBS.: Todas estas consideracoes sao validas para o PGR; porem, para o TSC
+apenas as referentes a PLATINA.
+
+ Havendo qualquer duvida quanto a utilizacao e funcionamento destes programas,
+queira contactar o  Departamento  de  Assistencia Tecnica da FILIZOLA atraves
+do Telefone  (011) 292-2055  ou  Fax       (011) 291-1041.
+
+*****************************************************************************
+
+
