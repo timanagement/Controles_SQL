@@ -1,0 +1,22 @@
+
+
+
+
+copiar 
+ Rave 5.1 com RAV do 5.0
+ as pastas
+   *Report
+   *Schemas
+para
+ c:\Controles_SQL\NFe\
+ c:\Controles_SQL\
+
+
+copiar
+ DLLs 5.1
+  *todos os arquivos
+para
+ c:\Controles_SQL\
+ c:\windows\system32\
+ c:\windows\sysWOW\
+
