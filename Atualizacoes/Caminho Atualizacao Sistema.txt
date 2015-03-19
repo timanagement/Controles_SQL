@@ -1,0 +1,8 @@
+//Git
+https://github.com/hetosoft/Controles_SQL/trunk/
+
+//novo
+https://hetosoft.googlecode.com/svn/trunk/
+
+//velho
+https://controles-sql.googlecode.com/svn/trunk/
