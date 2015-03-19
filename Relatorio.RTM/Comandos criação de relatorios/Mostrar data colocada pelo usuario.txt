@@ -1,0 +1,19 @@
+
+
+
+
+
+ if Report.AutoSearchCriteriaByName('CAIXA', 'DATACOMPENSADO').values[0] <> null then
+ begin
+ 
+  if Report.AutoSearchCriteriaByName('CAIXA', 'DATACOMPENSADO').values[0] <>
+     Report.AutoSearchCriteriaByName('CAIXA', 'DATACOMPENSADO').values[1] then
+  begin
+     value := 'Data  ' + Report.AutoSearchCriteriaByName('CAIXA', 'DATACOMPENSADO').values[0] +
+     '  a  ' +  Report.AutoSearchCriteriaByName('CAIXA', 'DATACOMPENSADO').values[1];
+  end else
+  begin
+    value := 'Data  ' + Report.AutoSearchCriteriaByName('CAIXA', 'DATACOMPENSADO').values[0];
+  end;
+  
+ end;

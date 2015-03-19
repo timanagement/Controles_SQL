@@ -1,0 +1,599 @@
+object ppReport1: TppReport
+  AutoStop = False
+  DataPipeline = daIBXQueryDataView1.PRODUTOS
+  PassSetting = psTwoPass
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'DXS Printout'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PrinterName = 'Screen'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 6350
+  PrinterSetup.mmMarginLeft = 6350
+  PrinterSetup.mmMarginRight = 6350
+  PrinterSetup.mmMarginTop = 6350
+  PrinterSetup.mmPaperHeight = 297127
+  PrinterSetup.mmPaperWidth = 210079
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.DatabaseSettings.DataPipeline = plItem
+  Template.DatabaseSettings.Name = 'Total de estoque por preco de venda'
+  Template.DatabaseSettings.NameField = 'NAME'
+  Template.DatabaseSettings.TemplateField = 'TEMPLATE'
+  Template.FileName = 
+    'E:\All_Delphi\Em_Andamento\All_Instalacao_Sol\Controles_SQL\Rela' +
+    'torio.RTM\Total de estoque por produto - preco.rtm'
+  Template.Format = ftASCII
+  Units = utPrinterPixels
+  AllowPrintToFile = True
+  CachePages = True
+  DeviceType = 'Screen'
+  EmailSettings.ReportFormat = 'PDF'
+  LanguageID = 'Default'
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.FontEncoding = feAnsi
+  PreviewFormSettings.WindowState = wsMaximized
+  PreviewFormSettings.ZoomSetting = zsPageWidth
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextSearchSettings.DefaultString = '<Texto a localizar>'
+  TextSearchSettings.Enabled = True
+  TextSearchSettings.ShowAll = True
+  TextSearchSettings.Visible = True
+  TextSearchSettings.WholeWord = True
+  Left = 225
+  Top = 310
+  Version = '12.03'
+  mmColumnWidth = 0
+  DataPipelineName = 'PRODUTOS'
+  object ppTitleBand1: TppTitleBand
+    mmBottomOffset = 0
+    mmHeight = 12171
+    mmPrintPosition = 0
+    object ppLabel1: TppLabel
+      UserName = 'Label1'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'VALOR TOTAL DO ESTOQUE POR PRODUTO (P.Venda)'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 15
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 6350
+      mmLeft = 1323
+      mmTop = 1323
+      mmWidth = 138907
+      BandType = 1
+    end
+    object ppSystemVariable4: TppSystemVariable
+      UserName = 'SystemVariable4'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPrintDateTime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 169863
+      mmTop = 1323
+      mmWidth = 26194
+      BandType = 1
+    end
+  end
+  object ppHeaderBand1: TppHeaderBand
+    mmBottomOffset = 0
+    mmHeight = 6615
+    mmPrintPosition = 0
+    object ppLine1: TppLine
+      UserName = 'Line1'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Pen.Width = 2
+      Weight = 1.500000000000000000
+      mmHeight = 3969
+      mmLeft = 1323
+      mmTop = 5292
+      mmWidth = 194734
+      BandType = 0
+    end
+    object ppLabel2: TppLabel
+      UserName = 'Label2'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'COD'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 1323
+      mmTop = 1323
+      mmWidth = 8467
+      BandType = 0
+    end
+    object ppLabel3: TppLabel
+      UserName = 'Label3'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'EST+DEP'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 157692
+      mmTop = 1323
+      mmWidth = 16404
+      BandType = 0
+    end
+    object ppLabel4: TppLabel
+      UserName = 'Label4'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'T.ESTOQUE'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 175684
+      mmTop = 1323
+      mmWidth = 20373
+      BandType = 0
+    end
+    object ppLabel5: TppLabel
+      UserName = 'Label5'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'NOME'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 24342
+      mmTop = 1323
+      mmWidth = 10848
+      BandType = 0
+    end
+    object ppLabel6: TppLabel
+      UserName = 'Label6'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'PRECO'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 141023
+      mmTop = 1323
+      mmWidth = 12435
+      BandType = 0
+    end
+  end
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background1.Gradient.EndColor = clWhite
+    Background1.Gradient.StartColor = clWhite
+    Background1.Gradient.Style = gsNone
+    Background2.Brush.Style = bsClear
+    Background2.Gradient.EndColor = clWhite
+    Background2.Gradient.StartColor = clWhite
+    Background2.Gradient.Style = gsNone
+    mmBottomOffset = 0
+    mmHeight = 3969
+    mmPrintPosition = 0
+    object ppDBText1: TppDBText
+      UserName = 'DBText1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'COD'
+      DataPipeline = daIBXQueryDataView1.PRODUTOS
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'PRODUTOS'
+      mmHeight = 3704
+      mmLeft = 1323
+      mmTop = 0
+      mmWidth = 21696
+      BandType = 4
+    end
+    object ppDBText2: TppDBText
+      UserName = 'DBText2'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'ESTOQUE'
+      DataPipeline = daIBXQueryDataView1.PRODUTOS
+      DisplayFormat = '#,0.00;-#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'PRODUTOS'
+      mmHeight = 3704
+      mmLeft = 157692
+      mmTop = 0
+      mmWidth = 16404
+      BandType = 4
+    end
+    object ppDBText3: TppDBText
+      UserName = 'DBText3'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'ESTTOTAL'
+      DataPipeline = daIBXQueryDataView1.PRODUTOS
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'PRODUTOS'
+      mmHeight = 3704
+      mmLeft = 177536
+      mmTop = 0
+      mmWidth = 18521
+      BandType = 4
+    end
+    object ppDBText4: TppDBText
+      UserName = 'DBText4'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'NOME'
+      DataPipeline = daIBXQueryDataView1.PRODUTOS
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'PRODUTOS'
+      mmHeight = 3704
+      mmLeft = 24342
+      mmTop = 0
+      mmWidth = 108744
+      BandType = 4
+    end
+    object ppDBText5: TppDBText
+      UserName = 'DBText5'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'PRECO'
+      DataPipeline = daIBXQueryDataView1.PRODUTOS
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'PRODUTOS'
+      mmHeight = 3704
+      mmLeft = 135467
+      mmTop = 0
+      mmWidth = 17992
+      BandType = 4
+    end
+    object ppLine4: TppLine
+      UserName = 'Line4'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Pen.Color = clGray
+      Weight = 0.750000000000000000
+      mmHeight = 265
+      mmLeft = 1323
+      mmTop = 3704
+      mmWidth = 194734
+      BandType = 4
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    mmBottomOffset = 0
+    mmHeight = 6350
+    mmPrintPosition = 0
+    object ppLine2: TppLine
+      UserName = 'Line2'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Pen.Color = clGray
+      Weight = 0.750000000000000000
+      mmHeight = 3969
+      mmLeft = 1323
+      mmTop = 5027
+      mmWidth = 194734
+      BandType = 8
+    end
+    object ppSystemVariable1: TppSystemVariable
+      UserName = 'SystemVariable1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPrintDateTime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 1323
+      mmTop = 1323
+      mmWidth = 26194
+      BandType = 8
+    end
+    object ppSystemVariable2: TppSystemVariable
+      UserName = 'SystemVariable2'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPageSet
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 188648
+      mmTop = 1323
+      mmWidth = 7408
+      BandType = 8
+    end
+  end
+  object ppSummaryBand1: TppSummaryBand
+    AlignToBottom = False
+    mmBottomOffset = 0
+    mmHeight = 5556
+    mmPrintPosition = 0
+    object ppDBCalc1: TppDBCalc
+      UserName = 'DBCalc1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'ESTTOTAL'
+      DataPipeline = daIBXQueryDataView1.PRODUTOS
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'PRODUTOS'
+      mmHeight = 4233
+      mmLeft = 163777
+      mmTop = 794
+      mmWidth = 32279
+      BandType = 7
+    end
+  end
+  object daDataModule1: TdaDataModule
+    object daIBXQueryDataView1: TdaIBXQueryDataView
+      UserName = 'Query_PRODUTOS'
+      Height = 539
+      Left = 10
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 10
+      TypeColumnWidth = 52
+      Width = 477
+      AutoSearchTabOrder = 0
+      object PRODUTOS: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'PRODUTOS'
+        object ppField1: TppField
+          FieldAlias = 'COD'
+          FieldName = 'COD'
+          FieldLength = 13
+          DisplayWidth = 13
+          Position = 0
+        end
+        object ppField2: TppField
+          FieldAlias = 'NOME'
+          FieldName = 'NOME'
+          FieldLength = 40
+          DisplayWidth = 40
+          Position = 1
+        end
+        object ppField3: TppField
+          FieldAlias = 'ESTOQUE'
+          FieldName = 'ESTOQUE'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 2
+        end
+        object ppField4: TppField
+          FieldAlias = 'PRECO'
+          FieldName = 'PRECO'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 3
+        end
+        object ppField5: TppField
+          FieldAlias = 'ESTTOTAL'
+          FieldName = 'ESTTOTAL'
+          FieldLength = 0
+          DataType = dtDouble
+          DisplayWidth = 10
+          Position = 4
+        end
+      end
+      object daSQL1: TdaSQL
+        CollationType = ctASCII
+        DatabaseName = 'Ib'
+        DatabaseType = dtInterBase
+        DataPipelineName = 'PRODUTOS'
+        EditSQLAsText = True
+        IsCaseSensitive = True
+        LinkColor = clMaroon
+        LinkType = ltParameterizedSQL
+        MaxSQLFieldAliasLength = 25
+        SQLText.Strings = (
+          'SELECT PRODUTOS_1.COD, PRODUTOS_1.NOME, '
+          
+            '       (ESTOQUE+DEPOSITO) AS ESTOQUE, PRODUTOS_1.PRECO , (ESTOQU' +
+            'E * PRECO)AS ESTTOTAL'
+          'FROM PRODUTOS PRODUTOS_1'
+          'WHERE PRODUTOS_1.LINKADO='#39'False'#39' and PRODUTOS_1.ESTOQUE>0'
+          'ORDER BY PRODUTOS_1.NOME')
+        SQLType = sqSQL2
+        object daField1: TdaField
+          Alias = 'COD'
+          DisplayWidth = 13
+          FieldAlias = 'COD'
+          FieldLength = 13
+          FieldName = 'COD'
+          SQLFieldName = 'COD'
+        end
+        object daField2: TdaField
+          Alias = 'NOME'
+          DisplayWidth = 40
+          FieldAlias = 'NOME'
+          FieldLength = 40
+          FieldName = 'NOME'
+          SQLFieldName = 'NOME'
+        end
+        object daField3: TdaField
+          Alias = 'ESTOQUE'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'ESTOQUE'
+          FieldLength = 4
+          FieldName = 'ESTOQUE'
+          SQLFieldName = 'ESTOQUE'
+        end
+        object daField4: TdaField
+          Alias = 'PRECO'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'PRECO'
+          FieldLength = 4
+          FieldName = 'PRECO'
+          SQLFieldName = 'PRECO'
+        end
+        object daField5: TdaField
+          Alias = 'ESTTOTAL'
+          DataType = dtDouble
+          DisplayWidth = 10
+          FieldAlias = 'ESTTOTAL'
+          FieldLength = 0
+          FieldName = 'ESTTOTAL'
+          SQLFieldName = 'ESTTOTAL'
+        end
+      end
+    end
+  end
+  object ppParameterList1: TppParameterList
+  end
+end

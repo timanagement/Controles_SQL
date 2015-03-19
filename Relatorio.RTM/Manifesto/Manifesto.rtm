@@ -1,0 +1,681 @@
+object ppReport1: TppReport
+  AutoStop = False
+  DataPipeline = daIBXQueryDataView1.N_MANIFESTO
+  PassSetting = psTwoPass
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'DXS Printout'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PrinterName = 'Screen'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 6350
+  PrinterSetup.mmMarginLeft = 6350
+  PrinterSetup.mmMarginRight = 6350
+  PrinterSetup.mmMarginTop = 6350
+  PrinterSetup.mmPaperHeight = 297127
+  PrinterSetup.mmPaperWidth = 210079
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.DatabaseSettings.DataPipeline = plItem
+  Template.DatabaseSettings.Name = 'Manifesto'
+  Template.DatabaseSettings.NameField = 'NAME'
+  Template.DatabaseSettings.TemplateField = 'TEMPLATE'
+  Template.FileName = 
+    'E:\All_Delphi\Em_Andamento\All_Instalacao_Sol\Controles_SQL\Rela' +
+    'torio.RTM\Manifesto\Manifesto.rtm'
+  Template.Format = ftASCII
+  Units = utPrinterPixels
+  AllowPrintToFile = True
+  CachePages = True
+  DeviceType = 'Screen'
+  EmailSettings.ReportFormat = 'PDF'
+  LanguageID = 'Default'
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.FontEncoding = feAnsi
+  PreviewFormSettings.WindowState = wsMaximized
+  PreviewFormSettings.ZoomSetting = zsPageWidth
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  ShowAutoSearchDialog = True
+  TextSearchSettings.DefaultString = '<FindText>'
+  TextSearchSettings.Enabled = True
+  TextSearchSettings.ShowAll = True
+  TextSearchSettings.Visible = True
+  TextSearchSettings.WholeWord = True
+  Left = 225
+  Top = 310
+  Version = '12.03'
+  mmColumnWidth = 0
+  DataPipelineName = 'N_MANIFESTO'
+  object ppTitleBand1: TppTitleBand
+    mmBottomOffset = 0
+    mmHeight = 12171
+    mmPrintPosition = 0
+    object ppLabel1: TppLabel
+      UserName = 'Label1'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'Relat'#243'rio Manifesto a Chegar'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 24
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 9525
+      mmLeft = 1323
+      mmTop = 1323
+      mmWidth = 120386
+      BandType = 1
+    end
+    object ppSystemVariable3: TppSystemVariable
+      UserName = 'SystemVariable3'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPrintDateTime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 169334
+      mmTop = 2910
+      mmWidth = 26194
+      BandType = 1
+    end
+  end
+  object ppHeaderBand1: TppHeaderBand
+    mmBottomOffset = 0
+    mmHeight = 6615
+    mmPrintPosition = 0
+    object ppLine1: TppLine
+      UserName = 'Line1'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Pen.Width = 2
+      Weight = 1.500000000000000000
+      mmHeight = 3969
+      mmLeft = 1323
+      mmTop = 5292
+      mmWidth = 194734
+      BandType = 0
+    end
+    object ppLabel2: TppLabel
+      UserName = 'Label2'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'FORNECEDOR'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 1323
+      mmTop = 1323
+      mmWidth = 110596
+      BandType = 0
+    end
+    object ppLabel3: TppLabel
+      UserName = 'Label3'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'CNPJ'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 113242
+      mmTop = 1323
+      mmWidth = 29633
+      BandType = 0
+    end
+    object ppLabel4: TppLabel
+      UserName = 'Label4'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'DATA'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 143934
+      mmTop = 1323
+      mmWidth = 11642
+      BandType = 0
+    end
+    object ppLabel5: TppLabel
+      UserName = 'Label5'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'N NOTA'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 161132
+      mmTop = 1323
+      mmWidth = 14288
+      BandType = 0
+    end
+    object ppLabel6: TppLabel
+      UserName = 'Label6'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'VALOR'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 177800
+      mmTop = 1323
+      mmWidth = 17727
+      BandType = 0
+    end
+  end
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background1.Gradient.EndColor = clWhite
+    Background1.Gradient.StartColor = clWhite
+    Background1.Gradient.Style = gsNone
+    Background2.Brush.Style = bsClear
+    Background2.Gradient.EndColor = clWhite
+    Background2.Gradient.StartColor = clWhite
+    Background2.Gradient.Style = gsNone
+    mmBottomOffset = 0
+    mmHeight = 4498
+    mmPrintPosition = 0
+    object ppDBText1: TppDBText
+      UserName = 'DBText1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'FORNECEDOR'
+      DataPipeline = daIBXQueryDataView1.N_MANIFESTO
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'N_MANIFESTO'
+      mmHeight = 3704
+      mmLeft = 1323
+      mmTop = 529
+      mmWidth = 110596
+      BandType = 4
+    end
+    object ppDBText2: TppDBText
+      UserName = 'DBText2'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'CNPJ'
+      DataPipeline = daIBXQueryDataView1.N_MANIFESTO
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'N_MANIFESTO'
+      mmHeight = 3704
+      mmLeft = 113242
+      mmTop = 529
+      mmWidth = 29633
+      BandType = 4
+    end
+    object ppDBText3: TppDBText
+      UserName = 'DBText3'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'DATA'
+      DataPipeline = daIBXQueryDataView1.N_MANIFESTO
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'N_MANIFESTO'
+      mmHeight = 3704
+      mmLeft = 143934
+      mmTop = 529
+      mmWidth = 16140
+      BandType = 4
+    end
+    object ppDBText4: TppDBText
+      UserName = 'DBText4'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'NUMERO'
+      DataPipeline = daIBXQueryDataView1.N_MANIFESTO
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'N_MANIFESTO'
+      mmHeight = 3704
+      mmLeft = 161132
+      mmTop = 529
+      mmWidth = 11642
+      BandType = 4
+    end
+    object ppDBText5: TppDBText
+      UserName = 'DBText5'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'VALOR'
+      DataPipeline = daIBXQueryDataView1.N_MANIFESTO
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'N_MANIFESTO'
+      mmHeight = 3704
+      mmLeft = 174096
+      mmTop = 529
+      mmWidth = 21431
+      BandType = 4
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    mmBottomOffset = 0
+    mmHeight = 6350
+    mmPrintPosition = 0
+    object ppLine2: TppLine
+      UserName = 'Line2'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Pen.Color = clGray
+      Weight = 0.750000000000000000
+      mmHeight = 3969
+      mmLeft = 1323
+      mmTop = 5027
+      mmWidth = 194734
+      BandType = 8
+    end
+    object ppSystemVariable1: TppSystemVariable
+      UserName = 'SystemVariable1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPrintDateTime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 1323
+      mmTop = 1323
+      mmWidth = 26194
+      BandType = 8
+    end
+    object ppSystemVariable2: TppSystemVariable
+      UserName = 'SystemVariable2'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPageSet
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 188648
+      mmTop = 1323
+      mmWidth = 7408
+      BandType = 8
+    end
+  end
+  object ppSummaryBand1: TppSummaryBand
+    AlignToBottom = False
+    mmBottomOffset = 0
+    mmHeight = 6350
+    mmPrintPosition = 0
+    object ppDBCalc1: TppDBCalc
+      UserName = 'DBCalc1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'FORNECEDOR'
+      DataPipeline = daIBXQueryDataView1.N_MANIFESTO
+      DisplayFormat = '#,##0'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      DBCalcType = dcCount
+      DataPipelineName = 'N_MANIFESTO'
+      mmHeight = 4233
+      mmLeft = 2910
+      mmTop = 1588
+      mmWidth = 11906
+      BandType = 7
+    end
+    object ppLabel7: TppLabel
+      UserName = 'Label7'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'Registros'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 16140
+      mmTop = 1588
+      mmWidth = 14288
+      BandType = 7
+    end
+    object ppLine3: TppLine
+      UserName = 'Line3'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Weight = 0.750000000000000000
+      mmHeight = 794
+      mmLeft = 1323
+      mmTop = 1323
+      mmWidth = 194205
+      BandType = 7
+    end
+  end
+  object daDataModule1: TdaDataModule
+    object daIBXQueryDataView1: TdaIBXQueryDataView
+      UserName = 'Query_N_MANIFESTO'
+      Height = 370
+      Left = 10
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 10
+      TypeColumnWidth = 52
+      Width = 343
+      AutoSearchTabOrder = 0
+      object N_MANIFESTO: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'N_MANIFESTO'
+        object ppField1: TppField
+          FieldAlias = 'FORNECEDOR'
+          FieldName = 'FORNECEDOR'
+          FieldLength = 100
+          DisplayWidth = 100
+          Position = 0
+          TableName = 'N_MANIFESTO_1'
+        end
+        object ppField2: TppField
+          FieldAlias = 'CNPJ'
+          FieldName = 'CNPJ'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 1
+          TableName = 'N_MANIFESTO_1'
+        end
+        object ppField3: TppField
+          FieldAlias = 'NUMERO'
+          FieldName = 'NUMERO'
+          FieldLength = 10
+          DisplayWidth = 10
+          Position = 2
+          TableName = 'N_MANIFESTO_1'
+        end
+        object ppField4: TppField
+          FieldAlias = 'DATA'
+          FieldName = 'DATA'
+          FieldLength = 0
+          DataType = dtDate
+          DisplayWidth = 10
+          Position = 3
+          TableName = 'N_MANIFESTO_1'
+        end
+        object ppField5: TppField
+          FieldAlias = 'VALOR'
+          FieldName = 'VALOR'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 4
+          TableName = 'N_MANIFESTO_1'
+        end
+      end
+      object daSQL1: TdaSQL
+        CollationType = ctASCII
+        DatabaseName = 'Ib'
+        DatabaseType = dtInterBase
+        DataPipelineName = 'N_MANIFESTO'
+        IsCaseSensitive = True
+        LinkColor = clMaroon
+        LinkType = ltMagicSQL
+        MaxSQLFieldAliasLength = 25
+        SQLText.Strings = (
+          'SELECT N_MANIFESTO_1.FORNECEDOR, '
+          '       N_MANIFESTO_1.CNPJ, N_MANIFESTO_1.NUMERO, '
+          '       N_MANIFESTO_1.DATA, N_MANIFESTO_1.VALOR'
+          'FROM N_MANIFESTO N_MANIFESTO_1'
+          'ORDER BY N_MANIFESTO_1.FORNECEDOR, '
+          '         N_MANIFESTO_1.DATA')
+        SQLType = sqSQL2
+        object daCriteria1: TdaCriteria
+          ChildType = 7
+          Level = 0
+          Operator = dacoInList
+          object TdaField
+            Alias = 'ID'
+            AutoSearch = True
+            DataType = dtInteger
+            DisplayWidth = 10
+            FieldAlias = 'ID'
+            FieldLength = 0
+            FieldName = 'ID'
+            SQLFieldName = 'ID'
+            TableAlias = 'N_MANIFESTO'
+            TableName = 'N_MANIFESTO'
+            TableSQLAlias = 'N_MANIFESTO_1'
+          end
+        end
+        object daField1: TdaField
+          Alias = 'FORNECEDOR'
+          DisplayWidth = 100
+          FieldAlias = 'FORNECEDOR'
+          FieldLength = 100
+          FieldName = 'FORNECEDOR'
+          SQLFieldName = 'FORNECEDOR'
+          TableAlias = 'N_MANIFESTO'
+          TableName = 'N_MANIFESTO'
+          TableSQLAlias = 'N_MANIFESTO_1'
+        end
+        object daField2: TdaField
+          Alias = 'CNPJ'
+          DisplayWidth = 30
+          FieldAlias = 'CNPJ'
+          FieldLength = 30
+          FieldName = 'CNPJ'
+          SQLFieldName = 'CNPJ'
+          TableAlias = 'N_MANIFESTO'
+          TableName = 'N_MANIFESTO'
+          TableSQLAlias = 'N_MANIFESTO_1'
+        end
+        object daField3: TdaField
+          Alias = 'NUMERO'
+          DisplayWidth = 10
+          FieldAlias = 'NUMERO'
+          FieldLength = 10
+          FieldName = 'NUMERO'
+          SQLFieldName = 'NUMERO'
+          TableAlias = 'N_MANIFESTO'
+          TableName = 'N_MANIFESTO'
+          TableSQLAlias = 'N_MANIFESTO_1'
+        end
+        object daField4: TdaField
+          Alias = 'DATA'
+          DataType = dtDate
+          DisplayWidth = 10
+          FieldAlias = 'DATA'
+          FieldLength = 0
+          FieldName = 'DATA'
+          SQLFieldName = 'DATA'
+          TableAlias = 'N_MANIFESTO'
+          TableName = 'N_MANIFESTO'
+          TableSQLAlias = 'N_MANIFESTO_1'
+        end
+        object daField5: TdaField
+          Alias = 'VALOR'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'VALOR'
+          FieldLength = 4
+          FieldName = 'VALOR'
+          SQLFieldName = 'VALOR'
+          TableAlias = 'N_MANIFESTO'
+          TableName = 'N_MANIFESTO'
+          TableSQLAlias = 'N_MANIFESTO_1'
+        end
+        object daField6: TdaField
+          ChildType = 2
+          Alias = 'FORNECEDOR'
+          DisplayWidth = 100
+          FieldAlias = 'FORNECEDOR'
+          FieldLength = 100
+          FieldName = 'FORNECEDOR'
+          SQLFieldName = 'FORNECEDOR'
+          TableAlias = 'N_MANIFESTO'
+          TableName = 'N_MANIFESTO'
+          TableSQLAlias = 'N_MANIFESTO_1'
+        end
+        object daField7: TdaField
+          ChildType = 2
+          Alias = 'DATA'
+          DataType = dtDate
+          DisplayWidth = 10
+          FieldAlias = 'DATA'
+          FieldLength = 0
+          FieldName = 'DATA'
+          SQLFieldName = 'DATA'
+          TableAlias = 'N_MANIFESTO'
+          TableName = 'N_MANIFESTO'
+          TableSQLAlias = 'N_MANIFESTO_1'
+        end
+        object daTable1: TdaTable
+          ChildType = 5
+          Alias = 'N_MANIFESTO'
+          JoinType = dajtNone
+          SQLAlias = 'N_MANIFESTO_1'
+          TableAlias = 'N_MANIFESTO'
+          TableName = 'N_MANIFESTO'
+        end
+      end
+    end
+  end
+  object ppParameterList1: TppParameterList
+  end
+end

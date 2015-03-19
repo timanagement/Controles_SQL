@@ -1,0 +1,37 @@
+      TEFComando:='[Comando:] MuneroCupom.';
+      IF IMPAtiva=3 THEN Form_PDV.MuneroCupom_Bematech;
+      IF IMPAtiva=4 THEN Form_PDV.MuneroCupom_Daruma;
+      IF IMPAtiva=5 THEN Form_PDV.MuneroCupom_Elgin; //X
+      IF IMPAtiva=6 THEN Form_PDV.MuneroCupom_ElginMFD;  //falta
+      IF IMPAtiva=7 THEN Form_PDV.MuneroCupom_Sweda;
+      IF IMPAtiva=8 THEN Form_PDV.MuneroCupom_SwedaMFD;
+      IF IMPAtiva=9 THEN Form_PDV.MuneroCupom_BematechMFD;
+      IF IMPAtiva=10 THEN Form_PDV.MuneroCupom_Sweda;
+      IF IMPAtiva=11 THEN Form_PDV.MuneroCupom_EpsonMFD;
+      //if IMPAtiva=12 then Zanthus
+      if IMPAtiva=13 then Form_PDV.MuneroCupom_ElginMFD; //Urano  //falta
+      //if IMPAtiva=14 then Form_PDV.;
+      if IMPAtiva=15 then Form_PDV.MuneroCupom_DarumaMFD;
+      IF IMPAtiva=16 THEN Form_PDV.MuneroCupom_ElginMFD; //termoPrinter  //falta
+      IF IMPAtiva=17 THEN Form_PDV.MuneroCupom_ACBrECF;
+
+
+
+                        TEFComando:='[Comando:] PegarSubTotal.';
+                        //if IMPAtiva=1 then Form_PDV.PegaSubTotal_SQL;
+                        //if IMPAtiva=2 then Form_PDV.PegaSubTotal_SQL40;
+                        if IMPAtiva=3 then Form_PDV.PegaSubTotal_Bematech;
+                        if IMPAtiva=9 then Form_PDV.PegaSubTotal_BematechMFD;
+                        if IMPAtiva=4 then Form_PDV.PegaSubTotal_Daruma;
+                        //if IMPAtiva=5 then Form_PDV.PegaSubTotal_Elgin;
+                        if IMPAtiva=6 then Form_PDV.PegaSubTotal_ElginMFD;
+                        if IMPAtiva=7 then Form_PDV.PegaSubTotal_Sweda;
+                        if IMPAtiva=8 then Form_PDV.PegaSubTotal_SwedaMFD;
+                        //if IMPAtiva=10 then Form_PDV.PegaSubTotal_Schalter;
+                        if IMPAtiva=11 then Form_PDV.PegaSubTotal_EpsonMFD;
+                        //if IMPAtiva=12 then Form_PDV.PegaSubTotal_Zanthus;
+                        if IMPAtiva=13 then Form_PDV.PegaSubTotal_ElginMFD; //urano
+                        //if IMPAtiva=14 then Form_PDV.;
+                        if IMPAtiva=15 then Form_PDV.PegaSubTotal_DarumaMFD;
+                        if IMPAtiva=16 then Form_PDV.PegaSubTotal_ElginMFD;
+                        if IMPAtiva=17 then Form_PDV.PegaSubTotal_ACBrECF;

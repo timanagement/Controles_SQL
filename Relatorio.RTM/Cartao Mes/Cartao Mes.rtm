@@ -1,0 +1,856 @@
+object ppReport1: TppReport
+  AutoStop = False
+  DataPipeline = daIBXQueryDataView1.CARTAO_SPED
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'DXS Printout'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PrinterName = 'Screen'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 6350
+  PrinterSetup.mmMarginLeft = 6350
+  PrinterSetup.mmMarginRight = 6350
+  PrinterSetup.mmMarginTop = 6350
+  PrinterSetup.mmPaperHeight = 297127
+  PrinterSetup.mmPaperWidth = 210079
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.DatabaseSettings.DataPipeline = plItem
+  Template.DatabaseSettings.Name = 'Cartao sped'
+  Template.DatabaseSettings.NameField = 'NAME'
+  Template.DatabaseSettings.TemplateField = 'TEMPLATE'
+  Template.FileName = 
+    'E:\All_Delphi\Em_Andamento\All_Instalacao_Sol\Controles_SQL\Rela' +
+    'torio.RTM\Cartao Mes\Cartao Mes.rtm'
+  Template.Format = ftASCII
+  Units = utPrinterPixels
+  AllowPrintToFile = True
+  CachePages = True
+  DeviceType = 'Screen'
+  EmailSettings.ReportFormat = 'PDF'
+  LanguageID = 'Default'
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.FontEncoding = feAnsi
+  PreviewFormSettings.WindowState = wsMaximized
+  PreviewFormSettings.ZoomSetting = zsPageWidth
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  ShowAutoSearchDialog = True
+  TextSearchSettings.DefaultString = '<Texto a localizar>'
+  TextSearchSettings.Enabled = True
+  TextSearchSettings.ShowAll = True
+  TextSearchSettings.Visible = True
+  TextSearchSettings.WholeWord = True
+  Left = 225
+  Top = 310
+  Version = '12.03'
+  mmColumnWidth = 0
+  DataPipelineName = 'CARTAO_SPED'
+  object ppTitleBand1: TppTitleBand
+    mmBottomOffset = 0
+    mmHeight = 9790
+    mmPrintPosition = 0
+    object ppLabel1: TppLabel
+      UserName = 'Label1'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'Cart'#227'o M'#234's'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 18
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 7144
+      mmLeft = 1323
+      mmTop = 1323
+      mmWidth = 46302
+      BandType = 1
+    end
+    object ppVariable1: TppVariable
+      UserName = 'Variable1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      BlankWhenZero = False
+      CalcOrder = 0
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 140229
+      mmTop = 5027
+      mmWidth = 55827
+      BandType = 1
+    end
+    object ppSystemVariable3: TppSystemVariable
+      UserName = 'SystemVariable3'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPrintDateTime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 169863
+      mmTop = 0
+      mmWidth = 26194
+      BandType = 1
+    end
+  end
+  object ppHeaderBand1: TppHeaderBand
+    mmBottomOffset = 0
+    mmHeight = 6615
+    mmPrintPosition = 0
+    object ppLine1: TppLine
+      UserName = 'Line1'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Pen.Width = 2
+      Weight = 1.500000000000000000
+      mmHeight = 3969
+      mmLeft = 1323
+      mmTop = 5292
+      mmWidth = 194734
+      BandType = 0
+    end
+    object ppLabel2: TppLabel
+      UserName = 'Label2'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'OPERADORA'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 1323
+      mmTop = 1323
+      mmWidth = 54240
+      BandType = 0
+    end
+    object ppLabel4: TppLabel
+      UserName = 'Label4'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'DATA'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 79375
+      mmTop = 1323
+      mmWidth = 10319
+      BandType = 0
+    end
+    object ppLabel5: TppLabel
+      UserName = 'Label5'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'T.CREDITO'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 98954
+      mmTop = 1323
+      mmWidth = 31221
+      BandType = 0
+    end
+    object ppLabel6: TppLabel
+      UserName = 'Label6'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'T.DEBITO'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 131498
+      mmTop = 1323
+      mmWidth = 31221
+      BandType = 0
+    end
+    object ppLabel7: TppLabel
+      UserName = 'Label7'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'T.GERAL'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 164836
+      mmTop = 1323
+      mmWidth = 31221
+      BandType = 0
+    end
+  end
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background1.Gradient.EndColor = clWhite
+    Background1.Gradient.StartColor = clWhite
+    Background1.Gradient.Style = gsNone
+    Background2.Brush.Style = bsClear
+    Background2.Gradient.EndColor = clWhite
+    Background2.Gradient.StartColor = clWhite
+    Background2.Gradient.Style = gsNone
+    mmBottomOffset = 0
+    mmHeight = 6085
+    mmPrintPosition = 0
+    object ppDBText1: TppDBText
+      UserName = 'DBText1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'NOME'
+      DataPipeline = daIBXQueryDataView1.CARTAO_SPED
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'CARTAO_SPED'
+      mmHeight = 3704
+      mmLeft = 11906
+      mmTop = 529
+      mmWidth = 65088
+      BandType = 4
+    end
+    object ppDBText3: TppDBText
+      UserName = 'DBText3'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'DATA'
+      DataPipeline = daIBXQueryDataView1.CARTAO_SPED
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'CARTAO_SPED'
+      mmHeight = 3704
+      mmLeft = 79375
+      mmTop = 529
+      mmWidth = 16933
+      BandType = 4
+    end
+    object ppDBText4: TppDBText
+      UserName = 'DBText4'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'TOT_CREDITO'
+      DataPipeline = daIBXQueryDataView1.CARTAO_SPED
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'CARTAO_SPED'
+      mmHeight = 3704
+      mmLeft = 98954
+      mmTop = 529
+      mmWidth = 31221
+      BandType = 4
+    end
+    object ppDBText5: TppDBText
+      UserName = 'DBText5'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'TOT_DEBITO'
+      DataPipeline = daIBXQueryDataView1.CARTAO_SPED
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'CARTAO_SPED'
+      mmHeight = 3704
+      mmLeft = 131498
+      mmTop = 529
+      mmWidth = 31221
+      BandType = 4
+    end
+    object ppDBText6: TppDBText
+      UserName = 'DBText6'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'TOT_GERAL'
+      DataPipeline = daIBXQueryDataView1.CARTAO_SPED
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'CARTAO_SPED'
+      mmHeight = 3704
+      mmLeft = 164836
+      mmTop = 529
+      mmWidth = 31221
+      BandType = 4
+    end
+    object ppDBText2: TppDBText
+      UserName = 'DBText2'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'ID_FORNECEDOR'
+      DataPipeline = daIBXQueryDataView1.CARTAO_SPED
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'CARTAO_SPED'
+      mmHeight = 3704
+      mmLeft = 1323
+      mmTop = 529
+      mmWidth = 8996
+      BandType = 4
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    mmBottomOffset = 0
+    mmHeight = 6350
+    mmPrintPosition = 0
+    object ppLine2: TppLine
+      UserName = 'Line2'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Pen.Color = clGray
+      Weight = 0.750000000000000000
+      mmHeight = 3969
+      mmLeft = 1323
+      mmTop = 5027
+      mmWidth = 194734
+      BandType = 8
+    end
+    object ppSystemVariable1: TppSystemVariable
+      UserName = 'SystemVariable1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPrintDateTime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 1323
+      mmTop = 1323
+      mmWidth = 26194
+      BandType = 8
+    end
+    object ppSystemVariable2: TppSystemVariable
+      UserName = 'SystemVariable2'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPageNoDesc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 185473
+      mmTop = 1323
+      mmWidth = 10583
+      BandType = 8
+    end
+  end
+  object ppSummaryBand1: TppSummaryBand
+    AlignToBottom = False
+    mmBottomOffset = 0
+    mmHeight = 5027
+    mmPrintPosition = 0
+    object ppDBCalc1: TppDBCalc
+      UserName = 'DBCalc1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'TOT_GERAL'
+      DataPipeline = daIBXQueryDataView1.CARTAO_SPED
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'CARTAO_SPED'
+      mmHeight = 4233
+      mmLeft = 164836
+      mmTop = 0
+      mmWidth = 31221
+      BandType = 7
+    end
+    object ppLine3: TppLine
+      UserName = 'Line3'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Weight = 0.750000000000000000
+      mmHeight = 1058
+      mmLeft = 1323
+      mmTop = 0
+      mmWidth = 194734
+      BandType = 7
+    end
+    object ppDBCalc2: TppDBCalc
+      UserName = 'DBCalc2'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'TOT_DEBITO'
+      DataPipeline = daIBXQueryDataView1.CARTAO_SPED
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'CARTAO_SPED'
+      mmHeight = 4233
+      mmLeft = 131498
+      mmTop = 0
+      mmWidth = 31221
+      BandType = 7
+    end
+    object ppDBCalc3: TppDBCalc
+      UserName = 'DBCalc3'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'TOT_CREDITO'
+      DataPipeline = daIBXQueryDataView1.CARTAO_SPED
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'CARTAO_SPED'
+      mmHeight = 4233
+      mmLeft = 98954
+      mmTop = 0
+      mmWidth = 31221
+      BandType = 7
+    end
+  end
+  object daDataModule1: TdaDataModule
+    object daIBXQueryDataView1: TdaIBXQueryDataView
+      UserName = 'Query_CARTAO_SPED'
+      Height = 492
+      Left = 10
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 10
+      TypeColumnWidth = 52
+      Width = 224
+      AutoSearchTabOrder = 0
+      object CARTAO_SPED: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'CARTAO_SPED'
+        object ppField1: TppField
+          FieldAlias = 'DATA'
+          FieldName = 'DATA'
+          FieldLength = 0
+          DataType = dtDate
+          DisplayWidth = 10
+          Position = 0
+          TableName = 'CARTAO_SPED_1'
+        end
+        object ppField2: TppField
+          FieldAlias = 'TOT_CREDITO'
+          FieldName = 'TOT_CREDITO'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 1
+          TableName = 'CARTAO_SPED_1'
+        end
+        object ppField3: TppField
+          FieldAlias = 'TOT_DEBITO'
+          FieldName = 'TOT_DEBITO'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 2
+          TableName = 'CARTAO_SPED_1'
+        end
+        object ppField4: TppField
+          FieldAlias = 'TOT_GERAL'
+          FieldName = 'TOT_GERAL'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 3
+          TableName = 'CARTAO_SPED_1'
+        end
+        object ppField5: TppField
+          FieldAlias = 'ID_FORNECEDOR'
+          FieldName = 'ID_FORNECEDOR'
+          FieldLength = 0
+          IsDetail = True
+          DataType = dtInteger
+          DisplayWidth = 10
+          Position = 4
+          TableName = 'C_FORMECEDOR_1'
+        end
+        object ppField6: TppField
+          FieldAlias = 'NOME'
+          FieldName = 'NOME'
+          FieldLength = 100
+          IsDetail = True
+          DisplayWidth = 100
+          Position = 5
+          TableName = 'C_FORMECEDOR_1'
+        end
+      end
+      object daSQL1: TdaSQL
+        CollationType = ctASCII
+        DatabaseName = 'Ib'
+        DatabaseType = dtInterBase
+        DataPipelineName = 'CARTAO_SPED'
+        IsCaseSensitive = True
+        LinkColor = clMaroon
+        LinkType = ltMagicSQL
+        MaxSQLFieldAliasLength = 25
+        SQLText.Strings = (
+          'SELECT CARTAO_SPED_1.DATA, '
+          '       CARTAO_SPED_1.TOT_CREDITO, '
+          '       CARTAO_SPED_1.TOT_DEBITO, '
+          '       CARTAO_SPED_1.TOT_GERAL, '
+          '       C_FORMECEDOR_1.ID_FORNECEDOR, '
+          '       C_FORMECEDOR_1.NOME'
+          'FROM CARTAO_SPED CARTAO_SPED_1'
+          '      INNER JOIN C_FORMECEDOR C_FORMECEDOR_1 ON '
+          
+            '     (C_FORMECEDOR_1.ID_FORNECEDOR = CARTAO_SPED_1.ID_FORNECEDOR' +
+            ')'
+          'ORDER BY C_FORMECEDOR_1.NOME')
+        SQLType = sqSQL2
+        object daCriteria1: TdaCriteria
+          ChildType = 7
+          Level = 0
+          Operator = dacoBetween
+          object TdaField
+            Alias = 'DATA'
+            AutoSearch = True
+            DataType = dtDate
+            DisplayWidth = 10
+            FieldAlias = 'DATA'
+            FieldLength = 0
+            FieldName = 'DATA'
+            Mandatory = True
+            SQLFieldName = 'DATA'
+            TableAlias = 'CARTAO_SPED'
+            TableName = 'CARTAO_SPED'
+            TableSQLAlias = 'CARTAO_SPED_1'
+          end
+        end
+        object daCriteria2: TdaCriteria
+          ChildType = 7
+          Level = 0
+          object TdaField
+            Alias = 'ID_FORNECEDOR'
+            AutoSearch = True
+            DataType = dtInteger
+            DisplayWidth = 10
+            FieldAlias = 'ID_FORNECEDOR'
+            FieldLength = 0
+            FieldName = 'ID_FORNECEDOR'
+            SQLFieldName = 'ID_FORNECEDOR'
+            TableAlias = 'CARTAO_SPED'
+            TableName = 'CARTAO_SPED'
+            TableSQLAlias = 'CARTAO_SPED_1'
+          end
+        end
+        object daField1: TdaField
+          Alias = 'DATA'
+          DataType = dtDate
+          DisplayWidth = 10
+          FieldAlias = 'DATA'
+          FieldLength = 0
+          FieldName = 'DATA'
+          SQLFieldName = 'DATA'
+          TableAlias = 'CARTAO_SPED'
+          TableName = 'CARTAO_SPED'
+          TableSQLAlias = 'CARTAO_SPED_1'
+        end
+        object daField2: TdaField
+          Alias = 'TOT_CREDITO'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'TOT_CREDITO'
+          FieldLength = 4
+          FieldName = 'TOT_CREDITO'
+          SQLFieldName = 'TOT_CREDITO'
+          TableAlias = 'CARTAO_SPED'
+          TableName = 'CARTAO_SPED'
+          TableSQLAlias = 'CARTAO_SPED_1'
+        end
+        object daField3: TdaField
+          Alias = 'TOT_DEBITO'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'TOT_DEBITO'
+          FieldLength = 4
+          FieldName = 'TOT_DEBITO'
+          SQLFieldName = 'TOT_DEBITO'
+          TableAlias = 'CARTAO_SPED'
+          TableName = 'CARTAO_SPED'
+          TableSQLAlias = 'CARTAO_SPED_1'
+        end
+        object daField4: TdaField
+          Alias = 'TOT_GERAL'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'TOT_GERAL'
+          FieldLength = 4
+          FieldName = 'TOT_GERAL'
+          SQLFieldName = 'TOT_GERAL'
+          TableAlias = 'CARTAO_SPED'
+          TableName = 'CARTAO_SPED'
+          TableSQLAlias = 'CARTAO_SPED_1'
+        end
+        object daField5: TdaField
+          Alias = 'ID_FORNECEDOR'
+          DataType = dtInteger
+          DisplayWidth = 10
+          FieldAlias = 'ID_FORNECEDOR'
+          FieldLength = 0
+          FieldName = 'ID_FORNECEDOR'
+          IsDetail = True
+          SQLFieldName = 'ID_FORNECEDOR'
+          TableAlias = 'C_FORMECEDOR'
+          TableName = 'C_FORMECEDOR'
+          TableSQLAlias = 'C_FORMECEDOR_1'
+        end
+        object daField6: TdaField
+          Alias = 'NOME'
+          DisplayWidth = 100
+          FieldAlias = 'NOME'
+          FieldLength = 100
+          FieldName = 'NOME'
+          IsDetail = True
+          SQLFieldName = 'NOME'
+          TableAlias = 'C_FORMECEDOR'
+          TableName = 'C_FORMECEDOR'
+          TableSQLAlias = 'C_FORMECEDOR_1'
+        end
+        object daField7: TdaField
+          ChildType = 2
+          Alias = 'NOME'
+          DisplayWidth = 100
+          FieldAlias = 'NOME'
+          FieldLength = 100
+          FieldName = 'NOME'
+          SQLFieldName = 'NOME'
+          TableAlias = 'C_FORMECEDOR'
+          TableName = 'C_FORMECEDOR'
+          TableSQLAlias = 'C_FORMECEDOR_1'
+        end
+        object daTable1: TdaTable
+          ChildType = 5
+          Alias = 'CARTAO_SPED'
+          JoinType = dajtNone
+          SQLAlias = 'CARTAO_SPED_1'
+          TableAlias = 'CARTAO_SPED'
+          TableName = 'CARTAO_SPED'
+        end
+        object daTable2: TdaTable
+          ChildType = 5
+          Alias = 'C_FORMECEDOR'
+          SQLAlias = 'C_FORMECEDOR_1'
+          TableAlias = 'C_FORMECEDOR'
+          TableName = 'C_FORMECEDOR'
+          object daTableJoin1: TdaTableJoin
+            ChildType = 6
+            object daField9: TdaField
+              ChildType = 3
+              Alias = 'ID_FORNECEDOR'
+              DataType = dtInteger
+              DisplayWidth = 10
+              FieldAlias = 'ID_FORNECEDOR'
+              FieldLength = 0
+              FieldName = 'ID_FORNECEDOR'
+              SQLFieldName = 'ID_FORNECEDOR'
+              TableAlias = 'C_FORMECEDOR'
+              TableName = 'C_FORMECEDOR'
+              TableSQLAlias = 'C_FORMECEDOR_1'
+            end
+            object daField8: TdaField
+              ChildType = 4
+              Alias = 'ID_FORNECEDOR'
+              DataType = dtInteger
+              DisplayWidth = 10
+              FieldAlias = 'ID_FORNECEDOR'
+              FieldLength = 0
+              FieldName = 'ID_FORNECEDOR'
+              SQLFieldName = 'ID_FORNECEDOR'
+              TableAlias = 'CARTAO_SPED'
+              TableName = 'CARTAO_SPED'
+              TableSQLAlias = 'CARTAO_SPED_1'
+            end
+          end
+        end
+      end
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060F5472614576656E7448616E646C65720B50726F6772616D4E616D65060F
+      5661726961626C65314F6E43616C630B50726F6772616D54797065070B747450
+      726F63656475726506536F757263650C3B01000070726F636564757265205661
+      726961626C65314F6E43616C63287661722056616C75653A2056617269616E74
+      293B0D0A626567696E0D0A0D0A20206966205265706F72742E4175746F536561
+      726368437269746572696142794E616D65282743415254414F5F53504544272C
+      20274441544127292E76616C7565735B305D203C3E206E756C6C207468656E0D
+      0A20202076616C7565203A3D202744617461202027202B205265706F72742E41
+      75746F536561726368437269746572696142794E616D65282743415254414F5F
+      53504544272C20274441544127292E76616C7565735B305D202B202720612027
+      202B20205265706F72742E4175746F536561726368437269746572696142794E
+      616D65282743415254414F5F53504544272C20274441544127292E76616C7565
+      735B315D3B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060956
+      61726961626C6531094576656E744E616D6506064F6E43616C63074576656E74
+      494402210000}
+  end
+  object ppParameterList1: TppParameterList
+  end
+end

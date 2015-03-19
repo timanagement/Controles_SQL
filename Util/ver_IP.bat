@@ -1,0 +1,6 @@
+
+
+ipconfig
+
+
+pause

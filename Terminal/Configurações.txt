@@ -1,0 +1,12 @@
+
+Elgin TT300 VADER
+
+Padrão do Arquivo
+
+02
+
+
+CAMPO inicial largura
+codigo 1        13
+nome   15       20
+preco  36       8

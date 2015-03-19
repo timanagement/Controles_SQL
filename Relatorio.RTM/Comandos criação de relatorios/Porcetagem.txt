@@ -1,0 +1,3 @@
+
+  Value := (( N_PRODUTOS['MAGEM'] / 100 ) *  N_PRODUTOS['CUSTOCAD'] ) +
+           N_PRODUTOS['CUSTOCAD'] ;

@@ -1,0 +1,8 @@
+
+  Value := DBcontas1['RECEBIDO'];
+  
+  
+  if ( FloatToStr(Value)='') or
+     ( FloatToStr(Value)='0') then
+  value:= DateToStr(CurrentDate) else
+  value:= DateToStr(DBcontas1['RECEBIDO']);

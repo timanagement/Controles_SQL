@@ -1,0 +1,731 @@
+object ppReport1: TppReport
+  AutoStop = False
+  DataPipeline = daIBXQueryDataView1.COTACAO
+  PassSetting = psTwoPass
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'DXS Printout'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PrinterName = 'Screen'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 6350
+  PrinterSetup.mmMarginLeft = 6350
+  PrinterSetup.mmMarginRight = 6350
+  PrinterSetup.mmMarginTop = 6350
+  PrinterSetup.mmPaperHeight = 297127
+  PrinterSetup.mmPaperWidth = 210079
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.DatabaseSettings.DataPipeline = plItem
+  Template.DatabaseSettings.Name = 'Resultado da cota'#231#227'o com Hist Prod e Fornecedor'
+  Template.DatabaseSettings.NameField = 'NAME'
+  Template.DatabaseSettings.TemplateField = 'TEMPLATE'
+  Template.FileName = 
+    'E:\All_Delphi\Em_Andamento\All_Instalacao_Sol\Controles_SQL\Rela' +
+    'torio.RTM\Cota'#231#227'o\Resultado da cota'#231#227'o com Hist Prod e Fornecedo' +
+    'r.rtm'
+  Template.Format = ftASCII
+  Units = utPrinterPixels
+  AllowPrintToFile = True
+  CachePages = True
+  DeviceType = 'Screen'
+  EmailSettings.ReportFormat = 'PDF'
+  LanguageID = 'Default'
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.FontEncoding = feAnsi
+  PreviewFormSettings.WindowState = wsMaximized
+  PreviewFormSettings.ZoomSetting = zsPageWidth
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextSearchSettings.DefaultString = '<Texto a localizar>'
+  TextSearchSettings.Enabled = True
+  TextSearchSettings.ShowAll = True
+  TextSearchSettings.Visible = True
+  TextSearchSettings.WholeWord = True
+  Left = 225
+  Top = 310
+  Version = '12.03'
+  mmColumnWidth = 0
+  DataPipelineName = 'COTACAO'
+  object ppTitleBand1: TppTitleBand
+    mmBottomOffset = 0
+    mmHeight = 12171
+    mmPrintPosition = 0
+    object ppLabel1: TppLabel
+      UserName = 'Label1'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'RESULTADO DA COTA'#199#195'O'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 24
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 9525
+      mmLeft = 1323
+      mmTop = 1323
+      mmWidth = 123296
+      BandType = 1
+    end
+    object ppSystemVariable3: TppSystemVariable
+      UserName = 'SystemVariable3'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPrintDateTime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 169863
+      mmTop = 7144
+      mmWidth = 26194
+      BandType = 1
+    end
+  end
+  object ppHeaderBand1: TppHeaderBand
+    mmBottomOffset = 0
+    mmHeight = 6615
+    mmPrintPosition = 0
+    object ppLine1: TppLine
+      UserName = 'Line1'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Pen.Width = 2
+      Weight = 1.500000000000000000
+      mmHeight = 529
+      mmLeft = 1323
+      mmTop = 5292
+      mmWidth = 194734
+      BandType = 0
+    end
+    object ppLabel2: TppLabel
+      UserName = 'Label2'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'C'#211'D.'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 1323
+      mmTop = 1323
+      mmWidth = 8202
+      BandType = 0
+    end
+    object ppLabel3: TppLabel
+      UserName = 'Label3'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'PRODUTO'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 10848
+      mmTop = 1323
+      mmWidth = 117475
+      BandType = 0
+    end
+    object ppLabel6: TppLabel
+      UserName = 'Label6'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'PRE'#199'O  F.'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 178594
+      mmTop = 1323
+      mmWidth = 17463
+      BandType = 0
+    end
+    object ppLabel7: TppLabel
+      UserName = 'Label7'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'FORNECEDOR'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 130440
+      mmTop = 1323
+      mmWidth = 25929
+      BandType = 0
+    end
+  end
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background1.Gradient.EndColor = clWhite
+    Background1.Gradient.StartColor = clWhite
+    Background1.Gradient.Style = gsNone
+    Background2.Brush.Style = bsClear
+    Background2.Gradient.EndColor = clWhite
+    Background2.Gradient.StartColor = clWhite
+    Background2.Gradient.Style = gsNone
+    mmBottomOffset = 0
+    mmHeight = 9525
+    mmPrintPosition = 0
+    object ppDBText1: TppDBText
+      UserName = 'DBText1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'CODIGO'
+      DataPipeline = daIBXQueryDataView1.COTACAO
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'COTACAO'
+      mmHeight = 3704
+      mmLeft = 1323
+      mmTop = 529
+      mmWidth = 19315
+      BandType = 4
+    end
+    object ppDBText2: TppDBText
+      UserName = 'DBText2'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'NOME'
+      DataPipeline = daIBXQueryDataView1.COTACAO
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'COTACAO'
+      mmHeight = 3704
+      mmLeft = 21696
+      mmTop = 529
+      mmWidth = 106627
+      BandType = 4
+    end
+    object ppDBText3: TppDBText
+      UserName = 'DBText3'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'FORNECEDOR'
+      DataPipeline = daIBXQueryDataView1.COTACAO
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'COTACAO'
+      mmHeight = 3704
+      mmLeft = 130440
+      mmTop = 529
+      mmWidth = 48419
+      BandType = 4
+    end
+    object ppDBText4: TppDBText
+      UserName = 'DBText4'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'VALOR'
+      DataPipeline = daIBXQueryDataView1.COTACAO
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'COTACAO'
+      mmHeight = 3704
+      mmLeft = 180711
+      mmTop = 529
+      mmWidth = 15346
+      BandType = 4
+    end
+    object ppDBText5: TppDBText
+      UserName = 'DBText5'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'QVENDA30DIAS'
+      DataPipeline = daIBXQueryDataView1.COTACAO
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'COTACAO'
+      mmHeight = 3704
+      mmLeft = 13229
+      mmTop = 4498
+      mmWidth = 7938
+      BandType = 4
+    end
+    object ppDBText6: TppDBText
+      UserName = 'DBText6'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'QVENDA15DIAS'
+      DataPipeline = daIBXQueryDataView1.COTACAO
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'COTACAO'
+      mmHeight = 3704
+      mmLeft = 30692
+      mmTop = 4498
+      mmWidth = 10054
+      BandType = 4
+    end
+    object ppDBText7: TppDBText
+      UserName = 'DBText7'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'MSM'
+      DataPipeline = daIBXQueryDataView1.COTACAO
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'COTACAO'
+      mmHeight = 3704
+      mmLeft = 58208
+      mmTop = 4498
+      mmWidth = 137848
+      BandType = 4
+    end
+    object ppDBText8: TppDBText
+      UserName = 'DBText8'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'DATA'
+      DataPipeline = daIBXQueryDataView1.COTACAO
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'COTACAO'
+      mmHeight = 3704
+      mmLeft = 42069
+      mmTop = 4498
+      mmWidth = 14552
+      BandType = 4
+    end
+    object ppLine3: TppLine
+      UserName = 'Line3'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Weight = 0.750000000000000000
+      mmHeight = 529
+      mmLeft = 265
+      mmTop = 8731
+      mmWidth = 195792
+      BandType = 4
+    end
+    object ppLabel10: TppLabel
+      UserName = 'Label10'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = '(30d)'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 5027
+      mmTop = 4498
+      mmWidth = 7144
+      BandType = 4
+    end
+    object ppLabel11: TppLabel
+      UserName = 'Label101'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = '(15d)'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Times New Roman'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 22490
+      mmTop = 4498
+      mmWidth = 7144
+      BandType = 4
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    mmBottomOffset = 0
+    mmHeight = 6350
+    mmPrintPosition = 0
+    object ppLine2: TppLine
+      UserName = 'Line2'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Pen.Color = clGray
+      Weight = 0.750000000000000000
+      mmHeight = 3969
+      mmLeft = 1323
+      mmTop = 5027
+      mmWidth = 194734
+      BandType = 8
+    end
+    object ppSystemVariable1: TppSystemVariable
+      UserName = 'SystemVariable1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPrintDateTime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 1323
+      mmTop = 1323
+      mmWidth = 26194
+      BandType = 8
+    end
+    object ppSystemVariable2: TppSystemVariable
+      UserName = 'SystemVariable2'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPageSet
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 188648
+      mmTop = 1323
+      mmWidth = 7408
+      BandType = 8
+    end
+  end
+  object daDataModule1: TdaDataModule
+    object daIBXQueryDataView1: TdaIBXQueryDataView
+      UserName = 'Query_COTACAO'
+      Height = 522
+      Left = 10
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 10
+      TypeColumnWidth = 52
+      Width = 340
+      AutoSearchTabOrder = 0
+      object COTACAO: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'COTACAO'
+        object ppField1: TppField
+          FieldAlias = 'CODIGO'
+          FieldName = 'CODIGO'
+          FieldLength = 13
+          DisplayWidth = 13
+          Position = 0
+        end
+        object ppField2: TppField
+          FieldAlias = 'NOME'
+          FieldName = 'NOME'
+          FieldLength = 100
+          DisplayWidth = 100
+          Position = 1
+        end
+        object ppField3: TppField
+          FieldAlias = 'FORNECEDOR'
+          FieldName = 'FORNECEDOR'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 2
+        end
+        object ppField4: TppField
+          FieldAlias = 'VALOR'
+          FieldName = 'VALOR'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 3
+        end
+        object ppField5: TppField
+          FieldAlias = 'QVENDA30DIAS'
+          FieldName = 'QVENDA30DIAS'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 4
+        end
+        object ppField6: TppField
+          FieldAlias = 'QVENDA15DIAS'
+          FieldName = 'QVENDA15DIAS'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 5
+        end
+        object ppField7: TppField
+          FieldAlias = 'MSM'
+          FieldName = 'MSM'
+          FieldLength = 100
+          DisplayWidth = 100
+          Position = 6
+        end
+        object ppField8: TppField
+          FieldAlias = 'DATA'
+          FieldName = 'DATA'
+          FieldLength = 0
+          DataType = dtDate
+          DisplayWidth = 10
+          Position = 7
+        end
+      end
+      object daSQL1: TdaSQL
+        CollationType = ctASCII
+        DatabaseName = 'Ib'
+        DatabaseType = dtInterBase
+        DataPipelineName = 'COTACAO'
+        EditSQLAsText = True
+        IsCaseSensitive = True
+        LinkColor = clMaroon
+        LinkType = ltParameterizedSQL
+        MaxSQLFieldAliasLength = 0
+        SQLText.Strings = (
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          'select'
+          '    r.codigo, r.nome , r.fornecedor , r.valor,'
+          
+            '    ( select sum(i.quant) from item2 i where ( i.data>=( CURRENT' +
+            '_DATE-30 )  and i.data<=CURRENT_DATE ) and r.codigo = i.cod_prod' +
+            'uto ) as QVenda30dias ,'
+          
+            '    ( select sum(i.quant) from item2 i where ( i.data>=( CURRENT' +
+            '_DATE-15 ) and i.data<=CURRENT_DATE ) and r.codigo = i.cod_produ' +
+            'to ) as QVenda15dias ,'
+          '    (Select msm From PRODUTOS_HIST h Where h.ID_PROD_HIST ='
+          
+            '          (  Select max(h.ID_PROD_HIST) From PRODUTOS_HIST h Whe' +
+            're h.acao='#39'CUSTO'#39'  and h.cod_referencia=r.codigo )     ) As msm,'
+          '    (Select data From PRODUTOS_HIST h Where h.ID_PROD_HIST ='
+          
+            '          (  Select max(h.ID_PROD_HIST) From PRODUTOS_HIST h Whe' +
+            're h.acao='#39'CUSTO'#39'  and h.cod_referencia=r.codigo )     ) As data'
+          ''
+          'from'
+          '  c_resultado r'
+          
+            '  left outer join PRODUTOS_HIST h on (r.codigo = h.cod_referenci' +
+            'a)'
+          'group by'
+          '  r.codigo, r.nome , r.fornecedor , r.valor'
+          'order by'
+          '  r.nome asc'
+          ''
+          '')
+        SQLType = sqSQL2
+        object daField1: TdaField
+          Alias = 'CODIGO'
+          DisplayWidth = 13
+          FieldAlias = 'CODIGO'
+          FieldLength = 13
+          FieldName = 'CODIGO'
+          SQLFieldName = 'CODIGO'
+        end
+        object daField2: TdaField
+          Alias = 'NOME'
+          DisplayWidth = 100
+          FieldAlias = 'NOME'
+          FieldLength = 100
+          FieldName = 'NOME'
+          SQLFieldName = 'NOME'
+        end
+        object daField3: TdaField
+          Alias = 'FORNECEDOR'
+          DisplayWidth = 30
+          FieldAlias = 'FORNECEDOR'
+          FieldLength = 30
+          FieldName = 'FORNECEDOR'
+          SQLFieldName = 'FORNECEDOR'
+        end
+        object daField4: TdaField
+          Alias = 'VALOR'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'VALOR'
+          FieldLength = 4
+          FieldName = 'VALOR'
+          SQLFieldName = 'VALOR'
+        end
+        object daField5: TdaField
+          Alias = 'QVENDA30DIAS'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'QVENDA30DIAS'
+          FieldLength = 4
+          FieldName = 'QVENDA30DIAS'
+          SQLFieldName = 'QVENDA30DIAS'
+        end
+        object daField6: TdaField
+          Alias = 'QVENDA15DIAS'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'QVENDA15DIAS'
+          FieldLength = 4
+          FieldName = 'QVENDA15DIAS'
+          SQLFieldName = 'QVENDA15DIAS'
+        end
+        object daField7: TdaField
+          Alias = 'MSM'
+          DisplayWidth = 100
+          FieldAlias = 'MSM'
+          FieldLength = 100
+          FieldName = 'MSM'
+          SQLFieldName = 'MSM'
+        end
+        object daField8: TdaField
+          Alias = 'DATA'
+          DataType = dtDate
+          DisplayWidth = 10
+          FieldAlias = 'DATA'
+          FieldLength = 0
+          FieldName = 'DATA'
+          SQLFieldName = 'DATA'
+        end
+      end
+    end
+  end
+  object ppParameterList1: TppParameterList
+  end
+end

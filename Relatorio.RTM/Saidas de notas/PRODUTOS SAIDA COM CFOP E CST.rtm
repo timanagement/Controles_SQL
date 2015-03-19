@@ -1,0 +1,1726 @@
+object ppReport1: TppReport
+  AutoStop = False
+  DataPipeline = daIBXQueryDataView1.NOTA
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'DXS Printout'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PrinterName = 'Screen'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 6350
+  PrinterSetup.mmMarginLeft = 6350
+  PrinterSetup.mmMarginRight = 6350
+  PrinterSetup.mmMarginTop = 6350
+  PrinterSetup.mmPaperHeight = 297127
+  PrinterSetup.mmPaperWidth = 210079
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.DatabaseSettings.DataPipeline = plItem
+  Template.DatabaseSettings.Name = 'RELAT'#211'RIO SAIDA DE PRODUTOS COM CFOP E CST'
+  Template.DatabaseSettings.NameField = 'NAME'
+  Template.DatabaseSettings.TemplateField = 'TEMPLATE'
+  Template.FileName = 'C:\Users\HETOSOFT\Desktop\PRODUTOS SAIDA COM CFOP E CST.rtm'
+  Template.Format = ftASCII
+  Units = utPrinterPixels
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  CachePages = True
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  LanguageID = 'Default'
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  ThumbnailSettings.Enabled = True
+  ThumbnailSettings.Visible = True
+  ThumbnailSettings.DeadSpace = 30
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.ImageCompressionLevel = 25
+  PreviewFormSettings.WindowState = wsMaximized
+  PreviewFormSettings.ZoomSetting = zsPageWidth
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  ShowAutoSearchDialog = True
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Texto a localizar>'
+  TextSearchSettings.Enabled = True
+  TextSearchSettings.ShowAll = True
+  TextSearchSettings.Visible = True
+  TextSearchSettings.WholeWord = True
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'ReportBuilder'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  Left = 225
+  Top = 310
+  Version = '15.02'
+  mmColumnWidth = 0
+  DataPipelineName = 'NOTA'
+  object ppTitleBand1: TppTitleBand
+    Background.Brush.Style = bsClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 30163
+    mmPrintPosition = 0
+    object ppDBText13: TppDBText
+      UserName = 'DBText13'
+      DataField = 'RASAO'
+      DataPipeline = daIBXQueryDataView2.FIRMA
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      ParentDataPipeline = False
+      Transparent = True
+      DataPipelineName = 'FIRMA'
+      mmHeight = 3704
+      mmLeft = 24075
+      mmTop = 17463
+      mmWidth = 91281
+      BandType = 1
+      LayerName = Foreground
+    end
+    object ppLabel1: TppLabel
+      UserName = 'Label1'
+      AutoSize = False
+      Caption = 'CNPJ:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 2117
+      mmTop = 21431
+      mmWidth = 7407
+      BandType = 1
+      LayerName = Foreground
+    end
+    object ppLabel14: TppLabel
+      UserName = 'Label14'
+      AutoSize = False
+      Caption = 'END:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 2117
+      mmTop = 25400
+      mmWidth = 6082
+      BandType = 1
+      LayerName = Foreground
+    end
+    object ppLabel40: TppLabel
+      UserName = 'Label40'
+      AutoSize = False
+      Caption = 'FONE:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 136525
+      mmTop = 22490
+      mmWidth = 8467
+      BandType = 1
+      LayerName = Foreground
+    end
+    object ppDBText27: TppDBText
+      UserName = 'DBText27'
+      DataField = 'ESCRICAO'
+      DataPipeline = daIBXQueryDataView2.FIRMA
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      ParentDataPipeline = False
+      Transparent = True
+      DataPipelineName = 'FIRMA'
+      mmHeight = 3704
+      mmLeft = 55033
+      mmTop = 21431
+      mmWidth = 26723
+      BandType = 1
+      LayerName = Foreground
+    end
+    object ppLabel43: TppLabel
+      UserName = 'Label401'
+      AutoSize = False
+      Caption = 'IE:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 50536
+      mmTop = 21431
+      mmWidth = 3969
+      BandType = 1
+      LayerName = Foreground
+    end
+    object ppVariable1: TppVariable
+      UserName = 'Variable1'
+      BlankWhenZero = False
+      CalcOrder = 0
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 9790
+      mmTop = 21431
+      mmWidth = 37306
+      BandType = 1
+      LayerName = Foreground
+    end
+    object ppLabel7: TppLabel
+      UserName = 'Label7'
+      Caption = 'RELAT'#211'RIO SAIDA COM CFOP E CST'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 14
+      Font.Style = [fsBold]
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 5821
+      mmLeft = 56092
+      mmTop = 2910
+      mmWidth = 92075
+      BandType = 1
+      LayerName = Foreground
+    end
+    object ppLabel25: TppLabel
+      UserName = 'Label25'
+      AutoSize = False
+      Caption = 'FANTASIA:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 2117
+      mmTop = 13494
+      mmWidth = 18521
+      BandType = 1
+      LayerName = Foreground
+    end
+    object ppDBText6: TppDBText
+      UserName = 'DBText6'
+      DataField = 'FANTASIA'
+      DataPipeline = daIBXQueryDataView2.FIRMA
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      ParentDataPipeline = False
+      Transparent = True
+      DataPipelineName = 'FIRMA'
+      mmHeight = 3704
+      mmLeft = 18256
+      mmTop = 13494
+      mmWidth = 90751
+      BandType = 1
+      LayerName = Foreground
+    end
+    object ppLabel28: TppLabel
+      UserName = 'Label28'
+      AutoSize = False
+      Caption = 'RAZ'#195'O SOCIAL:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 2117
+      mmTop = 17463
+      mmWidth = 21426
+      BandType = 1
+      LayerName = Foreground
+    end
+    object ppDBText25: TppDBText
+      UserName = 'DBText25'
+      DataField = 'TEL'
+      DataPipeline = daIBXQueryDataView2.FIRMA
+      DisplayFormat = '!\(99\)\ 0000\-0000;0; '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      ParentDataPipeline = False
+      Transparent = True
+      DataPipelineName = 'FIRMA'
+      mmHeight = 3704
+      mmLeft = 146579
+      mmTop = 22490
+      mmWidth = 28310
+      BandType = 1
+      LayerName = Foreground
+    end
+    object ppSystemVariable3: TppSystemVariable
+      UserName = 'SystemVariable3'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 180446
+      mmTop = 7938
+      mmWidth = 14288
+      BandType = 1
+      LayerName = Foreground
+    end
+    object ppVariable3: TppVariable
+      UserName = 'Variable3'
+      BlankWhenZero = False
+      CalcOrder = 1
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 8731
+      mmTop = 25400
+      mmWidth = 12171
+      BandType = 1
+      LayerName = Foreground
+    end
+    object ppLine1: TppLine
+      UserName = 'Line1'
+      Weight = 0.750000000000000000
+      mmHeight = 525
+      mmLeft = 2117
+      mmTop = 29633
+      mmWidth = 195263
+      BandType = 1
+      LayerName = Foreground
+    end
+  end
+  object ppHeaderBand1: TppHeaderBand
+    Background.Brush.Style = bsClear
+    mmBottomOffset = 0
+    mmHeight = 0
+    mmPrintPosition = 0
+  end
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 21696
+    mmPrintPosition = 0
+    object ppSubReport1: TppSubReport
+      UserName = 'SubReport1'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      TraverseAllData = False
+      DataPipelineName = 'NOTA_PRODUTO'
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 16669
+      mmWidth = 197379
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport1: TppChildReport
+        AutoStop = False
+        DataPipeline = daIBXQueryDataView3.NOTA_PRODUTO
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'DXS Printout'
+        PrinterSetup.PaperName = 'A4 210 x 297 mm'
+        PrinterSetup.PrinterName = 'Screen'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 6350
+        PrinterSetup.mmMarginLeft = 6350
+        PrinterSetup.mmMarginRight = 6350
+        PrinterSetup.mmMarginTop = 6350
+        PrinterSetup.mmPaperHeight = 297127
+        PrinterSetup.mmPaperWidth = 210079
+        PrinterSetup.PaperSize = 9
+        Template.DatabaseSettings.DataPipeline = plItem
+        Template.DatabaseSettings.NameField = 'NAME'
+        Template.DatabaseSettings.TemplateField = 'TEMPLATE'
+        Template.SaveTo = stDatabase
+        Units = utPrinterPixels
+        Version = '15.02'
+        mmColumnWidth = 0
+        DataPipelineName = 'NOTA_PRODUTO'
+        object ppTitleBand2: TppTitleBand
+          Background.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 0
+          mmPrintPosition = 0
+        end
+        object ppHeaderBand2: TppHeaderBand
+          Background.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 0
+          mmPrintPosition = 0
+        end
+        object ppDetailBand2: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background2.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 3175
+          mmPrintPosition = 0
+          object ppDBText2: TppDBText
+            UserName = 'DBText2'
+            DataField = 'CODIGO'
+            DataPipeline = daIBXQueryDataView3.NOTA_PRODUTO
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Arial'
+            Font.Size = 6
+            Font.Style = []
+            ParentDataPipeline = False
+            Transparent = True
+            DataPipelineName = 'NOTA_PRODUTO'
+            mmHeight = 3173
+            mmLeft = 2646
+            mmTop = 0
+            mmWidth = 16375
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppDBText1: TppDBText
+            UserName = 'DBText1'
+            DataField = 'PRODUTOS'
+            DataPipeline = daIBXQueryDataView3.NOTA_PRODUTO
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Arial'
+            Font.Size = 6
+            Font.Style = []
+            ParentDataPipeline = False
+            Transparent = True
+            DataPipelineName = 'NOTA_PRODUTO'
+            mmHeight = 3175
+            mmLeft = 20637
+            mmTop = 0
+            mmWidth = 30163
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppDBText3: TppDBText
+            UserName = 'DBText3'
+            DataField = 'QUANT'
+            DataPipeline = daIBXQueryDataView3.NOTA_PRODUTO
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Arial'
+            Font.Size = 6
+            Font.Style = []
+            ParentDataPipeline = False
+            Transparent = True
+            DataPipelineName = 'NOTA_PRODUTO'
+            mmHeight = 3175
+            mmLeft = 144997
+            mmTop = 0
+            mmWidth = 12171
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppDBText4: TppDBText
+            UserName = 'DBText4'
+            DataField = 'TOTAL'
+            DataPipeline = daIBXQueryDataView3.NOTA_PRODUTO
+            DisplayFormat = '$#,0.00;-$#,0.00'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Arial'
+            Font.Size = 6
+            Font.Style = []
+            ParentDataPipeline = False
+            TextAlignment = taRightJustified
+            Transparent = True
+            DataPipelineName = 'NOTA_PRODUTO'
+            mmHeight = 3175
+            mmLeft = 185208
+            mmTop = 0
+            mmWidth = 10848
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppDBText5: TppDBText
+            UserName = 'DBText5'
+            DataField = 'CFOP'
+            DataPipeline = daIBXQueryDataView3.NOTA_PRODUTO
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Arial'
+            Font.Size = 6
+            Font.Style = []
+            ParentDataPipeline = False
+            Transparent = True
+            DataPipelineName = 'NOTA_PRODUTO'
+            mmHeight = 3175
+            mmLeft = 158490
+            mmTop = 0
+            mmWidth = 8202
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppDBText7: TppDBText
+            UserName = 'DBText7'
+            DataField = 'CST_ICMS'
+            DataPipeline = daIBXQueryDataView3.NOTA_PRODUTO
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Arial'
+            Font.Size = 6
+            Font.Style = []
+            ParentDataPipeline = False
+            Transparent = True
+            DataPipelineName = 'NOTA_PRODUTO'
+            mmHeight = 3175
+            mmLeft = 171186
+            mmTop = 0
+            mmWidth = 10583
+            BandType = 4
+            LayerName = Foreground1
+          end
+        end
+        object ppSummaryBand1: TppSummaryBand
+          Background.Brush.Style = bsClear
+          mmBottomOffset = 0
+          mmHeight = 0
+          mmPrintPosition = 0
+        end
+        object ppDesignLayers2: TppDesignLayers
+          object ppDesignLayer2: TppDesignLayer
+            UserName = 'Foreground1'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
+    end
+    object ppDBText8: TppDBText
+      UserName = 'DBText8'
+      DataField = 'NUMERO'
+      DataPipeline = daIBXQueryDataView1.NOTA
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'NOTA'
+      mmHeight = 3969
+      mmLeft = 2117
+      mmTop = 6882
+      mmWidth = 15346
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText9: TppDBText
+      UserName = 'DBText9'
+      DataField = 'C_EMISSAO'
+      DataPipeline = daIBXQueryDataView1.NOTA
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'NOTA'
+      mmHeight = 3969
+      mmLeft = 23283
+      mmTop = 6882
+      mmWidth = 26194
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText10: TppDBText
+      UserName = 'DBText10'
+      DataField = 'CHEQ_NOME'
+      DataPipeline = daIBXQueryDataView4.CHEQUE_MESTLE
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      ParentDataPipeline = False
+      Transparent = True
+      DataPipelineName = 'CHEQUE_MESTLE'
+      mmHeight = 3969
+      mmLeft = 59278
+      mmTop = 6882
+      mmWidth = 79375
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel9: TppLabel
+      UserName = 'Label9'
+      AutoSize = False
+      Caption = 'N'#186' NFe'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 2117
+      mmTop = 1855
+      mmWidth = 19315
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel11: TppLabel
+      UserName = 'Label11'
+      AutoSize = False
+      Caption = 'DATA EMISS'#195'O'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 22223
+      mmTop = 1855
+      mmWidth = 26194
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel2: TppLabel
+      UserName = 'Label2'
+      AutoSize = False
+      Caption = 'DESTINATARIO'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 59278
+      mmTop = 1855
+      mmWidth = 26194
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel3: TppLabel
+      UserName = 'Label3'
+      Caption = 'C'#243'digo'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 2646
+      mmTop = 12720
+      mmWidth = 10319
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel4: TppLabel
+      UserName = 'Label4'
+      Caption = 'Descri'#231#227'o'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 20638
+      mmTop = 12720
+      mmWidth = 14287
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel5: TppLabel
+      UserName = 'Label5'
+      Caption = 'Qtd'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 142346
+      mmTop = 12720
+      mmWidth = 5027
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel6: TppLabel
+      UserName = 'Label6'
+      Caption = 'CFOP'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 156631
+      mmTop = 12720
+      mmWidth = 7673
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel8: TppLabel
+      UserName = 'Label8'
+      Caption = 'CST'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 172776
+      mmTop = 12720
+      mmWidth = 5821
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel10: TppLabel
+      UserName = 'Label10'
+      Caption = 'Valor'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 188384
+      mmTop = 12720
+      mmWidth = 7673
+      BandType = 4
+      LayerName = Foreground
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    Background.Brush.Style = bsClear
+    mmBottomOffset = 0
+    mmHeight = 0
+    mmPrintPosition = 0
+  end
+  object daDataModule1: TdaDataModule
+    object daIBXQueryDataView1: TdaIBXQueryDataView
+      UserName = 'Query_NOTA'
+      Height = 207
+      Left = 10
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 10
+      TypeColumnWidth = 52
+      Width = 221
+      AutoSearchTabOrder = 0
+      object NOTA: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'NOTA'
+        object ppField1: TppField
+          FieldAlias = 'COD'
+          FieldName = 'COD'
+          FieldLength = 0
+          DataType = dtInteger
+          DisplayWidth = 10
+          Position = 0
+          TableName = 'NOTA_1'
+        end
+        object ppField2: TppField
+          FieldAlias = 'NUMERO'
+          FieldName = 'NUMERO'
+          FieldLength = 0
+          DataType = dtInteger
+          DisplayWidth = 10
+          Position = 1
+          TableName = 'NOTA_1'
+        end
+        object ppField3: TppField
+          FieldAlias = 'NOTA'
+          FieldName = 'NOTA'
+          FieldLength = 5
+          DisplayWidth = 5
+          Position = 2
+          TableName = 'NOTA_1'
+        end
+        object ppField4: TppField
+          FieldAlias = 'DATACADASTRO'
+          FieldName = 'DATACADASTRO'
+          FieldLength = 0
+          DataType = dtDate
+          DisplayWidth = 10
+          Position = 3
+          TableName = 'NOTA_1'
+        end
+        object ppField5: TppField
+          FieldAlias = 'C_EMISSAO'
+          FieldName = 'C_EMISSAO'
+          FieldLength = 0
+          DataType = dtDate
+          DisplayWidth = 10
+          Position = 4
+          TableName = 'NOTA_1'
+        end
+        object ppField6: TppField
+          FieldAlias = 'ID_CLIENTE'
+          FieldName = 'ID_CLIENTE'
+          FieldLength = 0
+          DataType = dtInteger
+          DisplayWidth = 10
+          Position = 5
+          TableName = 'NOTA_1'
+        end
+        object ppField7: TppField
+          FieldAlias = 'ID_NOTA_TIPO'
+          FieldName = 'ID_NOTA_TIPO'
+          FieldLength = 0
+          DataType = dtInteger
+          DisplayWidth = 10
+          Position = 6
+          TableName = 'NOTA_1'
+        end
+      end
+      object daSQL1: TdaSQL
+        CollationType = ctASCII
+        DatabaseName = 'Ib'
+        DatabaseType = dtInterBase
+        DataPipelineName = 'NOTA'
+        IsCaseSensitive = True
+        LinkColor = clMaroon
+        LinkType = ltMagicSQL
+        MaxSQLFieldAliasLength = 25
+        SQLText.Strings = (
+          'SELECT NOTA_1.COD, NOTA_1.NUMERO, NOTA_1.NOTA, '
+          '       NOTA_1.DATACADASTRO, NOTA_1.C_EMISSAO, '
+          '       NOTA_1.ID_CLIENTE, NOTA_1.ID_NOTA_TIPO'
+          'FROM NOTA NOTA_1'
+          'ORDER BY NOTA_1.C_EMISSAO')
+        SQLType = sqSQL2
+        object daCriteria1: TdaCriteria
+          ChildType = 7
+          Level = 0
+          Operator = dacoBetween
+          object TdaField
+            Alias = 'C_EMISSAO'
+            AutoSearch = True
+            DataType = dtDate
+            DisplayWidth = 10
+            FieldAlias = 'C_EMISSAO'
+            FieldLength = 0
+            FieldName = 'C_EMISSAO'
+            Mandatory = True
+            SQLFieldName = 'C_EMISSAO'
+            TableAlias = 'NOTA'
+            TableName = 'NOTA'
+            TableSQLAlias = 'NOTA_1'
+          end
+        end
+        object daField1: TdaField
+          Alias = 'COD'
+          DataType = dtInteger
+          DisplayWidth = 10
+          FieldAlias = 'COD'
+          FieldLength = 0
+          FieldName = 'COD'
+          SQLFieldName = 'COD'
+          TableAlias = 'NOTA'
+          TableName = 'NOTA'
+          TableSQLAlias = 'NOTA_1'
+        end
+        object daField2: TdaField
+          Alias = 'NUMERO'
+          DataType = dtInteger
+          DisplayWidth = 10
+          FieldAlias = 'NUMERO'
+          FieldLength = 0
+          FieldName = 'NUMERO'
+          SQLFieldName = 'NUMERO'
+          TableAlias = 'NOTA'
+          TableName = 'NOTA'
+          TableSQLAlias = 'NOTA_1'
+        end
+        object daField3: TdaField
+          Alias = 'NOTA'
+          DisplayWidth = 5
+          FieldAlias = 'NOTA'
+          FieldLength = 5
+          FieldName = 'NOTA'
+          SQLFieldName = 'NOTA'
+          TableAlias = 'NOTA'
+          TableName = 'NOTA'
+          TableSQLAlias = 'NOTA_1'
+        end
+        object daField4: TdaField
+          Alias = 'DATACADASTRO'
+          DataType = dtDate
+          DisplayWidth = 10
+          FieldAlias = 'DATACADASTRO'
+          FieldLength = 0
+          FieldName = 'DATACADASTRO'
+          SQLFieldName = 'DATACADASTRO'
+          TableAlias = 'NOTA'
+          TableName = 'NOTA'
+          TableSQLAlias = 'NOTA_1'
+        end
+        object daField5: TdaField
+          Alias = 'C_EMISSAO'
+          DataType = dtDate
+          DisplayWidth = 10
+          FieldAlias = 'C_EMISSAO'
+          FieldLength = 0
+          FieldName = 'C_EMISSAO'
+          SQLFieldName = 'C_EMISSAO'
+          TableAlias = 'NOTA'
+          TableName = 'NOTA'
+          TableSQLAlias = 'NOTA_1'
+        end
+        object daField6: TdaField
+          Alias = 'ID_CLIENTE'
+          DataType = dtInteger
+          DisplayWidth = 10
+          FieldAlias = 'ID_CLIENTE'
+          FieldLength = 0
+          FieldName = 'ID_CLIENTE'
+          SQLFieldName = 'ID_CLIENTE'
+          TableAlias = 'NOTA'
+          TableName = 'NOTA'
+          TableSQLAlias = 'NOTA_1'
+        end
+        object daField7: TdaField
+          Alias = 'ID_NOTA_TIPO'
+          DataType = dtInteger
+          DisplayWidth = 10
+          FieldAlias = 'ID_NOTA_TIPO'
+          FieldLength = 0
+          FieldName = 'ID_NOTA_TIPO'
+          SQLFieldName = 'ID_NOTA_TIPO'
+          TableAlias = 'NOTA'
+          TableName = 'NOTA'
+          TableSQLAlias = 'NOTA_1'
+        end
+        object daField8: TdaField
+          ChildType = 2
+          Alias = 'C_EMISSAO'
+          DataType = dtDate
+          DisplayWidth = 10
+          FieldAlias = 'C_EMISSAO'
+          FieldLength = 0
+          FieldName = 'C_EMISSAO'
+          SQLFieldName = 'C_EMISSAO'
+          TableAlias = 'NOTA'
+          TableName = 'NOTA'
+          TableSQLAlias = 'NOTA_1'
+        end
+        object daTable1: TdaTable
+          ChildType = 5
+          Alias = 'NOTA'
+          JoinType = dajtNone
+          SQLAlias = 'NOTA_1'
+          TableAlias = 'NOTA'
+          TableName = 'NOTA'
+        end
+      end
+    end
+    object daIBXQueryDataView2: TdaIBXQueryDataView
+      UserName = 'Query_FIRMA'
+      Height = 458
+      Left = 813
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 4
+      TypeColumnWidth = 52
+      Width = 224
+      AutoSearchTabOrder = 0
+      object FIRMA: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'FIRMA'
+        object ppField1: TppField
+          FieldAlias = 'FANTASIA'
+          FieldName = 'FANTASIA'
+          FieldLength = 100
+          DisplayWidth = 100
+          Position = 0
+          TableName = 'FIRMA_1'
+        end
+        object ppField2: TppField
+          FieldAlias = 'RASAO'
+          FieldName = 'RASAO'
+          FieldLength = 100
+          DisplayWidth = 100
+          Position = 1
+          TableName = 'FIRMA_1'
+        end
+        object ppField3: TppField
+          FieldAlias = 'ENDERECO'
+          FieldName = 'ENDERECO'
+          FieldLength = 100
+          DisplayWidth = 100
+          Position = 2
+          TableName = 'FIRMA_1'
+        end
+        object ppField4: TppField
+          FieldAlias = 'ESCRICAO'
+          FieldName = 'ESCRICAO'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 3
+          TableName = 'FIRMA_1'
+        end
+        object ppField5: TppField
+          FieldAlias = 'CNPJ'
+          FieldName = 'CNPJ'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 4
+          TableName = 'FIRMA_1'
+        end
+        object ppField6: TppField
+          FieldAlias = 'TEL'
+          FieldName = 'TEL'
+          FieldLength = 20
+          DisplayWidth = 20
+          Position = 5
+          TableName = 'FIRMA_1'
+        end
+        object ppField7: TppField
+          FieldAlias = 'NUMERO'
+          FieldName = 'NUMERO'
+          FieldLength = 10
+          DisplayWidth = 10
+          Position = 6
+          TableName = 'FIRMA_1'
+        end
+        object ppField8: TppField
+          FieldAlias = 'CIDADE'
+          FieldName = 'CIDADE'
+          FieldLength = 60
+          DisplayWidth = 60
+          Position = 7
+          TableName = 'FIRMA_1'
+        end
+        object ppField9: TppField
+          FieldAlias = 'UF'
+          FieldName = 'UF'
+          FieldLength = 2
+          DisplayWidth = 2
+          Position = 8
+          TableName = 'FIRMA_1'
+        end
+        object ppField10: TppField
+          FieldAlias = 'CEP'
+          FieldName = 'CEP'
+          FieldLength = 8
+          DisplayWidth = 8
+          Position = 9
+          TableName = 'FIRMA_1'
+        end
+        object ppField11: TppField
+          FieldAlias = 'ENDERECO_SPED'
+          FieldName = 'ENDERECO_SPED'
+          FieldLength = 100
+          DisplayWidth = 100
+          Position = 10
+          TableName = 'FIRMA_1'
+        end
+      end
+      object daSQL2: TdaSQL
+        CollationType = ctASCII
+        DatabaseName = 'Ib'
+        DatabaseType = dtInterBase
+        DataPipelineName = 'FIRMA'
+        IsCaseSensitive = True
+        LinkColor = clNavy
+        LinkType = ltMagicSQL
+        MaxSQLFieldAliasLength = 25
+        SQLText.Strings = (
+          'SELECT FIRMA_1.FANTASIA, FIRMA_1.RASAO, '
+          '       FIRMA_1.ENDERECO, FIRMA_1.ESCRICAO, '
+          '       FIRMA_1.CNPJ, FIRMA_1.TEL, FIRMA_1.NUMERO, '
+          '       FIRMA_1.CIDADE, FIRMA_1.UF, FIRMA_1.CEP, '
+          '       FIRMA_1.ENDERECO_SPED'
+          'FROM FIRMA FIRMA_1')
+        SQLType = sqSQL2
+        object daField1: TdaField
+          Alias = 'FANTASIA'
+          DisplayWidth = 100
+          FieldAlias = 'FANTASIA'
+          FieldLength = 100
+          FieldName = 'FANTASIA'
+          SQLFieldName = 'FANTASIA'
+          TableAlias = 'FIRMA'
+          TableName = 'FIRMA'
+          TableSQLAlias = 'FIRMA_1'
+        end
+        object daField2: TdaField
+          Alias = 'RASAO'
+          DisplayWidth = 100
+          FieldAlias = 'RASAO'
+          FieldLength = 100
+          FieldName = 'RASAO'
+          SQLFieldName = 'RASAO'
+          TableAlias = 'FIRMA'
+          TableName = 'FIRMA'
+          TableSQLAlias = 'FIRMA_1'
+        end
+        object daField3: TdaField
+          Alias = 'ENDERECO'
+          DisplayWidth = 100
+          FieldAlias = 'ENDERECO'
+          FieldLength = 100
+          FieldName = 'ENDERECO'
+          SQLFieldName = 'ENDERECO'
+          TableAlias = 'FIRMA'
+          TableName = 'FIRMA'
+          TableSQLAlias = 'FIRMA_1'
+        end
+        object daField4: TdaField
+          Alias = 'ESCRICAO'
+          DisplayWidth = 30
+          FieldAlias = 'ESCRICAO'
+          FieldLength = 30
+          FieldName = 'ESCRICAO'
+          SQLFieldName = 'ESCRICAO'
+          TableAlias = 'FIRMA'
+          TableName = 'FIRMA'
+          TableSQLAlias = 'FIRMA_1'
+        end
+        object daField5: TdaField
+          Alias = 'CNPJ'
+          DisplayWidth = 30
+          FieldAlias = 'CNPJ'
+          FieldLength = 30
+          FieldName = 'CNPJ'
+          SQLFieldName = 'CNPJ'
+          TableAlias = 'FIRMA'
+          TableName = 'FIRMA'
+          TableSQLAlias = 'FIRMA_1'
+        end
+        object daField6: TdaField
+          Alias = 'TEL'
+          DisplayWidth = 20
+          FieldAlias = 'TEL'
+          FieldLength = 20
+          FieldName = 'TEL'
+          SQLFieldName = 'TEL'
+          TableAlias = 'FIRMA'
+          TableName = 'FIRMA'
+          TableSQLAlias = 'FIRMA_1'
+        end
+        object daField7: TdaField
+          Alias = 'NUMERO'
+          DisplayWidth = 10
+          FieldAlias = 'NUMERO'
+          FieldLength = 10
+          FieldName = 'NUMERO'
+          SQLFieldName = 'NUMERO'
+          TableAlias = 'FIRMA'
+          TableName = 'FIRMA'
+          TableSQLAlias = 'FIRMA_1'
+        end
+        object daField8: TdaField
+          Alias = 'CIDADE'
+          DisplayWidth = 60
+          FieldAlias = 'CIDADE'
+          FieldLength = 60
+          FieldName = 'CIDADE'
+          SQLFieldName = 'CIDADE'
+          TableAlias = 'FIRMA'
+          TableName = 'FIRMA'
+          TableSQLAlias = 'FIRMA_1'
+        end
+        object daField9: TdaField
+          Alias = 'UF'
+          DisplayWidth = 2
+          FieldAlias = 'UF'
+          FieldLength = 2
+          FieldName = 'UF'
+          SQLFieldName = 'UF'
+          TableAlias = 'FIRMA'
+          TableName = 'FIRMA'
+          TableSQLAlias = 'FIRMA_1'
+        end
+        object daField10: TdaField
+          Alias = 'CEP'
+          DisplayWidth = 8
+          FieldAlias = 'CEP'
+          FieldLength = 8
+          FieldName = 'CEP'
+          SQLFieldName = 'CEP'
+          TableAlias = 'FIRMA'
+          TableName = 'FIRMA'
+          TableSQLAlias = 'FIRMA_1'
+        end
+        object daField11: TdaField
+          Alias = 'ENDERECO_SPED'
+          DisplayWidth = 100
+          FieldAlias = 'ENDERECO_SPED'
+          FieldLength = 100
+          FieldName = 'ENDERECO_SPED'
+          SQLFieldName = 'ENDERECO_SPED'
+          TableAlias = 'FIRMA'
+          TableName = 'FIRMA'
+          TableSQLAlias = 'FIRMA_1'
+        end
+        object daTable1: TdaTable
+          ChildType = 5
+          Alias = 'FIRMA'
+          JoinType = dajtNone
+          SQLAlias = 'FIRMA_1'
+          TableAlias = 'FIRMA'
+          TableName = 'FIRMA'
+        end
+      end
+    end
+    object daIBXQueryDataView3: TdaIBXQueryDataView
+      UserName = 'Query_NOTA_PRODUTO'
+      Height = 211
+      Left = 462
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 19
+      TypeColumnWidth = 52
+      Width = 224
+      AutoSearchTabOrder = 0
+      MasterDataViewUserName = 'Query_NOTA'
+      object NOTA_PRODUTO: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'NOTA_PRODUTO'
+        MasterDataPipelineName = 'NOTA'
+        object ppField1: TppField
+          FieldAlias = 'COD'
+          FieldName = 'COD'
+          FieldLength = 0
+          DataType = dtInteger
+          DisplayWidth = 10
+          Position = 0
+          TableName = 'NOTA_PRODUTO_1'
+        end
+        object ppField2: TppField
+          FieldAlias = 'CODIGO'
+          FieldName = 'CODIGO'
+          FieldLength = 13
+          DisplayWidth = 13
+          Position = 1
+          TableName = 'NOTA_PRODUTO_1'
+        end
+        object ppField3: TppField
+          FieldAlias = 'PRODUTOS'
+          FieldName = 'PRODUTOS'
+          FieldLength = 40
+          DisplayWidth = 40
+          Position = 2
+          TableName = 'NOTA_PRODUTO_1'
+        end
+        object ppField4: TppField
+          FieldAlias = 'QUANT'
+          FieldName = 'QUANT'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 3
+          TableName = 'NOTA_PRODUTO_1'
+        end
+        object ppField5: TppField
+          FieldAlias = 'TOTAL'
+          FieldName = 'TOTAL'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 4
+          TableName = 'NOTA_PRODUTO_1'
+        end
+        object ppField6: TppField
+          FieldAlias = 'CFOP'
+          FieldName = 'CFOP'
+          FieldLength = 2
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 5
+          TableName = 'NOTA_PRODUTO_1'
+        end
+        object ppField7: TppField
+          FieldAlias = 'CST_ICMS'
+          FieldName = 'CST_ICMS'
+          FieldLength = 3
+          DisplayWidth = 3
+          Position = 6
+          TableName = 'NOTA_PRODUTO_1'
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'C_EMISSAO'
+          CollationType = ctASCII
+          GuidCollationType = gcString
+          DetailFieldName = 'C_EMISSAO'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'COD'
+          CollationType = ctASCII
+          GuidCollationType = gcString
+          DetailFieldName = 'COD'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+      end
+      object daSQL3: TdaSQL
+        CollationType = ctASCII
+        DatabaseName = 'Ib'
+        DatabaseType = dtInterBase
+        DataPipelineName = 'NOTA_PRODUTO'
+        IsCaseSensitive = True
+        LinkColor = clGreen
+        LinkType = ltMagicSQL
+        MaxSQLFieldAliasLength = 25
+        SQLText.Strings = (
+          'SELECT NOTA_PRODUTO_1.COD, NOTA_PRODUTO_1.CODIGO, '
+          '       NOTA_PRODUTO_1.PRODUTOS, '
+          '       NOTA_PRODUTO_1.QUANT, '
+          '       NOTA_PRODUTO_1.TOTAL, NOTA_PRODUTO_1.CFOP, '
+          '       NOTA_PRODUTO_1.CST_ICMS'
+          'FROM NOTA_PRODUTO NOTA_PRODUTO_1')
+        SQLType = sqSQL2
+        object daField1: TdaField
+          Alias = 'COD'
+          DataType = dtInteger
+          DisplayWidth = 10
+          FieldAlias = 'COD'
+          FieldLength = 0
+          FieldName = 'COD'
+          SQLFieldName = 'COD'
+          TableAlias = 'NOTA_PRODUTO'
+          TableName = 'NOTA_PRODUTO'
+          TableSQLAlias = 'NOTA_PRODUTO_1'
+        end
+        object daField2: TdaField
+          Alias = 'CODIGO'
+          DisplayWidth = 13
+          FieldAlias = 'CODIGO'
+          FieldLength = 13
+          FieldName = 'CODIGO'
+          SQLFieldName = 'CODIGO'
+          TableAlias = 'NOTA_PRODUTO'
+          TableName = 'NOTA_PRODUTO'
+          TableSQLAlias = 'NOTA_PRODUTO_1'
+        end
+        object daField3: TdaField
+          Alias = 'PRODUTOS'
+          DisplayWidth = 40
+          FieldAlias = 'PRODUTOS'
+          FieldLength = 40
+          FieldName = 'PRODUTOS'
+          SQLFieldName = 'PRODUTOS'
+          TableAlias = 'NOTA_PRODUTO'
+          TableName = 'NOTA_PRODUTO'
+          TableSQLAlias = 'NOTA_PRODUTO_1'
+        end
+        object daField4: TdaField
+          Alias = 'QUANT'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'QUANT'
+          FieldLength = 4
+          FieldName = 'QUANT'
+          SQLFieldName = 'QUANT'
+          TableAlias = 'NOTA_PRODUTO'
+          TableName = 'NOTA_PRODUTO'
+          TableSQLAlias = 'NOTA_PRODUTO_1'
+        end
+        object daField5: TdaField
+          Alias = 'TOTAL'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'TOTAL'
+          FieldLength = 4
+          FieldName = 'TOTAL'
+          SQLFieldName = 'TOTAL'
+          TableAlias = 'NOTA_PRODUTO'
+          TableName = 'NOTA_PRODUTO'
+          TableSQLAlias = 'NOTA_PRODUTO_1'
+        end
+        object daField6: TdaField
+          Alias = 'CFOP'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'CFOP'
+          FieldLength = 2
+          FieldName = 'CFOP'
+          SQLFieldName = 'CFOP'
+          TableAlias = 'NOTA_PRODUTO'
+          TableName = 'NOTA_PRODUTO'
+          TableSQLAlias = 'NOTA_PRODUTO_1'
+        end
+        object daField7: TdaField
+          Alias = 'CST_ICMS'
+          DisplayWidth = 3
+          FieldAlias = 'CST_ICMS'
+          FieldLength = 3
+          FieldName = 'CST_ICMS'
+          SQLFieldName = 'CST_ICMS'
+          TableAlias = 'NOTA_PRODUTO'
+          TableName = 'NOTA_PRODUTO'
+          TableSQLAlias = 'NOTA_PRODUTO_1'
+        end
+        object daTable1: TdaTable
+          ChildType = 5
+          Alias = 'NOTA_PRODUTO'
+          JoinType = dajtNone
+          SQLAlias = 'NOTA_PRODUTO_1'
+          TableAlias = 'NOTA_PRODUTO'
+          TableName = 'NOTA_PRODUTO'
+        end
+        object daSQLLink1: TdaSQLLink
+          ChildType = 9
+          object daField1: TdaField
+            ChildType = 10
+            Alias = 'COD'
+            DataType = dtInteger
+            DisplayWidth = 10
+            FieldAlias = 'COD'
+            FieldLength = 0
+            FieldName = 'COD'
+            SQLFieldName = 'COD'
+            TableAlias = 'NOTA'
+            TableName = 'NOTA'
+            TableSQLAlias = 'NOTA_1'
+          end
+          object daField2: TdaField
+            ChildType = 11
+            Alias = 'COD'
+            DataType = dtInteger
+            DisplayWidth = 10
+            FieldAlias = 'COD'
+            FieldLength = 0
+            FieldName = 'COD'
+            SQLFieldName = 'COD'
+            TableAlias = 'NOTA_PRODUTO'
+            TableName = 'NOTA_PRODUTO'
+            TableSQLAlias = 'NOTA_PRODUTO_1'
+          end
+        end
+      end
+    end
+    object daIBXQueryDataView4: TdaIBXQueryDataView
+      UserName = 'Query_CHEQUE_MESTLE'
+      Height = 217
+      Left = 462
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 243
+      TypeColumnWidth = 52
+      Width = 226
+      AutoSearchTabOrder = 0
+      MasterDataViewUserName = 'Query_NOTA'
+      object CHEQUE_MESTLE: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'CHEQUE_MESTLE'
+        MasterDataPipelineName = 'NOTA'
+        object ppField1: TppField
+          FieldAlias = 'CHEQ_COD'
+          FieldName = 'CHEQ_COD'
+          FieldLength = 0
+          DataType = dtInteger
+          DisplayWidth = 10
+          Position = 0
+          TableName = 'CHEQUE_MESTLE_1'
+        end
+        object ppField2: TppField
+          FieldAlias = 'CHEQ_NOME'
+          FieldName = 'CHEQ_NOME'
+          FieldLength = 100
+          DisplayWidth = 100
+          Position = 1
+          TableName = 'CHEQUE_MESTLE_1'
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'C_EMISSAO'
+          CollationType = ctASCII
+          GuidCollationType = gcString
+          DetailFieldName = 'C_EMISSAO'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'ID_CLIENTE'
+          CollationType = ctASCII
+          GuidCollationType = gcString
+          DetailFieldName = 'CHEQ_COD'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+      end
+      object daSQL4: TdaSQL
+        CollationType = ctASCII
+        DatabaseName = 'Ib'
+        DatabaseType = dtInterBase
+        DataPipelineName = 'CHEQUE_MESTLE'
+        IsCaseSensitive = True
+        LinkColor = clPurple
+        LinkType = ltMagicSQL
+        MaxSQLFieldAliasLength = 25
+        SQLText.Strings = (
+          'SELECT CHEQUE_MESTLE_1.CHEQ_COD, '
+          '       CHEQUE_MESTLE_1.CHEQ_NOME'
+          'FROM CHEQUE_MESTLE CHEQUE_MESTLE_1')
+        SQLType = sqSQL2
+        object daField1: TdaField
+          Alias = 'CHEQ_COD'
+          DataType = dtInteger
+          DisplayWidth = 10
+          FieldAlias = 'CHEQ_COD'
+          FieldLength = 0
+          FieldName = 'CHEQ_COD'
+          SQLFieldName = 'CHEQ_COD'
+          TableAlias = 'CHEQUE_MESTLE'
+          TableName = 'CHEQUE_MESTLE'
+          TableSQLAlias = 'CHEQUE_MESTLE_1'
+        end
+        object daField2: TdaField
+          Alias = 'CHEQ_NOME'
+          DisplayWidth = 100
+          FieldAlias = 'CHEQ_NOME'
+          FieldLength = 100
+          FieldName = 'CHEQ_NOME'
+          SQLFieldName = 'CHEQ_NOME'
+          TableAlias = 'CHEQUE_MESTLE'
+          TableName = 'CHEQUE_MESTLE'
+          TableSQLAlias = 'CHEQUE_MESTLE_1'
+        end
+        object daTable1: TdaTable
+          ChildType = 5
+          Alias = 'CHEQUE_MESTLE'
+          JoinType = dajtNone
+          SQLAlias = 'CHEQUE_MESTLE_1'
+          TableAlias = 'CHEQUE_MESTLE'
+          TableName = 'CHEQUE_MESTLE'
+        end
+        object daSQLLink1: TdaSQLLink
+          ChildType = 9
+          object daField1: TdaField
+            ChildType = 10
+            Alias = 'ID_CLIENTE'
+            DataType = dtInteger
+            DisplayWidth = 10
+            FieldAlias = 'ID_CLIENTE'
+            FieldLength = 0
+            FieldName = 'ID_CLIENTE'
+            SQLFieldName = 'ID_CLIENTE'
+            TableAlias = 'NOTA'
+            TableName = 'NOTA'
+            TableSQLAlias = 'NOTA_1'
+          end
+          object daField2: TdaField
+            ChildType = 11
+            Alias = 'CHEQ_COD'
+            DataType = dtInteger
+            DisplayWidth = 10
+            FieldAlias = 'CHEQ_COD'
+            FieldLength = 0
+            FieldName = 'CHEQ_COD'
+            SQLFieldName = 'CHEQ_COD'
+            TableAlias = 'CHEQUE_MESTLE'
+            TableName = 'CHEQUE_MESTLE'
+            TableSQLAlias = 'CHEQUE_MESTLE_1'
+          end
+        end
+      end
+    end
+    object daIBXQueryDataView5: TdaIBXQueryDataView
+      UserName = 'Query_NOTA_TIPOS'
+      Height = 234
+      Left = 461
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 476
+      TypeColumnWidth = 52
+      Width = 228
+      AutoSearchTabOrder = 0
+      MasterDataViewUserName = 'Query_NOTA'
+      object NOTA_TIPOS: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'NOTA_TIPOS'
+        MasterDataPipelineName = 'NOTA'
+        object ppField1: TppField
+          FieldAlias = 'ID_NOTA_TIPO'
+          FieldName = 'ID_NOTA_TIPO'
+          FieldLength = 0
+          DataType = dtInteger
+          DisplayWidth = 10
+          Position = 0
+          TableName = 'NOTA_TIPOS_1'
+        end
+        object ppField2: TppField
+          FieldAlias = 'CODIGO'
+          FieldName = 'CODIGO'
+          FieldLength = 4
+          DisplayWidth = 4
+          Position = 1
+          TableName = 'NOTA_TIPOS_1'
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'C_EMISSAO'
+          CollationType = ctASCII
+          GuidCollationType = gcString
+          DetailFieldName = 'C_EMISSAO'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'ID_NOTA_TIPO'
+          CollationType = ctASCII
+          GuidCollationType = gcString
+          DetailFieldName = 'ID_NOTA_TIPO'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+      end
+      object daSQL5: TdaSQL
+        CollationType = ctASCII
+        DatabaseName = 'Ib'
+        DatabaseType = dtInterBase
+        DataPipelineName = 'NOTA_TIPOS'
+        IsCaseSensitive = True
+        LinkColor = clMaroon
+        LinkType = ltMagicSQL
+        MaxSQLFieldAliasLength = 25
+        SQLText.Strings = (
+          'SELECT NOTA_TIPOS_1.ID_NOTA_TIPO, '
+          '       NOTA_TIPOS_1.CODIGO'
+          'FROM NOTA_TIPOS NOTA_TIPOS_1'
+          'WHERE ( NOTA_TIPOS_1.CODIGO = '#39'55'#39' )')
+        SQLType = sqSQL2
+        object daCriteria1: TdaCriteria
+          ChildType = 7
+          Level = 0
+          Value = '55'
+          object TdaField
+            Alias = 'CODIGO'
+            AutoSearch = True
+            DisplayWidth = 4
+            FieldAlias = 'CODIGO'
+            FieldLength = 4
+            FieldName = 'CODIGO'
+            SQLFieldName = 'CODIGO'
+            TableAlias = 'NOTA_TIPOS'
+            TableName = 'NOTA_TIPOS'
+            TableSQLAlias = 'NOTA_TIPOS_1'
+          end
+        end
+        object daField1: TdaField
+          Alias = 'ID_NOTA_TIPO'
+          DataType = dtInteger
+          DisplayWidth = 10
+          FieldAlias = 'ID_NOTA_TIPO'
+          FieldLength = 0
+          FieldName = 'ID_NOTA_TIPO'
+          SQLFieldName = 'ID_NOTA_TIPO'
+          TableAlias = 'NOTA_TIPOS'
+          TableName = 'NOTA_TIPOS'
+          TableSQLAlias = 'NOTA_TIPOS_1'
+        end
+        object daField2: TdaField
+          Alias = 'CODIGO'
+          DisplayWidth = 4
+          FieldAlias = 'CODIGO'
+          FieldLength = 4
+          FieldName = 'CODIGO'
+          SQLFieldName = 'CODIGO'
+          TableAlias = 'NOTA_TIPOS'
+          TableName = 'NOTA_TIPOS'
+          TableSQLAlias = 'NOTA_TIPOS_1'
+        end
+        object daTable1: TdaTable
+          ChildType = 5
+          Alias = 'NOTA_TIPOS'
+          JoinType = dajtNone
+          SQLAlias = 'NOTA_TIPOS_1'
+          TableAlias = 'NOTA_TIPOS'
+          TableName = 'NOTA_TIPOS'
+        end
+        object TdaSQLLink
+          ChildType = 9
+          object daField3: TdaField
+            ChildType = 10
+            Alias = 'ID_NOTA_TIPO'
+            DataType = dtInteger
+            DisplayWidth = 10
+            FieldAlias = 'ID_NOTA_TIPO'
+            FieldLength = 0
+            FieldName = 'ID_NOTA_TIPO'
+            SQLFieldName = 'ID_NOTA_TIPO'
+            TableAlias = 'NOTA'
+            TableName = 'NOTA'
+            TableSQLAlias = 'NOTA_1'
+          end
+          object daField4: TdaField
+            ChildType = 11
+            Alias = 'ID_NOTA_TIPO'
+            DataType = dtInteger
+            DisplayWidth = 10
+            FieldAlias = 'ID_NOTA_TIPO'
+            FieldLength = 0
+            FieldName = 'ID_NOTA_TIPO'
+            SQLFieldName = 'ID_NOTA_TIPO'
+            TableAlias = 'NOTA_TIPOS'
+            TableName = 'NOTA_TIPOS'
+            TableSQLAlias = 'NOTA_TIPOS_1'
+          end
+        end
+      end
+    end
+  end
+  object ppDesignLayers1: TppDesignLayers
+    object ppDesignLayer1: TppDesignLayer
+      UserName = 'Foreground'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList1: TppParameterList
+  end
+end

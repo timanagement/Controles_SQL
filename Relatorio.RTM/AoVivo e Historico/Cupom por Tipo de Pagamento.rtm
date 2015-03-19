@@ -1,0 +1,2236 @@
+object ppReport1: TppReport
+  AutoStop = False
+  DataPipeline = daIBXQueryDataView1.PAGAMENTO2
+  PassSetting = psTwoPass
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'DXS Printout'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PrinterName = 'Screen'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 6350
+  PrinterSetup.mmMarginLeft = 6350
+  PrinterSetup.mmMarginRight = 6350
+  PrinterSetup.mmMarginTop = 6350
+  PrinterSetup.mmPaperHeight = 297127
+  PrinterSetup.mmPaperWidth = 210079
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.DatabaseSettings.DataPipeline = plItem
+  Template.DatabaseSettings.Name = 'PAGAMENTO'
+  Template.DatabaseSettings.NameField = 'NAME'
+  Template.DatabaseSettings.TemplateField = 'TEMPLATE'
+  Template.FileName = 
+    'E:\All_Delphi\Em_Andamento\All_Instalacao_Sol\Controles_SQL\Rela' +
+    'torio.RTM\AoVivo e Historico\Cupom por Tipo de Pagamento.rtm'
+  Template.Format = ftASCII
+  Units = utPrinterPixels
+  AllowPrintToFile = True
+  CachePages = True
+  DeviceType = 'Screen'
+  EmailSettings.ReportFormat = 'PDF'
+  LanguageID = 'Default'
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.FontEncoding = feAnsi
+  PreviewFormSettings.WindowState = wsMaximized
+  PreviewFormSettings.ZoomSetting = zsPageWidth
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  ShowAutoSearchDialog = True
+  TextSearchSettings.DefaultString = '<Texto a localizar>'
+  TextSearchSettings.Enabled = True
+  TextSearchSettings.ShowAll = True
+  TextSearchSettings.Visible = True
+  TextSearchSettings.WholeWord = True
+  Left = 225
+  Top = 310
+  Version = '12.03'
+  mmColumnWidth = 0
+  DataPipelineName = 'PAGAMENTO2'
+  object ppTitleBand1: TppTitleBand
+    mmBottomOffset = 0
+    mmHeight = 12171
+    mmPrintPosition = 0
+    object ppLabel1: TppLabel
+      UserName = 'Label1'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'TIPO DE PAGAMENTO'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Times New Roman'
+      Font.Size = 16
+      Font.Style = [fsBold]
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 6615
+      mmLeft = 50800
+      mmTop = 529
+      mmWidth = 83873
+      BandType = 1
+    end
+    object ppVariable1: TppVariable
+      UserName = 'Variable1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      BlankWhenZero = False
+      CalcOrder = 0
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 1323
+      mmTop = 7408
+      mmWidth = 65352
+      BandType = 1
+    end
+  end
+  object ppHeaderBand1: TppHeaderBand
+    mmBottomOffset = 0
+    mmHeight = 529
+    mmPrintPosition = 0
+  end
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background1.Gradient.EndColor = clWhite
+    Background1.Gradient.StartColor = clWhite
+    Background1.Gradient.Style = gsNone
+    Background2.Brush.Style = bsClear
+    Background2.Gradient.EndColor = clWhite
+    Background2.Gradient.StartColor = clWhite
+    Background2.Gradient.Style = gsNone
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 5821
+    mmPrintPosition = 0
+    object ppSubReport1: TppSubReport
+      UserName = 'SubReport1'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      TraverseAllData = False
+      DataPipelineName = 'CUPOM2'
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 529
+      mmWidth = 197379
+      BandType = 4
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport1: TppChildReport
+        AutoStop = False
+        DataPipeline = daIBXQueryDataView2.CUPOM2
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'DXS Printout'
+        PrinterSetup.PaperName = 'A4 210 x 297 mm'
+        PrinterSetup.PrinterName = 'Screen'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 6350
+        PrinterSetup.mmMarginLeft = 6350
+        PrinterSetup.mmMarginRight = 6350
+        PrinterSetup.mmMarginTop = 6350
+        PrinterSetup.mmPaperHeight = 297127
+        PrinterSetup.mmPaperWidth = 210079
+        PrinterSetup.PaperSize = 9
+        Template.DatabaseSettings.DataPipeline = plItem
+        Template.DatabaseSettings.NameField = 'NAME'
+        Template.DatabaseSettings.TemplateField = 'TEMPLATE'
+        Template.SaveTo = stDatabase
+        Units = utPrinterPixels
+        Version = '12.03'
+        mmColumnWidth = 0
+        DataPipelineName = 'CUPOM2'
+        object ppTitleBand2: TppTitleBand
+          mmBottomOffset = 0
+          mmHeight = 4498
+          mmPrintPosition = 0
+          object ppLabel4: TppLabel
+            UserName = 'Label4'
+            HyperlinkColor = clBlue
+            AutoSize = False
+            Border.BorderPositions = []
+            Border.Color = clBlack
+            Border.Style = psSolid
+            Border.Visible = False
+            Caption = 'CAIXA'
+            Ellipsis = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Tahoma'
+            Font.Size = 7
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 2910
+            mmLeft = 32279
+            mmTop = 1058
+            mmWidth = 22225
+            BandType = 1
+          end
+          object ppLabel5: TppLabel
+            UserName = 'Label5'
+            HyperlinkColor = clBlue
+            AutoSize = False
+            Border.BorderPositions = []
+            Border.Color = clBlack
+            Border.Style = psSolid
+            Border.Visible = False
+            Caption = 'DATA'
+            Ellipsis = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Tahoma'
+            Font.Size = 7
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 2910
+            mmLeft = 1323
+            mmTop = 1058
+            mmWidth = 10319
+            BandType = 1
+          end
+          object ppLabel6: TppLabel
+            UserName = 'Label6'
+            HyperlinkColor = clBlue
+            AutoSize = False
+            Border.BorderPositions = []
+            Border.Color = clBlack
+            Border.Style = psSolid
+            Border.Visible = False
+            Caption = 'CUPOM'
+            Ellipsis = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Tahoma'
+            Font.Size = 7
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 2910
+            mmLeft = 57944
+            mmTop = 1058
+            mmWidth = 14023
+            BandType = 1
+          end
+          object ppLabel8: TppLabel
+            UserName = 'Label8'
+            HyperlinkColor = clBlue
+            AutoSize = False
+            Border.BorderPositions = []
+            Border.Color = clBlack
+            Border.Style = psSolid
+            Border.Visible = False
+            Caption = 'CLIENTE'
+            Ellipsis = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Tahoma'
+            Font.Size = 7
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 2910
+            mmLeft = 74083
+            mmTop = 1058
+            mmWidth = 98425
+            BandType = 1
+          end
+          object ppLabel9: TppLabel
+            UserName = 'Label9'
+            HyperlinkColor = clBlue
+            AutoSize = False
+            Border.BorderPositions = []
+            Border.Color = clBlack
+            Border.Style = psSolid
+            Border.Visible = False
+            Caption = 'TOTAL'
+            Ellipsis = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Tahoma'
+            Font.Size = 7
+            Font.Style = [fsBold]
+            TextAlignment = taRightJustified
+            Transparent = True
+            mmHeight = 2910
+            mmLeft = 174361
+            mmTop = 1058
+            mmWidth = 20638
+            BandType = 1
+          end
+          object ppLine4: TppLine
+            UserName = 'Line4'
+            Border.BorderPositions = []
+            Border.Color = clBlack
+            Border.Style = psSolid
+            Border.Visible = False
+            Weight = 0.750000000000000000
+            mmHeight = 794
+            mmLeft = 1058
+            mmTop = 265
+            mmWidth = 194998
+            BandType = 1
+          end
+          object ppLabel2: TppLabel
+            UserName = 'Label2'
+            HyperlinkColor = clBlue
+            AutoSize = False
+            Border.BorderPositions = []
+            Border.Color = clBlack
+            Border.Style = psSolid
+            Border.Visible = False
+            Caption = 'HORA'
+            Ellipsis = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Tahoma'
+            Font.Size = 7
+            Font.Style = [fsBold]
+            Transparent = True
+            mmHeight = 2910
+            mmLeft = 18785
+            mmTop = 1058
+            mmWidth = 10319
+            BandType = 1
+          end
+        end
+        object ppDetailBand2: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background1.Gradient.EndColor = clWhite
+          Background1.Gradient.StartColor = clWhite
+          Background1.Gradient.Style = gsNone
+          Background2.Brush.Style = bsClear
+          Background2.Gradient.EndColor = clWhite
+          Background2.Gradient.StartColor = clWhite
+          Background2.Gradient.Style = gsNone
+          PrintHeight = phDynamic
+          mmBottomOffset = 0
+          mmHeight = 3969
+          mmPrintPosition = 0
+          object ppDBText2: TppDBText
+            UserName = 'DBText2'
+            HyperlinkColor = clBlue
+            Border.BorderPositions = []
+            Border.Color = clBlack
+            Border.Style = psSolid
+            Border.Visible = False
+            DataField = 'CAIXA'
+            DataPipeline = daIBXQueryDataView2.CUPOM2
+            Ellipsis = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Tahoma'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            DataPipelineName = 'CUPOM2'
+            mmHeight = 3440
+            mmLeft = 32279
+            mmTop = 529
+            mmWidth = 25135
+            BandType = 4
+          end
+          object ppDBText3: TppDBText
+            UserName = 'DBText3'
+            HyperlinkColor = clBlue
+            Border.BorderPositions = []
+            Border.Color = clBlack
+            Border.Style = psSolid
+            Border.Visible = False
+            DataField = 'DATA'
+            DataPipeline = daIBXQueryDataView2.CUPOM2
+            Ellipsis = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Tahoma'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            DataPipelineName = 'CUPOM2'
+            mmHeight = 3440
+            mmLeft = 1323
+            mmTop = 529
+            mmWidth = 15875
+            BandType = 4
+          end
+          object ppDBText4: TppDBText
+            UserName = 'DBText4'
+            HyperlinkColor = clBlue
+            Border.BorderPositions = []
+            Border.Color = clBlack
+            Border.Style = psSolid
+            Border.Visible = False
+            DataField = 'COD_CUPOM'
+            DataPipeline = daIBXQueryDataView2.CUPOM2
+            Ellipsis = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Tahoma'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            DataPipelineName = 'CUPOM2'
+            mmHeight = 3440
+            mmLeft = 57944
+            mmTop = 529
+            mmWidth = 14023
+            BandType = 4
+          end
+          object ppDBText7: TppDBText
+            UserName = 'DBText7'
+            HyperlinkColor = clBlue
+            Border.BorderPositions = []
+            Border.Color = clBlack
+            Border.Style = psSolid
+            Border.Visible = False
+            DataField = 'TOTAL'
+            DataPipeline = daIBXQueryDataView2.CUPOM2
+            DisplayFormat = '$#,0.00;-$#,0.00'
+            Ellipsis = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Tahoma'
+            Font.Size = 8
+            Font.Style = []
+            TextAlignment = taRightJustified
+            Transparent = True
+            DataPipelineName = 'CUPOM2'
+            mmHeight = 3440
+            mmLeft = 174361
+            mmTop = 529
+            mmWidth = 20638
+            BandType = 4
+          end
+          object ppVariable2: TppVariable
+            UserName = 'Variable2'
+            HyperlinkColor = clBlue
+            Border.BorderPositions = []
+            Border.Color = clBlack
+            Border.Style = psSolid
+            Border.Visible = False
+            BlankWhenZero = False
+            CalcOrder = 0
+            Ellipsis = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Tahoma'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            mmHeight = 3440
+            mmLeft = 74083
+            mmTop = 529
+            mmWidth = 98425
+            BandType = 4
+          end
+          object ppDBText1: TppDBText
+            UserName = 'DBText1'
+            HyperlinkColor = clBlue
+            Border.BorderPositions = []
+            Border.Color = clBlack
+            Border.Style = psSolid
+            Border.Visible = False
+            DataField = 'HORAINICIAL'
+            DataPipeline = daIBXQueryDataView2.CUPOM2
+            Ellipsis = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Tahoma'
+            Font.Size = 8
+            Font.Style = []
+            Transparent = True
+            DataPipelineName = 'CUPOM2'
+            mmHeight = 3440
+            mmLeft = 18785
+            mmTop = 529
+            mmWidth = 12700
+            BandType = 4
+          end
+        end
+        object ppSummaryBand1: TppSummaryBand
+          PrintHeight = phDynamic
+          AlignToBottom = False
+          mmBottomOffset = 0
+          mmHeight = 6615
+          mmPrintPosition = 0
+          object ppSubReport2: TppSubReport
+            UserName = 'SubReport2'
+            ExpandAll = False
+            NewPrintJob = False
+            OutlineSettings.CreateNode = True
+            TraverseAllData = False
+            DataPipelineName = 'ITEM2'
+            mmHeight = 5027
+            mmLeft = 0
+            mmTop = 1323
+            mmWidth = 197379
+            BandType = 7
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+            object ppChildReport2: TppChildReport
+              AutoStop = False
+              DataPipeline = daIBXQueryDataView3.ITEM2
+              PrinterSetup.BinName = 'Default'
+              PrinterSetup.DocumentName = 'DXS Printout'
+              PrinterSetup.PaperName = 'A4 210 x 297 mm'
+              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.SaveDeviceSettings = False
+              PrinterSetup.mmMarginBottom = 6350
+              PrinterSetup.mmMarginLeft = 6350
+              PrinterSetup.mmMarginRight = 6350
+              PrinterSetup.mmMarginTop = 6350
+              PrinterSetup.mmPaperHeight = 297127
+              PrinterSetup.mmPaperWidth = 210079
+              PrinterSetup.PaperSize = 9
+              Template.DatabaseSettings.DataPipeline = plItem
+              Template.DatabaseSettings.NameField = 'NAME'
+              Template.DatabaseSettings.TemplateField = 'TEMPLATE'
+              Template.SaveTo = stDatabase
+              Units = utPrinterPixels
+              Version = '12.03'
+              mmColumnWidth = 0
+              DataPipelineName = 'ITEM2'
+              object ppTitleBand3: TppTitleBand
+                mmBottomOffset = 0
+                mmHeight = 4233
+                mmPrintPosition = 0
+                object ppLine5: TppLine
+                  UserName = 'Line5'
+                  Border.BorderPositions = []
+                  Border.Color = clBlack
+                  Border.Style = psSolid
+                  Border.Visible = False
+                  Weight = 0.750000000000000000
+                  mmHeight = 265
+                  mmLeft = 10054
+                  mmTop = 0
+                  mmWidth = 184944
+                  BandType = 1
+                end
+                object ppLabel10: TppLabel
+                  UserName = 'Label10'
+                  HyperlinkColor = clBlue
+                  AutoSize = False
+                  Border.BorderPositions = []
+                  Border.Color = clBlack
+                  Border.Style = psSolid
+                  Border.Visible = False
+                  Caption = 'N'#186
+                  Ellipsis = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Tahoma'
+                  Font.Size = 7
+                  Font.Style = []
+                  Transparent = True
+                  mmHeight = 2910
+                  mmLeft = 10054
+                  mmTop = 794
+                  mmWidth = 9260
+                  BandType = 1
+                end
+                object ppLabel11: TppLabel
+                  UserName = 'Label11'
+                  HyperlinkColor = clBlue
+                  AutoSize = False
+                  Border.BorderPositions = []
+                  Border.Color = clBlack
+                  Border.Style = psSolid
+                  Border.Visible = False
+                  Caption = 'CODIGO'
+                  Ellipsis = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Tahoma'
+                  Font.Size = 7
+                  Font.Style = []
+                  Transparent = True
+                  mmHeight = 2910
+                  mmLeft = 21696
+                  mmTop = 794
+                  mmWidth = 23019
+                  BandType = 1
+                end
+                object ppLabel12: TppLabel
+                  UserName = 'Label12'
+                  HyperlinkColor = clBlue
+                  AutoSize = False
+                  Border.BorderPositions = []
+                  Border.Color = clBlack
+                  Border.Style = psSolid
+                  Border.Visible = False
+                  Caption = 'PRODUTO'
+                  Ellipsis = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Tahoma'
+                  Font.Size = 7
+                  Font.Style = []
+                  Transparent = True
+                  mmHeight = 2910
+                  mmLeft = 47096
+                  mmTop = 794
+                  mmWidth = 69321
+                  BandType = 1
+                end
+                object ppLabel13: TppLabel
+                  UserName = 'Label13'
+                  HyperlinkColor = clBlue
+                  AutoSize = False
+                  Border.BorderPositions = []
+                  Border.Color = clBlack
+                  Border.Style = psSolid
+                  Border.Visible = False
+                  Caption = 'QUANT'
+                  Ellipsis = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Tahoma'
+                  Font.Size = 7
+                  Font.Style = []
+                  TextAlignment = taRightJustified
+                  Transparent = True
+                  mmHeight = 2910
+                  mmLeft = 135996
+                  mmTop = 794
+                  mmWidth = 17463
+                  BandType = 1
+                end
+                object ppLabel14: TppLabel
+                  UserName = 'Label14'
+                  HyperlinkColor = clBlue
+                  AutoSize = False
+                  Border.BorderPositions = []
+                  Border.Color = clBlack
+                  Border.Style = psSolid
+                  Border.Visible = False
+                  Caption = 'PRECO'
+                  Ellipsis = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Tahoma'
+                  Font.Size = 7
+                  Font.Style = []
+                  TextAlignment = taRightJustified
+                  Transparent = True
+                  mmHeight = 2910
+                  mmLeft = 155575
+                  mmTop = 794
+                  mmWidth = 17727
+                  BandType = 1
+                end
+                object ppLabel15: TppLabel
+                  UserName = 'Label15'
+                  HyperlinkColor = clBlue
+                  AutoSize = False
+                  Border.BorderPositions = []
+                  Border.Color = clBlack
+                  Border.Style = psSolid
+                  Border.Visible = False
+                  Caption = 'TOTAL'
+                  Ellipsis = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Tahoma'
+                  Font.Size = 7
+                  Font.Style = []
+                  TextAlignment = taRightJustified
+                  Transparent = True
+                  mmHeight = 2910
+                  mmLeft = 174890
+                  mmTop = 794
+                  mmWidth = 20108
+                  BandType = 1
+                end
+              end
+              object ppDetailBand3: TppDetailBand
+                Background1.Brush.Style = bsClear
+                Background1.Gradient.EndColor = clWhite
+                Background1.Gradient.StartColor = clWhite
+                Background1.Gradient.Style = gsNone
+                Background2.Brush.Style = bsClear
+                Background2.Gradient.EndColor = clWhite
+                Background2.Gradient.StartColor = clWhite
+                Background2.Gradient.Style = gsNone
+                PrintHeight = phDynamic
+                mmBottomOffset = 0
+                mmHeight = 4233
+                mmPrintPosition = 0
+                object ppDBText8: TppDBText
+                  UserName = 'DBText8'
+                  HyperlinkColor = clBlue
+                  Border.BorderPositions = []
+                  Border.Color = clBlack
+                  Border.Style = psSolid
+                  Border.Visible = False
+                  DataField = 'NUMERO'
+                  DataPipeline = daIBXQueryDataView3.ITEM2
+                  Ellipsis = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Tahoma'
+                  Font.Size = 7
+                  Font.Style = []
+                  Transparent = True
+                  DataPipelineName = 'ITEM2'
+                  mmHeight = 2910
+                  mmLeft = 10054
+                  mmTop = 529
+                  mmWidth = 9260
+                  BandType = 4
+                end
+                object ppDBText9: TppDBText
+                  UserName = 'DBText9'
+                  HyperlinkColor = clBlue
+                  Border.BorderPositions = []
+                  Border.Color = clBlack
+                  Border.Style = psSolid
+                  Border.Visible = False
+                  DataField = 'COD_PRODUTO'
+                  DataPipeline = daIBXQueryDataView3.ITEM2
+                  Ellipsis = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Tahoma'
+                  Font.Size = 7
+                  Font.Style = []
+                  Transparent = True
+                  DataPipelineName = 'ITEM2'
+                  mmHeight = 2910
+                  mmLeft = 21696
+                  mmTop = 529
+                  mmWidth = 23019
+                  BandType = 4
+                end
+                object ppDBText10: TppDBText
+                  UserName = 'DBText10'
+                  HyperlinkColor = clBlue
+                  Border.BorderPositions = []
+                  Border.Color = clBlack
+                  Border.Style = psSolid
+                  Border.Visible = False
+                  DataField = 'PRODUTO'
+                  DataPipeline = daIBXQueryDataView3.ITEM2
+                  Ellipsis = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Tahoma'
+                  Font.Size = 7
+                  Font.Style = []
+                  Transparent = True
+                  DataPipelineName = 'ITEM2'
+                  mmHeight = 2910
+                  mmLeft = 47096
+                  mmTop = 529
+                  mmWidth = 83079
+                  BandType = 4
+                end
+                object ppDBText11: TppDBText
+                  UserName = 'DBText11'
+                  HyperlinkColor = clBlue
+                  Border.BorderPositions = []
+                  Border.Color = clBlack
+                  Border.Style = psSolid
+                  Border.Visible = False
+                  DataField = 'QUANT'
+                  DataPipeline = daIBXQueryDataView3.ITEM2
+                  DisplayFormat = '#,###;-#,###'
+                  Ellipsis = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Tahoma'
+                  Font.Size = 7
+                  Font.Style = []
+                  TextAlignment = taRightJustified
+                  Transparent = True
+                  DataPipelineName = 'ITEM2'
+                  mmHeight = 2910
+                  mmLeft = 135996
+                  mmTop = 529
+                  mmWidth = 17463
+                  BandType = 4
+                end
+                object ppDBText12: TppDBText
+                  UserName = 'DBText12'
+                  HyperlinkColor = clBlue
+                  Border.BorderPositions = []
+                  Border.Color = clBlack
+                  Border.Style = psSolid
+                  Border.Visible = False
+                  DataField = 'PRECO'
+                  DataPipeline = daIBXQueryDataView3.ITEM2
+                  DisplayFormat = '$#,0.00;-$#,0.00'
+                  Ellipsis = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Tahoma'
+                  Font.Size = 7
+                  Font.Style = []
+                  TextAlignment = taRightJustified
+                  Transparent = True
+                  DataPipelineName = 'ITEM2'
+                  mmHeight = 2910
+                  mmLeft = 155575
+                  mmTop = 529
+                  mmWidth = 17727
+                  BandType = 4
+                end
+                object ppDBText13: TppDBText
+                  UserName = 'DBText13'
+                  HyperlinkColor = clBlue
+                  Border.BorderPositions = []
+                  Border.Color = clBlack
+                  Border.Style = psSolid
+                  Border.Visible = False
+                  DataField = 'TOTAL'
+                  DataPipeline = daIBXQueryDataView3.ITEM2
+                  DisplayFormat = '$#,0.00;-$#,0.00'
+                  Ellipsis = False
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Tahoma'
+                  Font.Size = 7
+                  Font.Style = []
+                  TextAlignment = taRightJustified
+                  Transparent = True
+                  DataPipelineName = 'ITEM2'
+                  mmHeight = 2910
+                  mmLeft = 174890
+                  mmTop = 529
+                  mmWidth = 20108
+                  BandType = 4
+                end
+              end
+              object ppSummaryBand2: TppSummaryBand
+                PrintHeight = phDynamic
+                AlignToBottom = False
+                mmBottomOffset = 0
+                mmHeight = 5292
+                mmPrintPosition = 0
+                object ppSubReport3: TppSubReport
+                  UserName = 'SubReport3'
+                  ExpandAll = False
+                  NewPrintJob = False
+                  OutlineSettings.CreateNode = True
+                  TraverseAllData = False
+                  DataPipelineName = 'PAGAMENTO22'
+                  mmHeight = 5027
+                  mmLeft = 0
+                  mmTop = 265
+                  mmWidth = 197379
+                  BandType = 7
+                  mmBottomOffset = 0
+                  mmOverFlowOffset = 0
+                  mmStopPosition = 0
+                  mmMinHeight = 0
+                  object ppChildReport3: TppChildReport
+                    AutoStop = False
+                    DataPipeline = daIBXQueryDataView4.PAGAMENTO22
+                    PrinterSetup.BinName = 'Default'
+                    PrinterSetup.DocumentName = 'DXS Printout'
+                    PrinterSetup.PaperName = 'A4 210 x 297 mm'
+                    PrinterSetup.PrinterName = 'Screen'
+                    PrinterSetup.SaveDeviceSettings = False
+                    PrinterSetup.mmMarginBottom = 6350
+                    PrinterSetup.mmMarginLeft = 6350
+                    PrinterSetup.mmMarginRight = 6350
+                    PrinterSetup.mmMarginTop = 6350
+                    PrinterSetup.mmPaperHeight = 297127
+                    PrinterSetup.mmPaperWidth = 210079
+                    PrinterSetup.PaperSize = 9
+                    Template.DatabaseSettings.DataPipeline = plItem
+                    Template.DatabaseSettings.NameField = 'NAME'
+                    Template.DatabaseSettings.TemplateField = 'TEMPLATE'
+                    Template.SaveTo = stDatabase
+                    Units = utPrinterPixels
+                    Version = '12.03'
+                    mmColumnWidth = 0
+                    DataPipelineName = 'PAGAMENTO22'
+                    object ppTitleBand4: TppTitleBand
+                      mmBottomOffset = 0
+                      mmHeight = 1058
+                      mmPrintPosition = 0
+                      object ppLine1: TppLine
+                        UserName = 'Line1'
+                        Border.BorderPositions = []
+                        Border.Color = clBlack
+                        Border.Style = psSolid
+                        Border.Visible = False
+                        Weight = 0.750000000000000000
+                        mmHeight = 794
+                        mmLeft = 9790
+                        mmTop = 265
+                        mmWidth = 185473
+                        BandType = 1
+                      end
+                    end
+                    object ppDetailBand4: TppDetailBand
+                      Background1.Brush.Style = bsClear
+                      Background1.Gradient.EndColor = clWhite
+                      Background1.Gradient.StartColor = clWhite
+                      Background1.Gradient.Style = gsNone
+                      Background2.Brush.Style = bsClear
+                      Background2.Gradient.EndColor = clWhite
+                      Background2.Gradient.StartColor = clWhite
+                      Background2.Gradient.Style = gsNone
+                      mmBottomOffset = 0
+                      mmHeight = 3440
+                      mmPrintPosition = 0
+                      object ppDBText14: TppDBText
+                        UserName = 'DBText14'
+                        HyperlinkColor = clBlue
+                        Border.BorderPositions = []
+                        Border.Color = clBlack
+                        Border.Style = psSolid
+                        Border.Visible = False
+                        DataField = 'TIPO_PAGAMENTO'
+                        DataPipeline = daIBXQueryDataView4.PAGAMENTO22
+                        Ellipsis = False
+                        Font.Charset = DEFAULT_CHARSET
+                        Font.Color = clBlack
+                        Font.Name = 'Tahoma'
+                        Font.Size = 7
+                        Font.Style = [fsBold]
+                        TextAlignment = taRightJustified
+                        Transparent = True
+                        DataPipelineName = 'PAGAMENTO22'
+                        mmHeight = 2910
+                        mmLeft = 135202
+                        mmTop = 265
+                        mmWidth = 38100
+                        BandType = 4
+                      end
+                      object ppDBText15: TppDBText
+                        UserName = 'DBText15'
+                        HyperlinkColor = clBlue
+                        Border.BorderPositions = []
+                        Border.Color = clBlack
+                        Border.Style = psSolid
+                        Border.Visible = False
+                        DataField = 'VALOR'
+                        DataPipeline = daIBXQueryDataView4.PAGAMENTO22
+                        DisplayFormat = '$#,0.00;-$#,0.00'
+                        Ellipsis = False
+                        Font.Charset = DEFAULT_CHARSET
+                        Font.Color = clBlack
+                        Font.Name = 'Tahoma'
+                        Font.Size = 7
+                        Font.Style = [fsBold]
+                        TextAlignment = taRightJustified
+                        Transparent = True
+                        DataPipelineName = 'PAGAMENTO22'
+                        mmHeight = 2910
+                        mmLeft = 176477
+                        mmTop = 265
+                        mmWidth = 18785
+                        BandType = 4
+                      end
+                    end
+                    object ppSummaryBand3: TppSummaryBand
+                      AlignToBottom = False
+                      mmBottomOffset = 0
+                      mmHeight = 4233
+                      mmPrintPosition = 0
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+        object raCodeModule2: TraCodeModule
+          ProgramStream = {
+            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D65060F
+            5661726961626C65324F6E43616C630B50726F6772616D54797065070B747450
+            726F63656475726506536F75726365067B70726F636564757265205661726961
+            626C65324F6E43616C63287661722056616C75653A2056617269616E74293B0D
+            0A626567696E0D0A0D0A202056616C7565203A3D20204355504F4D325B27434F
+            445F434C49454E5445275D2B272D272B4355504F4D325B27434C49454E544527
+            5D3B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060956617269
+            61626C6532094576656E744E616D6506064F6E43616C63074576656E74494402
+            210000}
+        end
+      end
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    mmBottomOffset = 0
+    mmHeight = 6350
+    mmPrintPosition = 0
+    object ppLine2: TppLine
+      UserName = 'Line2'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Pen.Color = clGray
+      Weight = 0.750000000000000000
+      mmHeight = 3969
+      mmLeft = 1323
+      mmTop = 5027
+      mmWidth = 194734
+      BandType = 8
+    end
+    object ppSystemVariable1: TppSystemVariable
+      UserName = 'SystemVariable1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPrintDateTime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 1323
+      mmTop = 1323
+      mmWidth = 26194
+      BandType = 8
+    end
+    object ppSystemVariable2: TppSystemVariable
+      UserName = 'SystemVariable2'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPageSet
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 188648
+      mmTop = 1323
+      mmWidth = 7408
+      BandType = 8
+    end
+  end
+  object daDataModule1: TdaDataModule
+    object daIBXQueryDataView1: TdaIBXQueryDataView
+      UserName = 'Query_PAGAMENTO2'
+      Height = 278
+      Left = 10
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 10
+      TypeColumnWidth = 52
+      Width = 305
+      AutoSearchTabOrder = 0
+      object PAGAMENTO2: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'PAGAMENTO2'
+        object ppField1: TppField
+          FieldAlias = 'COD'
+          FieldName = 'COD'
+          FieldLength = 0
+          DataType = dtDouble
+          DisplayWidth = 10
+          Position = 0
+          TableName = 'PAGAMENTO2_1'
+        end
+        object ppField2: TppField
+          FieldAlias = 'TIPO_PAGAMENTO'
+          FieldName = 'TIPO_PAGAMENTO'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 1
+          TableName = 'PAGAMENTO2_1'
+        end
+        object ppField3: TppField
+          FieldAlias = 'DATA'
+          FieldName = 'DATA'
+          FieldLength = 0
+          DataType = dtDate
+          DisplayWidth = 10
+          Position = 2
+          TableName = 'PAGAMENTO2_1'
+        end
+        object ppField4: TppField
+          FieldAlias = 'VALOR'
+          FieldName = 'VALOR'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 3
+          TableName = 'PAGAMENTO2_1'
+        end
+        object ppField5: TppField
+          FieldAlias = 'CAIXA'
+          FieldName = 'CAIXA'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 4
+          TableName = 'PAGAMENTO2_1'
+        end
+      end
+      object daSQL1: TdaSQL
+        CollationType = ctASCII
+        DatabaseName = 'Ib'
+        DatabaseType = dtInterBase
+        DataPipelineName = 'PAGAMENTO2'
+        IsCaseSensitive = True
+        LinkColor = clMaroon
+        LinkType = ltMagicSQL
+        MaxSQLFieldAliasLength = 25
+        SQLText.Strings = (
+          'SELECT PAGAMENTO2_1.COD, '
+          '       PAGAMENTO2_1.TIPO_PAGAMENTO, '
+          '       PAGAMENTO2_1.DATA, PAGAMENTO2_1.VALOR, '
+          '       PAGAMENTO2_1.CAIXA'
+          'FROM PAGAMENTO2 PAGAMENTO2_1'
+          'WHERE '
+          '      ( PAGAMENTO2_1.TIPO_PAGAMENTO IN ('#39'CONVENIO'#39') )'
+          
+            '       AND ( PAGAMENTO2_1.DATA BETWEEN '#39'02/01/2014'#39' AND '#39'04/01/2' +
+            '014'#39' )'
+          'ORDER BY PAGAMENTO2_1.TIPO_PAGAMENTO, '
+          '         PAGAMENTO2_1.DATA, PAGAMENTO2_1.CAIXA')
+        SQLType = sqSQL2
+        object daCriteria1: TdaCriteria
+          ChildType = 7
+          Level = 0
+          Operator = dacoInList
+          Value = 'CONVENIO'
+          object TdaField
+            Alias = 'TIPO_PAGAMENTO'
+            AutoSearch = True
+            DisplayWidth = 30
+            FieldAlias = 'TIPO_PAGAMENTO'
+            FieldLength = 30
+            FieldName = 'TIPO_PAGAMENTO'
+            Mandatory = True
+            SQLFieldName = 'TIPO_PAGAMENTO'
+            TableAlias = 'PAGAMENTO2'
+            TableName = 'PAGAMENTO2'
+            TableSQLAlias = 'PAGAMENTO2_1'
+          end
+        end
+        object daCriteria2: TdaCriteria
+          ChildType = 7
+          Level = 0
+          Operator = dacoBetween
+          Value = '01/02/2014,01/04/2014'
+          object TdaField
+            Alias = 'DATA'
+            AutoSearch = True
+            DataType = dtDate
+            DisplayWidth = 10
+            FieldAlias = 'DATA'
+            FieldLength = 0
+            FieldName = 'DATA'
+            Mandatory = True
+            SQLFieldName = 'DATA'
+            TableAlias = 'PAGAMENTO2'
+            TableName = 'PAGAMENTO2'
+            TableSQLAlias = 'PAGAMENTO2_1'
+          end
+          object TdaNumericValue
+            Value = 41671.000000000000000000
+          end
+          object TdaNumericValue
+            Value = 41730.000000000000000000
+          end
+        end
+        object daCriteria3: TdaCriteria
+          ChildType = 7
+          Level = 0
+          object TdaField
+            Alias = 'CAIXA'
+            AutoSearch = True
+            DisplayWidth = 30
+            FieldAlias = 'CAIXA'
+            FieldLength = 30
+            FieldName = 'CAIXA'
+            SQLFieldName = 'CAIXA'
+            TableAlias = 'PAGAMENTO2'
+            TableName = 'PAGAMENTO2'
+            TableSQLAlias = 'PAGAMENTO2_1'
+          end
+        end
+        object daCriteria4: TdaCriteria
+          ChildType = 7
+          Level = 0
+          object TdaField
+            Alias = 'COD_CLIENTE'
+            AutoSearch = True
+            DisplayWidth = 10
+            FieldAlias = 'COD_CLIENTE'
+            FieldLength = 10
+            FieldName = 'COD_CLIENTE'
+            SQLFieldName = 'COD_CLIENTE'
+            TableAlias = 'PAGAMENTO2'
+            TableName = 'PAGAMENTO2'
+            TableSQLAlias = 'PAGAMENTO2_1'
+          end
+        end
+        object daField1: TdaField
+          Alias = 'COD'
+          DataType = dtDouble
+          DisplayWidth = 10
+          FieldAlias = 'COD'
+          FieldLength = 0
+          FieldName = 'COD'
+          SQLFieldName = 'COD'
+          TableAlias = 'PAGAMENTO2'
+          TableName = 'PAGAMENTO2'
+          TableSQLAlias = 'PAGAMENTO2_1'
+        end
+        object daField2: TdaField
+          Alias = 'TIPO_PAGAMENTO'
+          DisplayWidth = 30
+          FieldAlias = 'TIPO_PAGAMENTO'
+          FieldLength = 30
+          FieldName = 'TIPO_PAGAMENTO'
+          SQLFieldName = 'TIPO_PAGAMENTO'
+          TableAlias = 'PAGAMENTO2'
+          TableName = 'PAGAMENTO2'
+          TableSQLAlias = 'PAGAMENTO2_1'
+        end
+        object daField3: TdaField
+          Alias = 'DATA'
+          DataType = dtDate
+          DisplayWidth = 10
+          FieldAlias = 'DATA'
+          FieldLength = 0
+          FieldName = 'DATA'
+          SQLFieldName = 'DATA'
+          TableAlias = 'PAGAMENTO2'
+          TableName = 'PAGAMENTO2'
+          TableSQLAlias = 'PAGAMENTO2_1'
+        end
+        object daField4: TdaField
+          Alias = 'VALOR'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'VALOR'
+          FieldLength = 4
+          FieldName = 'VALOR'
+          SQLFieldName = 'VALOR'
+          TableAlias = 'PAGAMENTO2'
+          TableName = 'PAGAMENTO2'
+          TableSQLAlias = 'PAGAMENTO2_1'
+        end
+        object daField5: TdaField
+          Alias = 'CAIXA'
+          DisplayWidth = 30
+          FieldAlias = 'CAIXA'
+          FieldLength = 30
+          FieldName = 'CAIXA'
+          SQLFieldName = 'CAIXA'
+          TableAlias = 'PAGAMENTO2'
+          TableName = 'PAGAMENTO2'
+          TableSQLAlias = 'PAGAMENTO2_1'
+        end
+        object daField6: TdaField
+          ChildType = 2
+          Alias = 'TIPO_PAGAMENTO'
+          DisplayWidth = 30
+          FieldAlias = 'TIPO_PAGAMENTO'
+          FieldLength = 30
+          FieldName = 'TIPO_PAGAMENTO'
+          SQLFieldName = 'TIPO_PAGAMENTO'
+          TableAlias = 'PAGAMENTO2'
+          TableName = 'PAGAMENTO2'
+          TableSQLAlias = 'PAGAMENTO2_1'
+        end
+        object daField7: TdaField
+          ChildType = 2
+          Alias = 'DATA'
+          DataType = dtDate
+          DisplayWidth = 10
+          FieldAlias = 'DATA'
+          FieldLength = 0
+          FieldName = 'DATA'
+          SQLFieldName = 'DATA'
+          TableAlias = 'PAGAMENTO2'
+          TableName = 'PAGAMENTO2'
+          TableSQLAlias = 'PAGAMENTO2_1'
+        end
+        object daField8: TdaField
+          ChildType = 2
+          Alias = 'CAIXA'
+          DisplayWidth = 30
+          FieldAlias = 'CAIXA'
+          FieldLength = 30
+          FieldName = 'CAIXA'
+          SQLFieldName = 'CAIXA'
+          TableAlias = 'PAGAMENTO2'
+          TableName = 'PAGAMENTO2'
+          TableSQLAlias = 'PAGAMENTO2_1'
+        end
+        object daTable1: TdaTable
+          ChildType = 5
+          Alias = 'PAGAMENTO2'
+          JoinType = dajtNone
+          SQLAlias = 'PAGAMENTO2_1'
+          TableAlias = 'PAGAMENTO2'
+          TableName = 'PAGAMENTO2'
+        end
+      end
+    end
+    object daIBXQueryDataView2: TdaIBXQueryDataView
+      UserName = 'Query_CUPOM2'
+      Height = 391
+      Left = 418
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 7
+      TypeColumnWidth = 52
+      Width = 308
+      AutoSearchTabOrder = 0
+      MasterDataViewUserName = 'Query_PAGAMENTO2'
+      object CUPOM2: TppChildDBPipeline
+        AutoCreateFields = False
+        SkipWhenNoRecords = False
+        UserName = 'CUPOM2'
+        MasterDataPipelineName = 'PAGAMENTO2'
+        object ppField1: TppField
+          FieldAlias = 'COD_CUPOM'
+          FieldName = 'COD_CUPOM'
+          FieldLength = 0
+          DataType = dtInteger
+          DisplayWidth = 10
+          Position = 0
+          TableName = 'CUPOM2_1'
+        end
+        object ppField2: TppField
+          FieldAlias = 'DATA'
+          FieldName = 'DATA'
+          FieldLength = 0
+          DataType = dtDate
+          DisplayWidth = 10
+          Position = 1
+          TableName = 'CUPOM2_1'
+        end
+        object ppField3: TppField
+          FieldAlias = 'TOTAL'
+          FieldName = 'TOTAL'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 2
+          TableName = 'CUPOM2_1'
+        end
+        object ppField4: TppField
+          FieldAlias = 'CAIXA'
+          FieldName = 'CAIXA'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 3
+          TableName = 'CUPOM2_1'
+        end
+        object ppField5: TppField
+          FieldAlias = 'COD_CLIENTE'
+          FieldName = 'COD_CLIENTE'
+          FieldLength = 10
+          DisplayWidth = 10
+          Position = 4
+          TableName = 'CUPOM2_1'
+        end
+        object ppField6: TppField
+          FieldAlias = 'CLIENTE'
+          FieldName = 'CLIENTE'
+          FieldLength = 100
+          DisplayWidth = 100
+          Position = 5
+          TableName = 'CUPOM2_1'
+        end
+        object ppField7: TppField
+          FieldAlias = 'HORAINICIAL'
+          FieldName = 'HORAINICIAL'
+          FieldLength = 0
+          DataType = dtTime
+          DisplayWidth = 10
+          Position = 6
+          TableName = 'CUPOM2_1'
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'TIPO_PAGAMENTO'
+          CollationType = ctASCII
+          GuidCollationType = gcString
+          DetailFieldName = 'TIPO_PAGAMENTO'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'COD'
+          CollationType = ctASCII
+          GuidCollationType = gcString
+          DetailFieldName = 'COD_CUPOM'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'DATA'
+          CollationType = ctASCII
+          GuidCollationType = gcString
+          DetailFieldName = 'DATA'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'CAIXA'
+          CollationType = ctASCII
+          GuidCollationType = gcString
+          DetailFieldName = 'CAIXA'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+      end
+      object daSQL2: TdaSQL
+        CollationType = ctASCII
+        DatabaseName = 'Ib'
+        DatabaseType = dtInterBase
+        DataPipelineName = 'CUPOM2'
+        IsCaseSensitive = True
+        LinkColor = clNavy
+        LinkType = ltMagicSQL
+        MaxSQLFieldAliasLength = 25
+        SkipWhenNoRecords = False
+        SQLText.Strings = (
+          'SELECT CUPOM2_1.COD_CUPOM, CUPOM2_1.DATA, '
+          '       CUPOM2_1.TOTAL, CUPOM2_1.CAIXA, '
+          '       CUPOM2_1.COD_CLIENTE, CUPOM2_1.CLIENTE, '
+          '       CUPOM2_1.HORAINICIAL'
+          'FROM CUPOM2 CUPOM2_1')
+        SQLType = sqSQL2
+        object daField1: TdaField
+          Alias = 'COD_CUPOM'
+          DataType = dtInteger
+          DisplayWidth = 10
+          FieldAlias = 'COD_CUPOM'
+          FieldLength = 0
+          FieldName = 'COD_CUPOM'
+          SQLFieldName = 'COD_CUPOM'
+          TableAlias = 'CUPOM2'
+          TableName = 'CUPOM2'
+          TableSQLAlias = 'CUPOM2_1'
+        end
+        object daField2: TdaField
+          Alias = 'DATA'
+          DataType = dtDate
+          DisplayWidth = 10
+          FieldAlias = 'DATA'
+          FieldLength = 0
+          FieldName = 'DATA'
+          SQLFieldName = 'DATA'
+          TableAlias = 'CUPOM2'
+          TableName = 'CUPOM2'
+          TableSQLAlias = 'CUPOM2_1'
+        end
+        object daField3: TdaField
+          Alias = 'TOTAL'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'TOTAL'
+          FieldLength = 4
+          FieldName = 'TOTAL'
+          SQLFieldName = 'TOTAL'
+          TableAlias = 'CUPOM2'
+          TableName = 'CUPOM2'
+          TableSQLAlias = 'CUPOM2_1'
+        end
+        object daField4: TdaField
+          Alias = 'CAIXA'
+          DisplayWidth = 30
+          FieldAlias = 'CAIXA'
+          FieldLength = 30
+          FieldName = 'CAIXA'
+          SQLFieldName = 'CAIXA'
+          TableAlias = 'CUPOM2'
+          TableName = 'CUPOM2'
+          TableSQLAlias = 'CUPOM2_1'
+        end
+        object daField5: TdaField
+          Alias = 'COD_CLIENTE'
+          DisplayWidth = 10
+          FieldAlias = 'COD_CLIENTE'
+          FieldLength = 10
+          FieldName = 'COD_CLIENTE'
+          SQLFieldName = 'COD_CLIENTE'
+          TableAlias = 'CUPOM2'
+          TableName = 'CUPOM2'
+          TableSQLAlias = 'CUPOM2_1'
+        end
+        object daField6: TdaField
+          Alias = 'CLIENTE'
+          DisplayWidth = 100
+          FieldAlias = 'CLIENTE'
+          FieldLength = 100
+          FieldName = 'CLIENTE'
+          SQLFieldName = 'CLIENTE'
+          TableAlias = 'CUPOM2'
+          TableName = 'CUPOM2'
+          TableSQLAlias = 'CUPOM2_1'
+        end
+        object daField7: TdaField
+          Alias = 'HORAINICIAL'
+          DataType = dtTime
+          DisplayWidth = 10
+          FieldAlias = 'HORAINICIAL'
+          FieldLength = 0
+          FieldName = 'HORAINICIAL'
+          SQLFieldName = 'HORAINICIAL'
+          TableAlias = 'CUPOM2'
+          TableName = 'CUPOM2'
+          TableSQLAlias = 'CUPOM2_1'
+        end
+        object daTable1: TdaTable
+          ChildType = 5
+          Alias = 'CUPOM2'
+          JoinType = dajtNone
+          SQLAlias = 'CUPOM2_1'
+          TableAlias = 'CUPOM2'
+          TableName = 'CUPOM2'
+        end
+        object TdaSQLLink
+          ChildType = 9
+          object daField8: TdaField
+            ChildType = 10
+            Alias = 'COD'
+            DataType = dtDouble
+            DisplayWidth = 10
+            FieldAlias = 'COD'
+            FieldLength = 0
+            FieldName = 'COD'
+            SQLFieldName = 'COD'
+            TableAlias = 'PAGAMENTO2'
+            TableName = 'PAGAMENTO2'
+            TableSQLAlias = 'PAGAMENTO2_1'
+          end
+          object daField9: TdaField
+            ChildType = 11
+            Alias = 'COD_CUPOM'
+            DataType = dtInteger
+            DisplayWidth = 10
+            FieldAlias = 'COD_CUPOM'
+            FieldLength = 0
+            FieldName = 'COD_CUPOM'
+            SQLFieldName = 'COD_CUPOM'
+            TableAlias = 'CUPOM2'
+            TableName = 'CUPOM2'
+            TableSQLAlias = 'CUPOM2_1'
+          end
+        end
+        object TdaSQLLink
+          ChildType = 9
+          object daField10: TdaField
+            ChildType = 10
+            Alias = 'DATA'
+            DataType = dtDate
+            DisplayWidth = 10
+            FieldAlias = 'DATA'
+            FieldLength = 0
+            FieldName = 'DATA'
+            SQLFieldName = 'DATA'
+            TableAlias = 'PAGAMENTO2'
+            TableName = 'PAGAMENTO2'
+            TableSQLAlias = 'PAGAMENTO2_1'
+          end
+          object daField11: TdaField
+            ChildType = 11
+            Alias = 'DATA'
+            DataType = dtDate
+            DisplayWidth = 10
+            FieldAlias = 'DATA'
+            FieldLength = 0
+            FieldName = 'DATA'
+            SQLFieldName = 'DATA'
+            TableAlias = 'CUPOM2'
+            TableName = 'CUPOM2'
+            TableSQLAlias = 'CUPOM2_1'
+          end
+        end
+        object TdaSQLLink
+          ChildType = 9
+          object daField12: TdaField
+            ChildType = 10
+            Alias = 'CAIXA'
+            DisplayWidth = 30
+            FieldAlias = 'CAIXA'
+            FieldLength = 30
+            FieldName = 'CAIXA'
+            SQLFieldName = 'CAIXA'
+            TableAlias = 'PAGAMENTO2'
+            TableName = 'PAGAMENTO2'
+            TableSQLAlias = 'PAGAMENTO2_1'
+          end
+          object daField13: TdaField
+            ChildType = 11
+            Alias = 'CAIXA'
+            DisplayWidth = 30
+            FieldAlias = 'CAIXA'
+            FieldLength = 30
+            FieldName = 'CAIXA'
+            SQLFieldName = 'CAIXA'
+            TableAlias = 'CUPOM2'
+            TableName = 'CUPOM2'
+            TableSQLAlias = 'CUPOM2_1'
+          end
+        end
+      end
+    end
+    object daIBXQueryDataView3: TdaIBXQueryDataView
+      UserName = 'Query_ITEM2'
+      Height = 324
+      Left = 808
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 3
+      TypeColumnWidth = 52
+      Width = 307
+      AutoSearchTabOrder = 0
+      MasterDataViewUserName = 'Query_CUPOM2'
+      object ITEM2: TppChildDBPipeline
+        AutoCreateFields = False
+        SkipWhenNoRecords = False
+        UserName = 'ITEM2'
+        MasterDataPipelineName = 'CUPOM2'
+        object ppField1: TppField
+          FieldAlias = 'COD'
+          FieldName = 'COD'
+          FieldLength = 0
+          DataType = dtDouble
+          DisplayWidth = 10
+          Position = 0
+          TableName = 'ITEM2_1'
+        end
+        object ppField2: TppField
+          FieldAlias = 'DATA'
+          FieldName = 'DATA'
+          FieldLength = 0
+          DataType = dtDate
+          DisplayWidth = 10
+          Position = 1
+          TableName = 'ITEM2_1'
+        end
+        object ppField3: TppField
+          FieldAlias = 'CAIXA'
+          FieldName = 'CAIXA'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 2
+          TableName = 'ITEM2_1'
+        end
+        object ppField4: TppField
+          FieldAlias = 'NUMERO'
+          FieldName = 'NUMERO'
+          FieldLength = 0
+          DataType = dtInteger
+          DisplayWidth = 10
+          Position = 3
+          TableName = 'ITEM2_1'
+        end
+        object ppField5: TppField
+          FieldAlias = 'COD_PRODUTO'
+          FieldName = 'COD_PRODUTO'
+          FieldLength = 13
+          DisplayWidth = 13
+          Position = 4
+          TableName = 'ITEM2_1'
+        end
+        object ppField6: TppField
+          FieldAlias = 'PRODUTO'
+          FieldName = 'PRODUTO'
+          FieldLength = 50
+          DisplayWidth = 50
+          Position = 5
+          TableName = 'ITEM2_1'
+        end
+        object ppField7: TppField
+          FieldAlias = 'QUANT'
+          FieldName = 'QUANT'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 6
+          TableName = 'ITEM2_1'
+        end
+        object ppField8: TppField
+          FieldAlias = 'PRECO'
+          FieldName = 'PRECO'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 7
+          TableName = 'ITEM2_1'
+        end
+        object ppField9: TppField
+          FieldAlias = 'TOTAL'
+          FieldName = 'TOTAL'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 8
+          TableName = 'ITEM2_1'
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'TIPO_PAGAMENTO'
+          CollationType = ctASCII
+          GuidCollationType = gcString
+          DetailFieldName = 'TIPO_PAGAMENTO'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'COD'
+          CollationType = ctASCII
+          GuidCollationType = gcString
+          DetailFieldName = 'COD_CUPOM'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'DATA_2'
+          CollationType = ctASCII
+          GuidCollationType = gcString
+          DetailFieldName = 'DATA_2'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'CAIXA_2'
+          CollationType = ctASCII
+          GuidCollationType = gcString
+          DetailFieldName = 'CAIXA_2'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+      end
+      object daSQL3: TdaSQL
+        CollationType = ctASCII
+        DatabaseName = 'Ib'
+        DatabaseType = dtInterBase
+        DataPipelineName = 'ITEM2'
+        IsCaseSensitive = True
+        LinkColor = clGreen
+        LinkType = ltMagicSQL
+        MaxSQLFieldAliasLength = 25
+        SkipWhenNoRecords = False
+        SQLText.Strings = (
+          'SELECT ITEM2_1.COD, ITEM2_1.DATA, ITEM2_1.CAIXA, '
+          '       ITEM2_1.NUMERO, ITEM2_1.COD_PRODUTO, '
+          '       ITEM2_1.PRODUTO, ITEM2_1.QUANT, '
+          '       ITEM2_1.PRECO, ITEM2_1.TOTAL'
+          'FROM ITEM2 ITEM2_1')
+        SQLType = sqSQL2
+        object daField1: TdaField
+          Alias = 'COD'
+          DataType = dtDouble
+          DisplayWidth = 10
+          FieldAlias = 'COD'
+          FieldLength = 0
+          FieldName = 'COD'
+          SQLFieldName = 'COD'
+          TableAlias = 'ITEM2'
+          TableName = 'ITEM2'
+          TableSQLAlias = 'ITEM2_1'
+        end
+        object daField2: TdaField
+          Alias = 'DATA'
+          DataType = dtDate
+          DisplayWidth = 10
+          FieldAlias = 'DATA'
+          FieldLength = 0
+          FieldName = 'DATA'
+          SQLFieldName = 'DATA'
+          TableAlias = 'ITEM2'
+          TableName = 'ITEM2'
+          TableSQLAlias = 'ITEM2_1'
+        end
+        object daField3: TdaField
+          Alias = 'CAIXA'
+          DisplayWidth = 30
+          FieldAlias = 'CAIXA'
+          FieldLength = 30
+          FieldName = 'CAIXA'
+          SQLFieldName = 'CAIXA'
+          TableAlias = 'ITEM2'
+          TableName = 'ITEM2'
+          TableSQLAlias = 'ITEM2_1'
+        end
+        object daField4: TdaField
+          Alias = 'NUMERO'
+          DataType = dtInteger
+          DisplayWidth = 10
+          FieldAlias = 'NUMERO'
+          FieldLength = 0
+          FieldName = 'NUMERO'
+          SQLFieldName = 'NUMERO'
+          TableAlias = 'ITEM2'
+          TableName = 'ITEM2'
+          TableSQLAlias = 'ITEM2_1'
+        end
+        object daField5: TdaField
+          Alias = 'COD_PRODUTO'
+          DisplayWidth = 13
+          FieldAlias = 'COD_PRODUTO'
+          FieldLength = 13
+          FieldName = 'COD_PRODUTO'
+          SQLFieldName = 'COD_PRODUTO'
+          TableAlias = 'ITEM2'
+          TableName = 'ITEM2'
+          TableSQLAlias = 'ITEM2_1'
+        end
+        object daField6: TdaField
+          Alias = 'PRODUTO'
+          DisplayWidth = 50
+          FieldAlias = 'PRODUTO'
+          FieldLength = 50
+          FieldName = 'PRODUTO'
+          SQLFieldName = 'PRODUTO'
+          TableAlias = 'ITEM2'
+          TableName = 'ITEM2'
+          TableSQLAlias = 'ITEM2_1'
+        end
+        object daField7: TdaField
+          Alias = 'QUANT'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'QUANT'
+          FieldLength = 4
+          FieldName = 'QUANT'
+          SQLFieldName = 'QUANT'
+          TableAlias = 'ITEM2'
+          TableName = 'ITEM2'
+          TableSQLAlias = 'ITEM2_1'
+        end
+        object daField8: TdaField
+          Alias = 'PRECO'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'PRECO'
+          FieldLength = 4
+          FieldName = 'PRECO'
+          SQLFieldName = 'PRECO'
+          TableAlias = 'ITEM2'
+          TableName = 'ITEM2'
+          TableSQLAlias = 'ITEM2_1'
+        end
+        object daField9: TdaField
+          Alias = 'TOTAL'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'TOTAL'
+          FieldLength = 4
+          FieldName = 'TOTAL'
+          SQLFieldName = 'TOTAL'
+          TableAlias = 'ITEM2'
+          TableName = 'ITEM2'
+          TableSQLAlias = 'ITEM2_1'
+        end
+        object daTable1: TdaTable
+          ChildType = 5
+          Alias = 'ITEM2'
+          JoinType = dajtNone
+          SQLAlias = 'ITEM2_1'
+          TableAlias = 'ITEM2'
+          TableName = 'ITEM2'
+        end
+        object daSQLLink1: TdaSQLLink
+          ChildType = 9
+          object daField1: TdaField
+            ChildType = 10
+            Alias = 'COD_CUPOM'
+            DataType = dtInteger
+            DisplayWidth = 10
+            FieldAlias = 'COD_CUPOM'
+            FieldLength = 0
+            FieldName = 'COD_CUPOM'
+            SQLFieldName = 'COD_CUPOM'
+            TableAlias = 'CUPOM2'
+            TableName = 'CUPOM2'
+            TableSQLAlias = 'CUPOM2_1'
+          end
+          object daField2: TdaField
+            ChildType = 11
+            Alias = 'COD'
+            DataType = dtDouble
+            DisplayWidth = 10
+            FieldAlias = 'COD'
+            FieldLength = 0
+            FieldName = 'COD'
+            SQLFieldName = 'COD'
+            TableAlias = 'ITEM2'
+            TableName = 'ITEM2'
+            TableSQLAlias = 'ITEM2_1'
+          end
+        end
+        object daSQLLink2: TdaSQLLink
+          ChildType = 9
+          object daField1: TdaField
+            ChildType = 10
+            Alias = 'DATA'
+            DataType = dtDate
+            DisplayWidth = 10
+            FieldAlias = 'DATA'
+            FieldLength = 0
+            FieldName = 'DATA'
+            SQLFieldName = 'DATA'
+            TableAlias = 'CUPOM2'
+            TableName = 'CUPOM2'
+            TableSQLAlias = 'CUPOM2_1'
+          end
+          object daField2: TdaField
+            ChildType = 11
+            Alias = 'DATA'
+            DataType = dtDate
+            DisplayWidth = 10
+            FieldAlias = 'DATA'
+            FieldLength = 0
+            FieldName = 'DATA'
+            SQLFieldName = 'DATA'
+            TableAlias = 'ITEM2'
+            TableName = 'ITEM2'
+            TableSQLAlias = 'ITEM2_1'
+          end
+        end
+        object daSQLLink3: TdaSQLLink
+          ChildType = 9
+          object daField1: TdaField
+            ChildType = 10
+            Alias = 'CAIXA'
+            DisplayWidth = 30
+            FieldAlias = 'CAIXA'
+            FieldLength = 30
+            FieldName = 'CAIXA'
+            SQLFieldName = 'CAIXA'
+            TableAlias = 'CUPOM2'
+            TableName = 'CUPOM2'
+            TableSQLAlias = 'CUPOM2_1'
+          end
+          object daField2: TdaField
+            ChildType = 11
+            Alias = 'CAIXA'
+            DisplayWidth = 30
+            FieldAlias = 'CAIXA'
+            FieldLength = 30
+            FieldName = 'CAIXA'
+            SQLFieldName = 'CAIXA'
+            TableAlias = 'ITEM2'
+            TableName = 'ITEM2'
+            TableSQLAlias = 'ITEM2_1'
+          end
+        end
+      end
+    end
+    object daIBXQueryDataView4: TdaIBXQueryDataView
+      UserName = 'Query_PAGAMENTO22'
+      Height = 228
+      Left = 809
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 338
+      TypeColumnWidth = 52
+      Width = 304
+      AutoSearchTabOrder = 0
+      MasterDataViewUserName = 'Query_CUPOM2'
+      object PAGAMENTO22: TppChildDBPipeline
+        AutoCreateFields = False
+        SkipWhenNoRecords = False
+        UserName = 'PAGAMENTO22'
+        MasterDataPipelineName = 'CUPOM2'
+        object ppField1: TppField
+          FieldAlias = 'COD'
+          FieldName = 'COD'
+          FieldLength = 0
+          DataType = dtDouble
+          DisplayWidth = 10
+          Position = 0
+          TableName = 'PAGAMENTO2_1'
+        end
+        object ppField2: TppField
+          FieldAlias = 'TIPO_PAGAMENTO'
+          FieldName = 'TIPO_PAGAMENTO'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 1
+          TableName = 'PAGAMENTO2_1'
+        end
+        object ppField3: TppField
+          FieldAlias = 'VALOR'
+          FieldName = 'VALOR'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 2
+          TableName = 'PAGAMENTO2_1'
+        end
+        object ppField4: TppField
+          FieldAlias = 'DATA'
+          FieldName = 'DATA'
+          FieldLength = 0
+          DataType = dtDate
+          DisplayWidth = 10
+          Position = 3
+          TableName = 'PAGAMENTO2_1'
+        end
+        object ppField5: TppField
+          FieldAlias = 'CAIXA'
+          FieldName = 'CAIXA'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 4
+          TableName = 'PAGAMENTO2_1'
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'TIPO_PAGAMENTO'
+          CollationType = ctASCII
+          GuidCollationType = gcString
+          DetailFieldName = 'TIPO_PAGAMENTO_2'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'COD'
+          CollationType = ctASCII
+          GuidCollationType = gcString
+          DetailFieldName = 'COD_CUPOM'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'DATA_2'
+          CollationType = ctASCII
+          GuidCollationType = gcString
+          DetailFieldName = 'DATA_2'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+        object TppMasterFieldLink
+          MasterFieldName = 'CAIXA_2'
+          CollationType = ctASCII
+          GuidCollationType = gcString
+          DetailFieldName = 'CAIXA_2'
+          DetailSortOrder = soAscending
+          IsCaseSensitive = True
+        end
+      end
+      object daSQL4: TdaSQL
+        CollationType = ctASCII
+        DatabaseName = 'Ib'
+        DatabaseType = dtInterBase
+        DataPipelineName = 'PAGAMENTO22'
+        IsCaseSensitive = True
+        LinkColor = clPurple
+        LinkType = ltMagicSQL
+        MaxSQLFieldAliasLength = 25
+        SkipWhenNoRecords = False
+        SQLText.Strings = (
+          'SELECT PAGAMENTO2_1.COD, '
+          '       PAGAMENTO2_1.TIPO_PAGAMENTO, '
+          '       PAGAMENTO2_1.VALOR, PAGAMENTO2_1.DATA, '
+          '       PAGAMENTO2_1.CAIXA'
+          'FROM PAGAMENTO2 PAGAMENTO2_1')
+        SQLType = sqSQL2
+        object daField1: TdaField
+          Alias = 'COD'
+          DataType = dtDouble
+          DisplayWidth = 10
+          FieldAlias = 'COD'
+          FieldLength = 0
+          FieldName = 'COD'
+          SQLFieldName = 'COD'
+          TableAlias = 'PAGAMENTO2'
+          TableName = 'PAGAMENTO2'
+          TableSQLAlias = 'PAGAMENTO2_1'
+        end
+        object daField2: TdaField
+          Alias = 'TIPO_PAGAMENTO'
+          DisplayWidth = 30
+          FieldAlias = 'TIPO_PAGAMENTO'
+          FieldLength = 30
+          FieldName = 'TIPO_PAGAMENTO'
+          SQLFieldName = 'TIPO_PAGAMENTO'
+          TableAlias = 'PAGAMENTO2'
+          TableName = 'PAGAMENTO2'
+          TableSQLAlias = 'PAGAMENTO2_1'
+        end
+        object daField3: TdaField
+          Alias = 'VALOR'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'VALOR'
+          FieldLength = 4
+          FieldName = 'VALOR'
+          SQLFieldName = 'VALOR'
+          TableAlias = 'PAGAMENTO2'
+          TableName = 'PAGAMENTO2'
+          TableSQLAlias = 'PAGAMENTO2_1'
+        end
+        object daField4: TdaField
+          Alias = 'DATA'
+          DataType = dtDate
+          DisplayWidth = 10
+          FieldAlias = 'DATA'
+          FieldLength = 0
+          FieldName = 'DATA'
+          SQLFieldName = 'DATA'
+          TableAlias = 'PAGAMENTO2'
+          TableName = 'PAGAMENTO2'
+          TableSQLAlias = 'PAGAMENTO2_1'
+        end
+        object daField5: TdaField
+          Alias = 'CAIXA'
+          DisplayWidth = 30
+          FieldAlias = 'CAIXA'
+          FieldLength = 30
+          FieldName = 'CAIXA'
+          SQLFieldName = 'CAIXA'
+          TableAlias = 'PAGAMENTO2'
+          TableName = 'PAGAMENTO2'
+          TableSQLAlias = 'PAGAMENTO2_1'
+        end
+        object daTable1: TdaTable
+          ChildType = 5
+          Alias = 'PAGAMENTO2'
+          JoinType = dajtNone
+          SQLAlias = 'PAGAMENTO2_1'
+          TableAlias = 'PAGAMENTO2'
+          TableName = 'PAGAMENTO2'
+        end
+        object daSQLLink1: TdaSQLLink
+          ChildType = 9
+          object daField1: TdaField
+            ChildType = 10
+            Alias = 'COD_CUPOM'
+            DataType = dtInteger
+            DisplayWidth = 10
+            FieldAlias = 'COD_CUPOM'
+            FieldLength = 0
+            FieldName = 'COD_CUPOM'
+            SQLFieldName = 'COD_CUPOM'
+            TableAlias = 'CUPOM2'
+            TableName = 'CUPOM2'
+            TableSQLAlias = 'CUPOM2_1'
+          end
+          object daField2: TdaField
+            ChildType = 11
+            Alias = 'COD'
+            DataType = dtDouble
+            DisplayWidth = 10
+            FieldAlias = 'COD'
+            FieldLength = 0
+            FieldName = 'COD'
+            SQLFieldName = 'COD'
+            TableAlias = 'PAGAMENTO2'
+            TableName = 'PAGAMENTO2'
+            TableSQLAlias = 'PAGAMENTO2_1'
+          end
+        end
+        object daSQLLink2: TdaSQLLink
+          ChildType = 9
+          object daField1: TdaField
+            ChildType = 10
+            Alias = 'DATA'
+            DataType = dtDate
+            DisplayWidth = 10
+            FieldAlias = 'DATA'
+            FieldLength = 0
+            FieldName = 'DATA'
+            SQLFieldName = 'DATA'
+            TableAlias = 'CUPOM2'
+            TableName = 'CUPOM2'
+            TableSQLAlias = 'CUPOM2_1'
+          end
+          object daField2: TdaField
+            ChildType = 11
+            Alias = 'DATA'
+            DataType = dtDate
+            DisplayWidth = 10
+            FieldAlias = 'DATA'
+            FieldLength = 0
+            FieldName = 'DATA'
+            SQLFieldName = 'DATA'
+            TableAlias = 'PAGAMENTO2'
+            TableName = 'PAGAMENTO2'
+            TableSQLAlias = 'PAGAMENTO2_1'
+          end
+        end
+        object daSQLLink3: TdaSQLLink
+          ChildType = 9
+          object daField1: TdaField
+            ChildType = 10
+            Alias = 'CAIXA'
+            DisplayWidth = 30
+            FieldAlias = 'CAIXA'
+            FieldLength = 30
+            FieldName = 'CAIXA'
+            SQLFieldName = 'CAIXA'
+            TableAlias = 'CUPOM2'
+            TableName = 'CUPOM2'
+            TableSQLAlias = 'CUPOM2_1'
+          end
+          object daField2: TdaField
+            ChildType = 11
+            Alias = 'CAIXA'
+            DisplayWidth = 30
+            FieldAlias = 'CAIXA'
+            FieldLength = 30
+            FieldName = 'CAIXA'
+            SQLFieldName = 'CAIXA'
+            TableAlias = 'PAGAMENTO2'
+            TableName = 'PAGAMENTO2'
+            TableSQLAlias = 'PAGAMENTO2_1'
+          end
+        end
+      end
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060F5472614576656E7448616E646C65720B50726F6772616D4E616D65060F
+      5661726961626C65314F6E43616C630B50726F6772616D54797065070B747450
+      726F63656475726506536F757263650C3A01000070726F636564757265205661
+      726961626C65314F6E43616C63287661722056616C75653A2056617269616E74
+      293B0D0A626567696E0D0A0D0A206966205265706F72742E4175746F53656172
+      6368437269746572696142794E616D652827504147414D454E544F32272C2027
+      4441544127292E76616C7565735B305D203C3E206E756C6C207468656E0D0A20
+      202076616C7565203A3D202744617461202027202B205265706F72742E417574
+      6F536561726368437269746572696142794E616D652827504147414D454E544F
+      32272C20274441544127292E76616C7565735B305D202B2027206120270D0A20
+      202B20205265706F72742E4175746F536561726368437269746572696142794E
+      616D652827504147414D454E544F32272C20274441544127292E76616C756573
+      5B315D3B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506095661
+      726961626C6531094576656E744E616D6506064F6E43616C63074576656E7449
+      4402210000}
+  end
+  object ppParameterList1: TppParameterList
+  end
+end

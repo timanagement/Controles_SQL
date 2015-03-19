@@ -1,0 +1,45 @@
+; Arquivo de Registro de Comandos da DLLG2.DLL
+03/12/2011 11:46:49.789 -> {90;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:46:54.791 <- {90;11010;NomeErro="ErroProtTimeout" Circunstancia="Tempo esgotado ao executar comando";}
+03/12/2011 11:46:54.792 -> {91;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:46:59.793 <- {91;11010;NomeErro="ErroProtTimeout" Circunstancia="Tempo esgotado ao executar comando";}
+03/12/2011 11:46:59.806 -> {92;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:47:04.806 <- {92;11010;NomeErro="ErroProtTimeout" Circunstancia="Tempo esgotado ao executar comando";}
+03/12/2011 11:47:04.808 -> {93;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:47:09.809 <- {93;11010;NomeErro="ErroProtTimeout" Circunstancia="Tempo esgotado ao executar comando";}
+03/12/2011 11:47:09.817 -> {94;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:47:14.818 <- {94;11010;NomeErro="ErroProtTimeout" Circunstancia="Tempo esgotado ao executar comando";}
+03/12/2011 11:47:14.822 -> {95;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:47:19.822 <- {95;11010;NomeErro="ErroProtTimeout" Circunstancia="Tempo esgotado ao executar comando";}
+03/12/2011 11:47:19.829 -> {96;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:47:19.829 <- {96;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:47:19.831 -> {97;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:47:19.831 <- {97;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:47:19.844 -> {98;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:47:19.844 <- {98;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:47:19.845 -> {99;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:47:19.846 <- {99;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:47:19.853 -> {100;LeTexto;NomeTexto="Marca";30}
+03/12/2011 11:47:19.853 <- {100;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:47:47.662 -> {148;LeTexto;NomeTexto="Marca";30}
+03/12/2011 11:47:52.663 <- {148;11010;NomeErro="ErroProtTimeout" Circunstancia="Tempo esgotado ao executar comando";}
+03/12/2011 11:47:52.664 -> {149;LeTexto;NomeTexto="Marca";30}
+03/12/2011 11:47:57.665 <- {149;11010;NomeErro="ErroProtTimeout" Circunstancia="Tempo esgotado ao executar comando";}
+03/12/2011 11:47:57.678 -> {150;LeTexto;NomeTexto="Marca";30}
+03/12/2011 11:48:02.679 <- {150;11010;NomeErro="ErroProtTimeout" Circunstancia="Tempo esgotado ao executar comando";}
+03/12/2011 11:48:02.681 -> {151;LeTexto;NomeTexto="Marca";30}
+03/12/2011 11:48:07.681 <- {151;11010;NomeErro="ErroProtTimeout" Circunstancia="Tempo esgotado ao executar comando";}
+03/12/2011 11:48:07.684 -> {152;LeTexto;NomeTexto="Marca";30}
+03/12/2011 11:48:12.684 <- {152;11010;NomeErro="ErroProtTimeout" Circunstancia="Tempo esgotado ao executar comando";}
+03/12/2011 11:48:12.688 -> {153;LeTexto;NomeTexto="Marca";30}
+03/12/2011 11:48:17.688 <- {153;11010;NomeErro="ErroProtTimeout" Circunstancia="Tempo esgotado ao executar comando";}
+03/12/2011 11:48:17.694 -> {154;LeTexto;NomeTexto="Marca";30}
+03/12/2011 11:48:22.696 <- {154;11010;NomeErro="ErroProtTimeout" Circunstancia="Tempo esgotado ao executar comando";}
+03/12/2011 11:48:22.697 -> {155;LeTexto;NomeTexto="Marca";30}
+03/12/2011 11:48:27.698 <- {155;11010;NomeErro="ErroProtTimeout" Circunstancia="Tempo esgotado ao executar comando";}
+03/12/2011 11:48:27.715 -> {156;LeTexto;NomeTexto="Marca";30}
+03/12/2011 11:48:27.715 <- {156;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:48:27.717 -> {157;LeTexto;NomeTexto="Marca";30}
+03/12/2011 11:48:27.717 <- {157;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:48:27.724 -> {158;LeTexto;NomeTexto="Marca";30}
+03/12/2011 11:48:27.724 <- {158;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}

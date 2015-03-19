@@ -1,0 +1,20 @@
+
+
+
+
+ if Report.AutoSearchCriteriaByName('CONTAS_A_PAGAR', 'VECIMENTO').values[0] <> null then
+   value := 'Data  ' + Report.AutoSearchCriteriaByName('CONTAS_A_PAGAR', 'VECIMENTO').values[0] + ' a ' +  Report.AutoSearchCriteriaByName('CONTAS_A_PAGAR', 'VECIMENTO').values[1];
+
+
+
+  if Report.AutoSearchCriteriaByName('contas_a_pagar', 'PAGO').values[0] = 'True' then
+    Value := 'Sintuação ( Pagos )';
+
+
+  if Report.AutoSearchCriteriaByName('contas_a_pagar', 'PAGO').values[0] = 'False' then
+    Value := 'Sintuação ( Não Pagos )';
+
+
+
+
+value := 'Data  ' + Report.AutoSearchCriteriaByName('CONTAS_A_PAGAR', 'VECIMENTO').values[0]

@@ -1,0 +1,42 @@
+
+
+Value := Value + Variable37.Value; 
+
+
+
+
+
+
+
+  if DB_XML['PRODUTO'] = DB_XML['PRODUTO_ORIGINAL'] then
+  begin
+    Value := '';
+  end  else
+  begin
+    value := DB_XML['PRODUTO'];
+  end;
+  
+
+
+
+ if N_PRODUTOS['CST_PIS'] = '01' then
+  begin
+    value :=   N_PRODUTOS['TOTAL'] * 0.0925;
+  end else
+  begin
+    value := 0;
+  end;
+  
+
+
+
+
+Value := (N_PRODUTOS['CUSTOOPERACIONAL'] * variable3.asdouble) / 100;
+
+
+
+
+  Value := variable5.asdouble - variable4.asdouble;
+
+
+

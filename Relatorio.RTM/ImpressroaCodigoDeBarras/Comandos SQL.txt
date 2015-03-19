@@ -1,0 +1,50 @@
+
+
+
+'R$ '||CAST(PRECO AS DECIMAL(13,2)) as PRECOA
+
+CURRENT_DATE AS DATAATUAL
+
+(CURRENT_DATE+7) AS VENCIMENTOV
+
+(CURRENT_DATE+ CAST(VALIDADE as integer)  ) AS VENCIMENTO2
+
+substring( a.nome from 1 for 3 ) as atendimento
+
+(case when h.M = 'True' then 'Manha' else
+(case when h.T = 'True' then 'Tarde' else
+(case when h.N = 'True' then 'Noite' end )  end ) end ) as sistematexto
+
+
+( LPAD( EXTRACT(DAY FROM CURRENT_DATE-10) ,2,'0') )as data ,
+
+
+CAST((EXTRACT(DAY FROM CURRENT_DATE)||'/'||EXTRACT(MONTH FROM CURRENT_DATE)||'/'||EXTRACT(YEAR FROM CURRENT_DATE))AS VARCHAR(10))
+
+
+SELECT
+( 'EMB: '|| CURRENT_DATE ) AS EMBALAGEM  ,
+(case when (VALIDADE = '' or VALIDADE IS NULL ) then ('SEM VALIDADE'  ) else 
+( 'VENC: '|| (CURRENT_DATE+ CAST(VALIDADE as integer))   )  end ) AS VALIDADE1
+FROM PRODUTOS
+WHERE COD='0000000000004'
+
+
+SELECT
+( 'EMB: '|| 
+CAST((LPAD(EXTRACT(DAY FROM CURRENT_DATE),2,'0')||'/'||
+LPAD(EXTRACT(MONTH FROM CURRENT_DATE),2,'0')||'/'||
+EXTRACT(YEAR FROM CURRENT_DATE))AS VARCHAR(10))    ) AS EMBALAGEM  ,
+(case when (VALIDADE = '' or VALIDADE IS NULL ) then ('SEM VALIDADE'  ) else 
+( 'VENC: '|| CAST((LPAD(EXTRACT(DAY FROM (CURRENT_DATE+ CAST(VALIDADE as integer))),2,'0')||'/'||
+LPAD(EXTRACT(MONTH FROM (CURRENT_DATE+ CAST(VALIDADE as integer))),2,'0')||'/'||
+EXTRACT(YEAR FROM (CURRENT_DATE+ CAST(VALIDADE as integer))))AS VARCHAR(10))   )  end ) AS VALIDADE1
+FROM PRODUTOS
+WHERE COD='0000000000001'
+
+
+
+
+
+
+

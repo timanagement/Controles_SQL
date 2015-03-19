@@ -1,0 +1,26 @@
+
+
+
+
+[Cabecalho]
+LIN000=SUPERMERCADO
+LIN001=RUA QUADRA , N  -  Bairro
+LIN002=Cidade  -  UF  -  99999-999
+LIN003=CNPJ: 00.000.000/0001-00    IE: 000.000.000.00
+[Cabecalho_Item]
+LIN000=ITEM DESCRICAO            QUANT    TOTAL
+LIN001=----------------------------------------
+MascaraItem=III DDDDDDDDDDDDDDDDDDDDD xQQQQQQ TTTTTT
+[Impressora]
+
+Colunas=40
+Comando_Abrir_Gaveta=#27,#118,#140
+Comando_Corta_Papel_Completo=#27,#119
+Comando_Corta_Papel_Parcial=#27,#119
+Comando_Incializacao=
+Comando_Ativar_Condensado=
+Comando_Expandido_uma_Linha=
+Comando_Fim_Expandido=
+
+
+

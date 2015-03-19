@@ -1,0 +1,772 @@
+object ppReport1: TppReport
+  AutoStop = False
+  DataPipeline = daIBXQueryDataView1.PRODUTOS
+  PassSetting = psTwoPass
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'DXS Printout'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PrinterName = 'Screen'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 6350
+  PrinterSetup.mmMarginLeft = 6350
+  PrinterSetup.mmMarginRight = 6350
+  PrinterSetup.mmMarginTop = 6350
+  PrinterSetup.mmPaperHeight = 297127
+  PrinterSetup.mmPaperWidth = 210079
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.DatabaseSettings.DataPipeline = plItem
+  Template.DatabaseSettings.Name = 'Novo Relat'#243'rio'
+  Template.DatabaseSettings.NameField = 'NAME'
+  Template.DatabaseSettings.TemplateField = 'TEMPLATE'
+  Template.FileName = 
+    'E:\All_Delphi\Em_Andamento\All_Instalacao_Sol\Controles_SQL\Rela' +
+    'torio.RTM\Cadastro de produtos\Produtos EM PESQUISAR e SEM CODNA' +
+    'OINCIDENCIA.rtm'
+  Template.Format = ftASCII
+  Units = utPrinterPixels
+  AllowPrintToFile = True
+  CachePages = True
+  DeviceType = 'Screen'
+  EmailSettings.ReportFormat = 'PDF'
+  LanguageID = 'Default'
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.FontEncoding = feAnsi
+  PreviewFormSettings.WindowState = wsMaximized
+  PreviewFormSettings.ZoomSetting = zsPageWidth
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextSearchSettings.DefaultString = '<Texto a localizar>'
+  TextSearchSettings.Enabled = True
+  TextSearchSettings.ShowAll = True
+  TextSearchSettings.Visible = True
+  TextSearchSettings.WholeWord = True
+  Left = 225
+  Top = 310
+  Version = '12.03'
+  mmColumnWidth = 0
+  DataPipelineName = 'PRODUTOS'
+  object ppTitleBand1: TppTitleBand
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 5292
+    mmPrintPosition = 0
+    object ppLabel6: TppLabel
+      UserName = 'Label6'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'PIS'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 73819
+      mmTop = 1058
+      mmWidth = 10848
+      BandType = 1
+    end
+    object ppLabel5: TppLabel
+      UserName = 'Label5'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'PISEN'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 60061
+      mmTop = 1058
+      mmWidth = 11377
+      BandType = 1
+    end
+    object ppLabel4: TppLabel
+      UserName = 'Label4'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'NCM'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 37306
+      mmTop = 1058
+      mmWidth = 12435
+      BandType = 1
+    end
+    object ppLabel3: TppLabel
+      UserName = 'Label3'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'NOME'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 22754
+      mmTop = 1058
+      mmWidth = 12965
+      BandType = 1
+    end
+    object ppLabel2: TppLabel
+      UserName = 'Label2'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'COD'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 11113
+      mmTop = 1058
+      mmWidth = 10054
+      BandType = 1
+    end
+    object ppLabel1: TppLabel
+      UserName = 'Label1'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'NAOINC.'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 85990
+      mmTop = 1058
+      mmWidth = 10848
+      BandType = 1
+    end
+    object ppLabel7: TppLabel
+      UserName = 'Label7'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'EX'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 51329
+      mmTop = 1058
+      mmWidth = 7408
+      BandType = 1
+    end
+    object ppLabel8: TppLabel
+      UserName = 'Label8'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'X'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 1588
+      mmTop = 1058
+      mmWidth = 7673
+      BandType = 1
+    end
+  end
+  object ppHeaderBand1: TppHeaderBand
+    Visible = False
+    mmBottomOffset = 0
+    mmHeight = 0
+    mmPrintPosition = 0
+  end
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background1.Gradient.EndColor = clWhite
+    Background1.Gradient.StartColor = clWhite
+    Background1.Gradient.Style = gsNone
+    Background2.Brush.Style = bsClear
+    Background2.Gradient.EndColor = clWhite
+    Background2.Gradient.StartColor = clWhite
+    Background2.Gradient.Style = gsNone
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 4498
+    mmPrintPosition = 0
+    object ppDBText1: TppDBText
+      UserName = 'DBText1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'COD'
+      DataPipeline = daIBXQueryDataView1.PRODUTOS
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'PRODUTOS'
+      mmHeight = 3704
+      mmLeft = 11113
+      mmTop = 529
+      mmWidth = 10054
+      BandType = 4
+    end
+    object ppDBText2: TppDBText
+      UserName = 'DBText2'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'NOME'
+      DataPipeline = daIBXQueryDataView1.PRODUTOS
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'PRODUTOS'
+      mmHeight = 3704
+      mmLeft = 22754
+      mmTop = 529
+      mmWidth = 12965
+      BandType = 4
+    end
+    object ppDBText3: TppDBText
+      UserName = 'DBText3'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'substring_PRODUTOS_CODI_2'
+      DataPipeline = daIBXQueryDataView1.PRODUTOS
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'PRODUTOS'
+      mmHeight = 3704
+      mmLeft = 37306
+      mmTop = 529
+      mmWidth = 12435
+      BandType = 4
+    end
+    object ppDBText4: TppDBText
+      UserName = 'DBText4'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'CST_PISE'
+      DataPipeline = daIBXQueryDataView1.PRODUTOS
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'PRODUTOS'
+      mmHeight = 3704
+      mmLeft = 60061
+      mmTop = 529
+      mmWidth = 11377
+      BandType = 4
+    end
+    object ppDBText5: TppDBText
+      UserName = 'DBText5'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'CST_PIS'
+      DataPipeline = daIBXQueryDataView1.PRODUTOS
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'PRODUTOS'
+      mmHeight = 3704
+      mmLeft = 73819
+      mmTop = 529
+      mmWidth = 10848
+      BandType = 4
+    end
+    object ppDBText6: TppDBText
+      UserName = 'DBText6'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'CODNAOINCIDENCIA'
+      DataPipeline = daIBXQueryDataView1.PRODUTOS
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'PRODUTOS'
+      mmHeight = 3704
+      mmLeft = 85990
+      mmTop = 529
+      mmWidth = 10848
+      BandType = 4
+    end
+    object ppDBText7: TppDBText
+      UserName = 'DBText7'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'substring_PRODUTOS_CODIGO'
+      DataPipeline = daIBXQueryDataView1.PRODUTOS
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'PRODUTOS'
+      mmHeight = 3704
+      mmLeft = 51329
+      mmTop = 529
+      mmWidth = 7408
+      BandType = 4
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    Visible = False
+    mmBottomOffset = 0
+    mmHeight = 0
+    mmPrintPosition = 0
+  end
+  object daDataModule1: TdaDataModule
+    object daIBXQueryDataView1: TdaIBXQueryDataView
+      UserName = 'Query_PRODUTOS'
+      Height = 483
+      Left = 10
+      NameColumnWidth = 155
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 10
+      TypeColumnWidth = 52
+      Width = 571
+      AutoSearchTabOrder = 0
+      object PRODUTOS: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'PRODUTOS'
+        object ppField1: TppField
+          FieldAlias = 'NOME'
+          FieldName = 'NOME'
+          FieldLength = 40
+          DisplayWidth = 40
+          Position = 0
+          TableName = 'PRODUTOS_1'
+        end
+        object ppField2: TppField
+          FieldAlias = 'CODIGOTRIBUTADO'
+          FieldName = 'CODIGOTRIBUTADO'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 1
+          TableName = 'PRODUTOS_1'
+        end
+        object ppField3: TppField
+          FieldAlias = 'CST_PIS'
+          FieldName = 'CST_PIS'
+          FieldLength = 2
+          DisplayWidth = 2
+          Position = 2
+          TableName = 'PRODUTOS_1'
+        end
+        object ppField4: TppField
+          FieldAlias = 'CST_PISE'
+          FieldName = 'CST_PISE'
+          FieldLength = 2
+          DisplayWidth = 2
+          Position = 3
+          TableName = 'PRODUTOS_1'
+        end
+        object ppField5: TppField
+          FieldAlias = 'COD'
+          FieldName = 'COD'
+          FieldLength = 13
+          DisplayWidth = 13
+          Position = 4
+          TableName = 'PRODUTOS_1'
+        end
+        object ppField6: TppField
+          FieldAlias = 'CODNAOINCIDENCIA'
+          FieldName = 'CODNAOINCIDENCIA'
+          FieldLength = 3
+          DisplayWidth = 3
+          Position = 5
+          TableName = 'PRODUTOS_1'
+        end
+        object ppField7: TppField
+          FieldAlias = 'substring_PRODUTOS_1_CODI'
+          FieldName = 'substring_PRODUTOS_1_CODI'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 6
+          TableName = 'PRODUTOS_1'
+        end
+        object ppField8: TppField
+          FieldAlias = 'substring_PRODUTOS_1_CO_2'
+          FieldName = 'substring_PRODUTOS_1_CO_2'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 7
+          TableName = 'PRODUTOS_1'
+        end
+      end
+      object daSQL1: TdaSQL
+        CollationType = ctASCII
+        DatabaseName = 'Ib'
+        DatabaseType = dtInterBase
+        DataPipelineName = 'PRODUTOS'
+        IsCaseSensitive = True
+        LinkColor = clMaroon
+        LinkType = ltMagicSQL
+        MaxSQLFieldAliasLength = 25
+        SQLText.Strings = (
+          'SELECT PRODUTOS_1.NOME, '
+          '       PRODUTOS_1.CODIGOTRIBUTADO, '
+          '       PRODUTOS_1.CST_PIS, PRODUTOS_1.CST_PISE, '
+          '       PRODUTOS_1.COD, '
+          '       PRODUTOS_1.CODNAOINCIDENCIA, '
+          
+            '       substring(PRODUTOS_1.CODIGOTRIBUTADO from 1 FOR 8) substr' +
+            'ing_PRODUTOS_1_CODI, '
+          
+            '       substring(PRODUTOS_1.CODIGOTRIBUTADO from 9 FOR 3) substr' +
+            'ing_PRODUTOS_1_CO_2'
+          'FROM PRODUTOS PRODUTOS_1'
+          'WHERE ( PRODUTOS_1.CST_PIS IS NULL  )'
+          '       OR ( PRODUTOS_1.CST_PIS = '#39#39' ) OR ('
+          '      ( PRODUTOS_1.CST_PIS <> '#39'01'#39' ) AND ('
+          '      ( PRODUTOS_1.CODNAOINCIDENCIA IS NULL  )'
+          '       OR ( PRODUTOS_1.CODNAOINCIDENCIA = '#39#39' )))'
+          'ORDER BY PRODUTOS_1.CST_PIS')
+        SQLType = sqSQL2
+        object daCalculation1: TdaCalculation
+          ChildType = 8
+          Alias = 'substring_PRODUTOS_1_CODI'
+          DisplayWidth = 30
+          FieldAlias = 'CODIGOTRIBUTADO'
+          FieldLength = 30
+          FieldName = 'CODIGOTRIBUTADO'
+          SQLFieldName = 'substring_PRODUTOS_1_CODI'
+          TableAlias = 'PRODUTOS'
+          TableName = 'PRODUTOS'
+          TableSQLAlias = 'PRODUTOS_1'
+          CalcType = dacaExpression
+          Expression = 'substring(PRODUTOS_1.CODIGOTRIBUTADO from 1 FOR 8)'
+        end
+        object daCalculation2: TdaCalculation
+          ChildType = 8
+          Alias = 'substring_PRODUTOS_1_CO_2'
+          DisplayWidth = 30
+          FieldAlias = 'CODIGOTRIBUTADO'
+          FieldLength = 30
+          FieldName = 'CODIGOTRIBUTADO'
+          SQLFieldName = 'substring_PRODUTOS_1_CO_2'
+          TableAlias = 'PRODUTOS'
+          TableName = 'PRODUTOS'
+          TableSQLAlias = 'PRODUTOS_1'
+          CalcType = dacaExpression
+          Expression = 'substring(PRODUTOS_1.CODIGOTRIBUTADO from 9 FOR 3)'
+        end
+        object daCriteria1: TdaCriteria
+          ChildType = 7
+          Level = 0
+          Operator = dacoBlank
+          object TdaField
+            Alias = 'CST_PIS'
+            DisplayWidth = 2
+            FieldAlias = 'CST_PIS'
+            FieldLength = 2
+            FieldName = 'CST_PIS'
+            SQLFieldName = 'CST_PIS'
+            TableAlias = 'PRODUTOS'
+            TableName = 'PRODUTOS'
+            TableSQLAlias = 'PRODUTOS_1'
+          end
+        end
+        object daCriteria2: TdaCriteria
+          ChildType = 7
+          CriteriaType = dacrOR
+          Level = 0
+        end
+        object daCriteria3: TdaCriteria
+          ChildType = 7
+          Level = 0
+          object TdaField
+            Alias = 'CST_PIS'
+            DisplayWidth = 2
+            FieldAlias = 'CST_PIS'
+            FieldLength = 2
+            FieldName = 'CST_PIS'
+            SQLFieldName = 'CST_PIS'
+            TableAlias = 'PRODUTOS'
+            TableName = 'PRODUTOS'
+            TableSQLAlias = 'PRODUTOS_1'
+          end
+        end
+        object daCriteria4: TdaCriteria
+          ChildType = 7
+          CriteriaType = dacrOR
+          Level = 0
+        end
+        object daCriteria5: TdaCriteria
+          ChildType = 7
+          CriteriaType = dacrBegin
+          Level = 0
+        end
+        object daCriteria6: TdaCriteria
+          ChildType = 7
+          Level = 0
+          Operator = dacoNotEqual
+          Value = '01'
+          object TdaField
+            Alias = 'CST_PIS'
+            DisplayWidth = 2
+            FieldAlias = 'CST_PIS'
+            FieldLength = 2
+            FieldName = 'CST_PIS'
+            SQLFieldName = 'CST_PIS'
+            TableAlias = 'PRODUTOS'
+            TableName = 'PRODUTOS'
+            TableSQLAlias = 'PRODUTOS_1'
+          end
+        end
+        object daCriteria7: TdaCriteria
+          ChildType = 7
+          CriteriaType = dacrBegin
+          Level = 0
+        end
+        object daCriteria8: TdaCriteria
+          ChildType = 7
+          Level = 0
+          Operator = dacoBlank
+          object TdaField
+            Alias = 'CODNAOINCIDENCIA'
+            DisplayWidth = 3
+            FieldAlias = 'CODNAOINCIDENCIA'
+            FieldLength = 3
+            FieldName = 'CODNAOINCIDENCIA'
+            SQLFieldName = 'CODNAOINCIDENCIA'
+            TableAlias = 'PRODUTOS'
+            TableName = 'PRODUTOS'
+            TableSQLAlias = 'PRODUTOS_1'
+          end
+        end
+        object daCriteria9: TdaCriteria
+          ChildType = 7
+          CriteriaType = dacrOR
+          Level = 0
+        end
+        object daCriteria10: TdaCriteria
+          ChildType = 7
+          Level = 0
+          object TdaField
+            Alias = 'CODNAOINCIDENCIA'
+            DisplayWidth = 3
+            FieldAlias = 'CODNAOINCIDENCIA'
+            FieldLength = 3
+            FieldName = 'CODNAOINCIDENCIA'
+            SQLFieldName = 'CODNAOINCIDENCIA'
+            TableAlias = 'PRODUTOS'
+            TableName = 'PRODUTOS'
+            TableSQLAlias = 'PRODUTOS_1'
+          end
+        end
+        object daCriteria11: TdaCriteria
+          ChildType = 7
+          CriteriaType = dacrEnd
+          Level = 0
+        end
+        object daCriteria12: TdaCriteria
+          ChildType = 7
+          CriteriaType = dacrEnd
+          Level = 0
+        end
+        object daField1: TdaField
+          Alias = 'NOME'
+          DisplayWidth = 40
+          FieldAlias = 'NOME'
+          FieldLength = 40
+          FieldName = 'NOME'
+          SQLFieldName = 'NOME'
+          TableAlias = 'PRODUTOS'
+          TableName = 'PRODUTOS'
+          TableSQLAlias = 'PRODUTOS_1'
+        end
+        object daField2: TdaField
+          Alias = 'CODIGOTRIBUTADO'
+          DisplayWidth = 30
+          FieldAlias = 'CODIGOTRIBUTADO'
+          FieldLength = 30
+          FieldName = 'CODIGOTRIBUTADO'
+          SQLFieldName = 'CODIGOTRIBUTADO'
+          TableAlias = 'PRODUTOS'
+          TableName = 'PRODUTOS'
+          TableSQLAlias = 'PRODUTOS_1'
+        end
+        object daField3: TdaField
+          Alias = 'CST_PIS'
+          DisplayWidth = 2
+          FieldAlias = 'CST_PIS'
+          FieldLength = 2
+          FieldName = 'CST_PIS'
+          SQLFieldName = 'CST_PIS'
+          TableAlias = 'PRODUTOS'
+          TableName = 'PRODUTOS'
+          TableSQLAlias = 'PRODUTOS_1'
+        end
+        object daField4: TdaField
+          Alias = 'CST_PISE'
+          DisplayWidth = 2
+          FieldAlias = 'CST_PISE'
+          FieldLength = 2
+          FieldName = 'CST_PISE'
+          SQLFieldName = 'CST_PISE'
+          TableAlias = 'PRODUTOS'
+          TableName = 'PRODUTOS'
+          TableSQLAlias = 'PRODUTOS_1'
+        end
+        object daField5: TdaField
+          Alias = 'COD'
+          DisplayWidth = 13
+          FieldAlias = 'COD'
+          FieldLength = 13
+          FieldName = 'COD'
+          SQLFieldName = 'COD'
+          TableAlias = 'PRODUTOS'
+          TableName = 'PRODUTOS'
+          TableSQLAlias = 'PRODUTOS_1'
+        end
+        object daField6: TdaField
+          Alias = 'CODNAOINCIDENCIA'
+          DisplayWidth = 3
+          FieldAlias = 'CODNAOINCIDENCIA'
+          FieldLength = 3
+          FieldName = 'CODNAOINCIDENCIA'
+          SQLFieldName = 'CODNAOINCIDENCIA'
+          TableAlias = 'PRODUTOS'
+          TableName = 'PRODUTOS'
+          TableSQLAlias = 'PRODUTOS_1'
+        end
+        object daField7: TdaField
+          ChildType = 2
+          Alias = 'CST_PIS'
+          DisplayWidth = 2
+          FieldAlias = 'CST_PIS'
+          FieldLength = 2
+          FieldName = 'CST_PIS'
+          SQLFieldName = 'CST_PIS'
+          TableAlias = 'PRODUTOS'
+          TableName = 'PRODUTOS'
+          TableSQLAlias = 'PRODUTOS_1'
+        end
+        object daTable1: TdaTable
+          ChildType = 5
+          Alias = 'PRODUTOS'
+          JoinType = dajtNone
+          SQLAlias = 'PRODUTOS_1'
+          TableAlias = 'PRODUTOS'
+          TableName = 'PRODUTOS'
+        end
+      end
+    end
+  end
+  object ppParameterList1: TppParameterList
+  end
+end

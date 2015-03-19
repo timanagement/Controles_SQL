@@ -1,0 +1,104 @@
+
+
+
+
+
+TRY
+if GAVETA='1' THEN
+begin
+AssignFile(F,PortaPorta);
+Rewrite(F);
+Writeln(F,#27#118); //BEMATCH
+CloseFile(F);
+end;
+
+
+if GAVETA='2' THEN
+begin
+AssignFile(F,PortaPorta);
+Rewrite(F);
+Writeln(F,#27#118#140); //BEMATCH termicas COM guilhotina
+CloseFile(F);
+end;
+
+
+if GAVETA='3' THEN
+begin
+AssignFile(F,PortaPorta);
+Rewrite(F);
+Writeln(F,chr($1B)+'p'+chr($0)+chr($25)+chr($250));  // epson, shalton, sweda
+CloseFile(F);
+end;
+
+
+
+if GAVETA='4' THEN
+begin
+AssignFile(F,PortaPorta);
+Rewrite(F);
+Writeln(F,#27#118#140); //BEMATCH termicas SEM guilhotina
+CloseFile(F);
+end;
+
+
+
+if GAVETA='5' THEN
+begin
+AssignFile(F,PortaPorta);
+Rewrite(F);
+//Writeln(F,#27 + #112 + #0 + #50 + #50); //DATAREGIS
+Writeln(F,#27#112#0#50#50); //DATAREGIS
+CloseFile(F);
+end;
+
+
+
+
+
+
+
+ {
+
+
+      Abrir Gaveta
+      #27#118      Bematech
+      #27#118#140     BEMATCH termicas COM guilhotina
+      $1B),p,$0,$25,$250         epson, shalton, sweda
+      #27#118#140      BEMATCH termicas SEM guilhotina
+      #27#112#0#50#50    DATAREGIS
+      #27,&,0,#12,#48    MECAF / DIEBOLD 
+      $1B,p,$0,$25,$250    Impressora EPSON
+      #027+'v'+#140    Bematech
+      #27,&,0,#12,#48     MECAF / DIEBOLD / Abre a gaveta
+      #27,p     Daruma Abre a gaveta
+
+
+     Guilhotina
+     #27,#112,#0,#50,#50    DARUMA
+     #027,p,#000,#050,#200  schaelton
+     #027,p,0,#050,#200     Mecaf
+     #027,v,#140            Bematech
+     #27#119#109            Bematech
+     #254                   Daruma
+     #27,#112,#0,#50,#50     dataregis
+     #10,#17    MECAF / DIEBOLD 
+     #27,m      Daruma Corte de papel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

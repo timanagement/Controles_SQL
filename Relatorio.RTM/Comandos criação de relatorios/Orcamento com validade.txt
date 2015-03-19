@@ -1,0 +1,3 @@
+  Value :=  SolExecutarSQLSelect(
+  'SELECT (CURRENT_DATE + 7  ) AS VENCIMENTOV FROM NOTA WHERE COD='+NOTA['COD']+' ',
+  'VENCIMENTOV');

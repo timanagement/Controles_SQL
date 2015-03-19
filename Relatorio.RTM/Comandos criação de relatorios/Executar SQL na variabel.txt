@@ -1,0 +1,18 @@
+
+
+
+
+  if variable2.value<>'' then
+  begin
+
+  Value :=   SolStringParaDouble(  SolExecutarSQLSelect(
+
+  'SELECT SUM(VALOR) AS TOTAL FROM CAIXA WHERE '+
+  ' (DATACOMPENSADO<'''+ StrTran(variable2.value, '/', '.') +''') '+
+  ' AND CAIXA='''+DBText4.text+'''   '+
+  ' AND COMPENSADO=''True''   '
+
+  , 'TOTAL')   )  ;
+
+  end else
+  Value :=  value + 0 ;

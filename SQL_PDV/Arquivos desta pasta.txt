@@ -1,0 +1,38 @@
+
+NOME DO ARQUIVOS   =   DETALHES
+------------------------------------------------------------
+
+INI_PDV = configurações de ip, nomes e endereços do programa
+
+BemaFI32.dll, BemaFI32.ini = impressora fiscal bematch
+
+ECF32M.DLL = impressora fiscal elgin
+
+DLLG2.dll  = impressora fiscal elgin térmica (MFD)
+
+dll32phi.dll = impressora fiscal schalter
+
+CONVECF.DLL = impressora fiscal sweda
+
+CONVERSOR.dll = impressora fiscal sweda
+
+Swmfd-connectc.dll = impressora fiscal sweda
+
+Swmfd.dll = impressora fiscal sweda
+
+CONVECF.lib = = impressora fiscal sweda
+
+Swmfd.dll = impressora fiscal sweda
+
+Daruma32.dll = impressora fiscal daruma
+
+InterfaceEpson.dll = impressora fiscal epson (MFD)
+
+fbclient.dll, dbexpint.dll = funcionamento do banco de dados em rede
+
+BANCOPDV.FDB = banco de dados do soft
+
+SQL_PDV.EXE = o programa (soft)
+
+Excom = programa para funcionar leitores de codigo de barra de mesa (serial ex:com1)
+

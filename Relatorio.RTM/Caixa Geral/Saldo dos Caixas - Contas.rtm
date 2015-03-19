@@ -1,0 +1,1523 @@
+object ppReport1: TppReport
+  AutoStop = False
+  DataPipeline = daIBXQueryDataView1.CAIXA
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'DXS Printout'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PrinterName = 'Screen'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 6350
+  PrinterSetup.mmMarginLeft = 6350
+  PrinterSetup.mmMarginRight = 6350
+  PrinterSetup.mmMarginTop = 6350
+  PrinterSetup.mmPaperHeight = 297127
+  PrinterSetup.mmPaperWidth = 210079
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.DatabaseSettings.DataPipeline = plItem
+  Template.DatabaseSettings.Name = 'Caixa geral - Caixas P e R'
+  Template.DatabaseSettings.NameField = 'NAME'
+  Template.DatabaseSettings.TemplateField = 'TEMPLATE'
+  Template.FileName = 
+    'E:\All_Delphi\Em_Andamento\All_Instalacao_Sol\Controles_SQL\Rela' +
+    'torio.RTM\Caixa Geral\Saldo dos Caixas - Contas.rtm'
+  Template.Format = ftASCII
+  Units = utPrinterPixels
+  AllowPrintToFile = True
+  CachePages = True
+  DeviceType = 'Screen'
+  EmailSettings.ReportFormat = 'PDF'
+  LanguageID = 'Default'
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.FontEncoding = feAnsi
+  PreviewFormSettings.WindowState = wsMaximized
+  PreviewFormSettings.ZoomSetting = zsPageWidth
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  ShowAutoSearchDialog = True
+  TextSearchSettings.DefaultString = '<Texto a localizar>'
+  TextSearchSettings.Enabled = True
+  TextSearchSettings.ShowAll = True
+  TextSearchSettings.Visible = True
+  TextSearchSettings.WholeWord = True
+  Left = 225
+  Top = 310
+  Version = '12.03'
+  mmColumnWidth = 0
+  DataPipelineName = 'CAIXA'
+  object ppTitleBand1: TppTitleBand
+    mmBottomOffset = 0
+    mmHeight = 12171
+    mmPrintPosition = 0
+    object ppLabel1: TppLabel
+      UserName = 'Label1'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'Caixa Geral'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 20
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 8467
+      mmLeft = 1323
+      mmTop = 1323
+      mmWidth = 43392
+      BandType = 1
+    end
+    object ppLine1: TppLine
+      UserName = 'Line1'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Pen.Width = 2
+      Weight = 1.500000000000000000
+      mmHeight = 3969
+      mmLeft = 1323
+      mmTop = 10583
+      mmWidth = 194734
+      BandType = 1
+    end
+    object ppVariable1: TppVariable
+      UserName = 'Variable1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      BlankWhenZero = False
+      CalcOrder = 0
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 148167
+      mmTop = 5821
+      mmWidth = 47890
+      BandType = 1
+    end
+    object ppSystemVariable3: TppSystemVariable
+      UserName = 'SystemVariable3'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPrintDateTime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 169863
+      mmTop = 1323
+      mmWidth = 26194
+      BandType = 1
+    end
+    object ppVariable2: TppVariable
+      UserName = 'Variable2'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      BlankWhenZero = False
+      CalcOrder = 1
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 46567
+      mmTop = 1588
+      mmWidth = 97896
+      BandType = 1
+    end
+    object ppVariable3: TppVariable
+      UserName = 'Variable3'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      BlankWhenZero = False
+      CalcOrder = 2
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 46567
+      mmTop = 6085
+      mmWidth = 97896
+      BandType = 1
+    end
+  end
+  object ppHeaderBand1: TppHeaderBand
+    mmBottomOffset = 0
+    mmHeight = 0
+    mmPrintPosition = 0
+  end
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background1.Gradient.EndColor = clWhite
+    Background1.Gradient.StartColor = clWhite
+    Background1.Gradient.Style = gsNone
+    Background2.Brush.Style = bsClear
+    Background2.Gradient.EndColor = clWhite
+    Background2.Gradient.StartColor = clWhite
+    Background2.Gradient.Style = gsNone
+    mmBottomOffset = 0
+    mmHeight = 6085
+    mmPrintPosition = 0
+    object ppDBText2: TppDBText
+      UserName = 'DBText2'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'SUM_case_when_caixa_1_V_2'
+      DataPipeline = daIBXQueryDataView1.CAIXA
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'CAIXA'
+      mmHeight = 3704
+      mmLeft = 35719
+      mmTop = 529
+      mmWidth = 26194
+      BandType = 4
+    end
+    object ppDBText3: TppDBText
+      UserName = 'DBText3'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'SUM_case_when_caixa_1_VAL'
+      DataPipeline = daIBXQueryDataView1.CAIXA
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'CAIXA'
+      mmHeight = 3704
+      mmLeft = 6615
+      mmTop = 529
+      mmWidth = 24871
+      BandType = 4
+    end
+    object ppDBText4: TppDBText
+      UserName = 'DBText4'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'SUM_CAIXA_1_VALOR'
+      DataPipeline = daIBXQueryDataView1.CAIXA
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'CAIXA'
+      mmHeight = 3704
+      mmLeft = 161661
+      mmTop = 529
+      mmWidth = 34396
+      BandType = 4
+    end
+    object ppLine4: TppLine
+      UserName = 'Line4'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Weight = 1.000000000000000000
+      mmHeight = 794
+      mmLeft = 6615
+      mmTop = 5292
+      mmWidth = 189707
+      BandType = 4
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    mmBottomOffset = 0
+    mmHeight = 6350
+    mmPrintPosition = 0
+    object ppLine5: TppLine
+      UserName = 'Line5'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Pen.Color = clGray
+      Weight = 0.750000000000000000
+      mmHeight = 3969
+      mmLeft = 1323
+      mmTop = 5027
+      mmWidth = 194734
+      BandType = 8
+    end
+    object ppSystemVariable1: TppSystemVariable
+      UserName = 'SystemVariable1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPrintDateTime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 1323
+      mmTop = 1323
+      mmWidth = 26194
+      BandType = 8
+    end
+    object ppSystemVariable2: TppSystemVariable
+      UserName = 'SystemVariable2'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPageNoDesc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 185473
+      mmTop = 1323
+      mmWidth = 10583
+      BandType = 8
+    end
+  end
+  object ppSummaryBand1: TppSummaryBand
+    PrintHeight = phDynamic
+    AlignToBottom = False
+    mmBottomOffset = 0
+    mmHeight = 42598
+    mmPrintPosition = 0
+    object ppLine2: TppLine
+      UserName = 'Line2'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Weight = 1.000000000000000000
+      mmHeight = 1588
+      mmLeft = 1323
+      mmTop = 17198
+      mmWidth = 194734
+      BandType = 7
+    end
+    object ppLabel6: TppLabel
+      UserName = 'Label6'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'SALDO GERAL'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = [fsBold, fsUnderline]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 161661
+      mmTop = 6350
+      mmWidth = 34396
+      BandType = 7
+    end
+    object ppDBCalc1: TppDBCalc
+      UserName = 'DBCalc1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'SUM_CAIXA_1_VALOR'
+      DataPipeline = daIBXQueryDataView1.CAIXA
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'CAIXA'
+      mmHeight = 3440
+      mmLeft = 160867
+      mmTop = 11642
+      mmWidth = 35190
+      BandType = 7
+    end
+    object ppLabel7: TppLabel
+      UserName = 'Label7'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'CREDITO GERAL'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 1323
+      mmTop = 6350
+      mmWidth = 24871
+      BandType = 7
+    end
+    object ppLabel8: TppLabel
+      UserName = 'Label8'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'DEBITO GERAL'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 30427
+      mmTop = 6350
+      mmWidth = 24871
+      BandType = 7
+    end
+    object ppDBCalc2: TppDBCalc
+      UserName = 'DBCalc2'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'SUM_case_when_caixa_1_VAL'
+      DataPipeline = daIBXQueryDataView1.CAIXA
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      DataPipelineName = 'CAIXA'
+      mmHeight = 3440
+      mmLeft = 1323
+      mmTop = 11642
+      mmWidth = 24871
+      BandType = 7
+    end
+    object ppDBCalc3: TppDBCalc
+      UserName = 'DBCalc3'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'SUM_case_when_caixa_1_V_2'
+      DataPipeline = daIBXQueryDataView1.CAIXA
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      DataPipelineName = 'CAIXA'
+      mmHeight = 3440
+      mmLeft = 30427
+      mmTop = 11642
+      mmWidth = 24871
+      BandType = 7
+    end
+    object ppSubReport1: TppSubReport
+      UserName = 'SubReport1'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      TraverseAllData = False
+      DataPipelineName = 'RECEBER'
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 19315
+      mmWidth = 197379
+      BandType = 7
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport1: TppChildReport
+        AutoStop = False
+        DataPipeline = daIBXQueryDataView2.RECEBER
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'DXS Printout'
+        PrinterSetup.PaperName = 'A4 210 x 297 mm'
+        PrinterSetup.PrinterName = 'Screen'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 6350
+        PrinterSetup.mmMarginLeft = 6350
+        PrinterSetup.mmMarginRight = 6350
+        PrinterSetup.mmMarginTop = 6350
+        PrinterSetup.mmPaperHeight = 297127
+        PrinterSetup.mmPaperWidth = 210079
+        PrinterSetup.PaperSize = 9
+        Template.DatabaseSettings.DataPipeline = plItem
+        Template.DatabaseSettings.NameField = 'NAME'
+        Template.DatabaseSettings.TemplateField = 'TEMPLATE'
+        Template.SaveTo = stDatabase
+        Units = utPrinterPixels
+        Version = '12.03'
+        mmColumnWidth = 0
+        DataPipelineName = 'RECEBER'
+        object ppTitleBand2: TppTitleBand
+          mmBottomOffset = 0
+          mmHeight = 4763
+          mmPrintPosition = 0
+          object ppLabel9: TppLabel
+            UserName = 'Label9'
+            HyperlinkColor = clBlue
+            AutoSize = False
+            Border.BorderPositions = []
+            Border.Color = clBlack
+            Border.Style = psSolid
+            Border.Visible = False
+            Caption = 'A RECEBER'
+            Ellipsis = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'TIMES NEW ROMAN'
+            Font.Size = 8
+            Font.Style = [fsUnderline]
+            TextAlignment = taRightJustified
+            Transparent = True
+            mmHeight = 3704
+            mmLeft = 169334
+            mmTop = 529
+            mmWidth = 26194
+            BandType = 1
+          end
+        end
+        object ppDetailBand2: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background1.Gradient.EndColor = clWhite
+          Background1.Gradient.StartColor = clWhite
+          Background1.Gradient.Style = gsNone
+          Background2.Brush.Style = bsClear
+          Background2.Gradient.EndColor = clWhite
+          Background2.Gradient.StartColor = clWhite
+          Background2.Gradient.Style = gsNone
+          mmBottomOffset = 0
+          mmHeight = 6350
+          mmPrintPosition = 0
+          object ppDBText5: TppDBText
+            UserName = 'DBText5'
+            HyperlinkColor = clBlue
+            Border.BorderPositions = []
+            Border.Color = clBlack
+            Border.Style = psSolid
+            Border.Visible = False
+            DataField = 'SUM_RECEBER_1_VALOR_P'
+            DataPipeline = daIBXQueryDataView2.RECEBER
+            DisplayFormat = '$#,0.00;-$#,0.00'
+            Ellipsis = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'TIMES NEW ROMAN'
+            Font.Size = 8
+            Font.Style = [fsBold]
+            TextAlignment = taRightJustified
+            Transparent = True
+            DataPipelineName = 'RECEBER'
+            mmHeight = 3440
+            mmLeft = 169334
+            mmTop = 1058
+            mmWidth = 26194
+            BandType = 4
+          end
+          object ppLine3: TppLine
+            UserName = 'Line3'
+            Border.BorderPositions = []
+            Border.Color = clBlack
+            Border.Style = psSolid
+            Border.Visible = False
+            Weight = 0.750000000000000000
+            mmHeight = 265
+            mmLeft = 3969
+            mmTop = 5556
+            mmWidth = 191559
+            BandType = 4
+          end
+        end
+        object ppSummaryBand2: TppSummaryBand
+          AlignToBottom = False
+          mmBottomOffset = 0
+          mmHeight = 0
+          mmPrintPosition = 0
+        end
+        object raCodeModule2: TraCodeModule
+          ProgramStream = {00}
+        end
+      end
+    end
+    object ppSubReport2: TppSubReport
+      UserName = 'SubReport2'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      ShiftRelativeTo = ppSubReport1
+      TraverseAllData = False
+      DataPipelineName = 'CONTAS'
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 25665
+      mmWidth = 197379
+      BandType = 7
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport2: TppChildReport
+        AutoStop = False
+        DataPipeline = daIBXQueryDataView3.CONTAS
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'DXS Printout'
+        PrinterSetup.PaperName = 'A4 210 x 297 mm'
+        PrinterSetup.PrinterName = 'Screen'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 6350
+        PrinterSetup.mmMarginLeft = 6350
+        PrinterSetup.mmMarginRight = 6350
+        PrinterSetup.mmMarginTop = 6350
+        PrinterSetup.mmPaperHeight = 297127
+        PrinterSetup.mmPaperWidth = 210079
+        PrinterSetup.PaperSize = 9
+        Template.DatabaseSettings.DataPipeline = plItem
+        Template.DatabaseSettings.NameField = 'NAME'
+        Template.DatabaseSettings.TemplateField = 'TEMPLATE'
+        Template.SaveTo = stDatabase
+        Units = utPrinterPixels
+        Version = '12.03'
+        mmColumnWidth = 0
+        DataPipelineName = 'CONTAS'
+        object ppTitleBand3: TppTitleBand
+          mmBottomOffset = 0
+          mmHeight = 4763
+          mmPrintPosition = 0
+          object ppLabel10: TppLabel
+            UserName = 'Label10'
+            HyperlinkColor = clBlue
+            AutoSize = False
+            Border.BorderPositions = []
+            Border.Color = clBlack
+            Border.Style = psSolid
+            Border.Visible = False
+            Caption = 'A PAGAR'
+            Ellipsis = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'TIMES NEW ROMAN'
+            Font.Size = 8
+            Font.Style = [fsUnderline]
+            TextAlignment = taRightJustified
+            Transparent = True
+            mmHeight = 3704
+            mmLeft = 169334
+            mmTop = 1058
+            mmWidth = 26194
+            BandType = 1
+          end
+        end
+        object ppDetailBand3: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background1.Gradient.EndColor = clWhite
+          Background1.Gradient.StartColor = clWhite
+          Background1.Gradient.Style = gsNone
+          Background2.Brush.Style = bsClear
+          Background2.Gradient.EndColor = clWhite
+          Background2.Gradient.StartColor = clWhite
+          Background2.Gradient.Style = gsNone
+          mmBottomOffset = 0
+          mmHeight = 6350
+          mmPrintPosition = 0
+          object ppLine6: TppLine
+            UserName = 'Line6'
+            Border.BorderPositions = []
+            Border.Color = clBlack
+            Border.Style = psSolid
+            Border.Visible = False
+            Weight = 0.750000000000000000
+            mmHeight = 265
+            mmLeft = 3969
+            mmTop = 5821
+            mmWidth = 191559
+            BandType = 4
+          end
+          object ppDBText6: TppDBText
+            UserName = 'DBText6'
+            HyperlinkColor = clBlue
+            Border.BorderPositions = []
+            Border.Color = clBlack
+            Border.Style = psSolid
+            Border.Visible = False
+            DataField = 'SUM_CONTAS_1_VALOR_P'
+            DataPipeline = daIBXQueryDataView3.CONTAS
+            DisplayFormat = '$#,0.00;-$#,0.00'
+            Ellipsis = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'TIMES NEW ROMAN'
+            Font.Size = 8
+            Font.Style = [fsBold]
+            TextAlignment = taRightJustified
+            Transparent = True
+            DataPipelineName = 'CONTAS'
+            mmHeight = 3440
+            mmLeft = 169334
+            mmTop = 1058
+            mmWidth = 26194
+            BandType = 4
+          end
+        end
+        object ppSummaryBand3: TppSummaryBand
+          AlignToBottom = False
+          mmBottomOffset = 0
+          mmHeight = 0
+          mmPrintPosition = 0
+        end
+        object raCodeModule3: TraCodeModule
+          ProgramStream = {00}
+        end
+      end
+    end
+    object ppVariable5: TppVariable
+      UserName = 'Variable5'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      BlankWhenZero = False
+      CalcOrder = 0
+      DataType = dtDouble
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      Visible = False
+      mmHeight = 3440
+      mmLeft = 142875
+      mmTop = 11642
+      mmWidth = 13229
+      BandType = 7
+    end
+    object ppRegion1: TppRegion
+      UserName = 'Region1'
+      Caption = 'Region1'
+      Pen.Color = clWhite
+      ShiftRelativeTo = ppSubReport2
+      mmHeight = 11113
+      mmLeft = 0
+      mmTop = 31485
+      mmWidth = 197380
+      BandType = 7
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppLabel11: TppLabel
+        UserName = 'Label11'
+        HyperlinkColor = clBlue
+        AutoSize = False
+        Border.BorderPositions = []
+        Border.Color = clBlack
+        Border.Style = psSolid
+        Border.Visible = False
+        Caption = 'SALDO FINAL'
+        Ellipsis = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'TIMES NEW ROMAN'
+        Font.Size = 8
+        Font.Style = [fsBold, fsUnderline]
+        TextAlignment = taRightJustified
+        Transparent = True
+        WordWrap = True
+        mmHeight = 3440
+        mmLeft = 161661
+        mmTop = 33338
+        mmWidth = 34396
+        BandType = 7
+      end
+      object ppVariable4: TppVariable
+        UserName = 'Variable4'
+        HyperlinkColor = clBlue
+        Border.BorderPositions = []
+        Border.Color = clBlack
+        Border.Style = psSolid
+        Border.Visible = False
+        BlankWhenZero = False
+        CalcOrder = 1
+        DataType = dtDouble
+        DisplayFormat = '$#,0.00;-$#,0.00'
+        Ellipsis = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'TIMES NEW ROMAN'
+        Font.Size = 8
+        Font.Style = [fsBold]
+        TextAlignment = taRightJustified
+        Transparent = True
+        mmHeight = 3440
+        mmLeft = 141023
+        mmTop = 37835
+        mmWidth = 54769
+        BandType = 7
+      end
+    end
+  end
+  object ppGroup1: TppGroup
+    BreakName = 'CAIXA'
+    DataPipeline = daIBXQueryDataView1.CAIXA
+    GroupFileSettings.NewFile = False
+    GroupFileSettings.EmailFile = False
+    OutlineSettings.CreateNode = True
+    StartOnOddPage = False
+    UserName = 'Group1'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    DataPipelineName = 'CAIXA'
+    NewFile = False
+    object ppGroupHeaderBand1: TppGroupHeaderBand
+      mmBottomOffset = 0
+      mmHeight = 10848
+      mmPrintPosition = 0
+      object ppDBText1: TppDBText
+        UserName = 'DBText1'
+        HyperlinkColor = clBlue
+        Border.BorderPositions = []
+        Border.Color = clBlack
+        Border.Style = psSolid
+        Border.Visible = False
+        DataField = 'CAIXA'
+        DataPipeline = daIBXQueryDataView1.CAIXA
+        Ellipsis = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'TIMES NEW ROMAN'
+        Font.Size = 10
+        Font.Style = [fsBold]
+        Transparent = True
+        DataPipelineName = 'CAIXA'
+        mmHeight = 4233
+        mmLeft = 14288
+        mmTop = 1588
+        mmWidth = 48683
+        BandType = 3
+        GroupNo = 0
+      end
+      object ppLabel2: TppLabel
+        UserName = 'Label2'
+        HyperlinkColor = clBlue
+        AutoSize = False
+        Border.BorderPositions = []
+        Border.Color = clBlack
+        Border.Style = psSolid
+        Border.Visible = False
+        Caption = 'CREDITO'
+        Ellipsis = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'TIMES NEW ROMAN'
+        Font.Size = 8
+        Font.Style = [fsBold]
+        Transparent = True
+        mmHeight = 3440
+        mmLeft = 6879
+        mmTop = 6879
+        mmWidth = 26194
+        BandType = 3
+        GroupNo = 0
+      end
+      object ppLabel3: TppLabel
+        UserName = 'Label3'
+        HyperlinkColor = clBlue
+        AutoSize = False
+        Border.BorderPositions = []
+        Border.Color = clBlack
+        Border.Style = psSolid
+        Border.Visible = False
+        Caption = 'DEBITO'
+        Ellipsis = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'TIMES NEW ROMAN'
+        Font.Size = 8
+        Font.Style = [fsBold]
+        Transparent = True
+        mmHeight = 3440
+        mmLeft = 35983
+        mmTop = 6879
+        mmWidth = 43656
+        BandType = 3
+        GroupNo = 0
+      end
+      object ppLabel4: TppLabel
+        UserName = 'Label4'
+        HyperlinkColor = clBlue
+        AutoSize = False
+        Border.BorderPositions = []
+        Border.Color = clBlack
+        Border.Style = psSolid
+        Border.Visible = False
+        Caption = 'SALDO'
+        Ellipsis = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'TIMES NEW ROMAN'
+        Font.Size = 8
+        Font.Style = [fsBold]
+        TextAlignment = taRightJustified
+        Transparent = True
+        mmHeight = 3440
+        mmLeft = 161661
+        mmTop = 6879
+        mmWidth = 34396
+        BandType = 3
+        GroupNo = 0
+      end
+      object ppLabel5: TppLabel
+        UserName = 'Label5'
+        HyperlinkColor = clBlue
+        Border.BorderPositions = []
+        Border.Color = clBlack
+        Border.Style = psSolid
+        Border.Visible = False
+        Caption = 'CAIXA:'
+        Ellipsis = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'TIMES NEW ROMAN'
+        Font.Size = 10
+        Font.Style = []
+        Transparent = True
+        mmHeight = 4233
+        mmLeft = 1323
+        mmTop = 1588
+        mmWidth = 11642
+        BandType = 3
+        GroupNo = 0
+      end
+    end
+    object ppGroupFooterBand1: TppGroupFooterBand
+      HideWhenOneDetail = False
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060F5472614576656E7448616E646C65720B50726F6772616D4E616D65060F
+      5661726961626C65314F6E43616C630B50726F6772616D54797065070B747450
+      726F63656475726506536F7572636506A570726F636564757265205661726961
+      626C65314F6E43616C63287661722056616C75653A2056617269616E74293B0D
+      0A626567696E0D0A0D0A202056616C7565203A3D20202753616C646F20446174
+      61202027202B205265706F72742E4175746F5365617263684372697465726961
+      42794E616D6528274341495841272C202744415441434F4D50454E5341444F27
+      292E76616C7565735B305D3B0D0A0D0A656E643B0D0A0D436F6D706F6E656E74
+      4E616D6506095661726961626C6531094576656E744E616D6506064F6E43616C
+      63074576656E74494402210001060F5472614576656E7448616E646C65720B50
+      726F6772616D4E616D65060F5661726961626C65324F6E43616C630B50726F67
+      72616D54797065070B747450726F63656475726506536F757263650C47010000
+      70726F636564757265205661726961626C65324F6E43616C6328766172205661
+      6C75653A2056617269616E74293B0D0A626567696E0D0A0D0A20696620526570
+      6F72742E4175746F536561726368437269746572696142794E616D6528275245
+      4345424552272C2027564543494D454E544F27292E76616C7565735B305D203C
+      3E206E756C6C207468656E0D0A20202076616C7565203A3D2027412052656365
+      6265722044617461202027202B205265706F72742E4175746F53656172636843
+      7269746572696142794E616D65282752454345424552272C2027564543494D45
+      4E544F27292E76616C7565735B305D202B202720612027202B20205265706F72
+      742E4175746F536561726368437269746572696142794E616D65282752454345
+      424552272C2027564543494D454E544F27292E76616C7565735B315D3B0D0A0D
+      0A656E643B0D0A0D436F6D706F6E656E744E616D6506095661726961626C6532
+      094576656E744E616D6506064F6E43616C63074576656E74494402210001060F
+      5472614576656E7448616E646C65720B50726F6772616D4E616D65060F566172
+      6961626C65334F6E43616C630B50726F6772616D54797065070B747450726F63
+      656475726506536F757263650C4601000070726F636564757265205661726961
+      626C65334F6E43616C63287661722056616C75653A2056617269616E74293B0D
+      0A626567696E0D0A0D0A206966205265706F72742E4175746F53656172636843
+      7269746572696142794E616D652827434F4E544153272C2027564543494D454E
+      544F27292E76616C7565735B305D203C3E206E756C6C207468656E0D0A202020
+      76616C7565203A3D202741205061676172202020202044617461202027202B20
+      5265706F72742E4175746F536561726368437269746572696142794E616D6528
+      27434F4E544153272C2027564543494D454E544F27292E76616C7565735B305D
+      202B202720612027202B20205265706F72742E4175746F536561726368437269
+      746572696142794E616D652827434F4E544153272C2027564543494D454E544F
+      27292E76616C7565735B315D3B0D0A0D0A656E643B0D0A0D436F6D706F6E656E
+      744E616D6506095661726961626C6533094576656E744E616D6506064F6E4361
+      6C63074576656E74494402210001060F5472614576656E7448616E646C65720B
+      50726F6772616D4E616D65060F5661726961626C65354F6E43616C630B50726F
+      6772616D54797065070B747450726F63656475726506536F7572636506747072
+      6F636564757265205661726961626C65354F6E43616C63287661722056616C75
+      653A2056617269616E74293B0D0A626567696E0D0A0D0A202056616C7565203A
+      3D202056616C7565202B20202043414958415B2753554D5F43414958415F315F
+      56414C4F52275D3B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65
+      06095661726961626C6535094576656E744E616D6506064F6E43616C63074576
+      656E74494402210001060F5472614576656E7448616E646C65720B50726F6772
+      616D4E616D65060F5661726961626C65344F6E43616C630B50726F6772616D54
+      797065070B747450726F63656475726506536F7572636506AC70726F63656475
+      7265205661726961626C65344F6E43616C63287661722056616C75653A205661
+      7269616E74293B0D0A626567696E0D0A0D0A202056616C7565203A3D0D0A2020
+      5661726961626C65352E76616C7565202B0D0A2020524543454245525B275355
+      4D5F524543454245525F315F56414C4F525F50275D20202D0D0A2020434F4E54
+      41535B2753554D5F434F4E5441535F315F56414C4F525F50275D3B0D0A0D0A65
+      6E643B0D0A0D436F6D706F6E656E744E616D6506095661726961626C65340945
+      76656E744E616D6506064F6E43616C63074576656E74494402210000}
+  end
+  object daDataModule1: TdaDataModule
+    object daIBXQueryDataView1: TdaIBXQueryDataView
+      UserName = 'Query_CAIXA'
+      Height = 382
+      Left = 10
+      NameColumnWidth = 159
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 10
+      TypeColumnWidth = 52
+      Width = 390
+      AutoSearchTabOrder = 0
+      object CAIXA: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'CAIXA'
+        object ppField1: TppField
+          FieldAlias = 'CAIXA'
+          FieldName = 'CAIXA'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 0
+          TableName = 'CAIXA_1'
+        end
+        object ppField2: TppField
+          FieldAlias = 'SUM_CAIXA_1_VALOR'
+          FieldName = 'SUM_CAIXA_1_VALOR'
+          FieldLength = 4
+          Linkable = False
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 1
+          TableName = 'CAIXA_1'
+        end
+        object ppField3: TppField
+          FieldAlias = 'SUM_case_when_caixa_1_VAL'
+          FieldName = 'SUM_case_when_caixa_1_VAL'
+          FieldLength = 4
+          Linkable = False
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 2
+          TableName = 'CAIXA_1'
+        end
+        object ppField4: TppField
+          FieldAlias = 'SUM_case_when_caixa_1_V_2'
+          FieldName = 'SUM_case_when_caixa_1_V_2'
+          FieldLength = 4
+          Linkable = False
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 3
+          TableName = 'CAIXA_1'
+        end
+      end
+      object daSQL1: TdaSQL
+        CollationType = ctASCII
+        DatabaseName = 'Ib'
+        DatabaseType = dtInterBase
+        DataPipelineName = 'CAIXA'
+        IsCaseSensitive = True
+        GroupByFieldsSynced = True
+        LinkColor = clMaroon
+        LinkType = ltMagicSQL
+        MaxSQLFieldAliasLength = 25
+        SQLText.Strings = (
+          'SELECT CAIXA_1.CAIXA, '
+          '       SUM(CAIXA_1.VALOR)  SUM_CAIXA_1_VALOR, '
+          
+            '       SUM(case  when  (caixa_1.VALOR>0) then (caixa_1.VALOR) el' +
+            'se (0) end)  SUM_case_when_caixa_1_VAL, '
+          
+            '       SUM(case  when  (caixa_1.VALOR<0) then (caixa_1.VALOR) el' +
+            'se (0) end)  SUM_case_when_caixa_1_V_2'
+          'FROM CAIXA CAIXA_1'
+          'WHERE ( CAIXA_1.COMPENSADO = '#39'True'#39' )'
+          '       AND ( CAIXA_1.DATACOMPENSADO <= CURRENT_DATE )'
+          
+            '       AND ( CAIXA_1.CAIXA IN ('#39'GAVETA'#39','#39'HSBC'#39','#39'CAIXA ECONOMICA'#39 +
+            ','#39'ITAU'#39','#39'GAVETA SUPORTE'#39') )'
+          'GROUP BY CAIXA_1.CAIXA'
+          'ORDER BY CAIXA_1.CAIXA')
+        SQLType = sqSQL2
+        object daCalculation1: TdaCalculation
+          ChildType = 8
+          Alias = 'SUM_CAIXA_1_VALOR'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'VALOR'
+          FieldLength = 4
+          FieldName = 'VALOR'
+          Linkable = False
+          SQLFieldName = 'SUM_CAIXA_1_VALOR'
+          TableAlias = 'CAIXA'
+          TableName = 'CAIXA'
+          TableSQLAlias = 'CAIXA_1'
+          CalcType = dacaExpression
+          Expression = 'SUM(CAIXA_1.VALOR) '
+        end
+        object daCalculation2: TdaCalculation
+          ChildType = 8
+          Alias = 'SUM_case_when_caixa_1_VAL'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'VALOR'
+          FieldLength = 4
+          FieldName = 'VALOR'
+          Linkable = False
+          SQLFieldName = 'SUM_case_when_caixa_1_VAL'
+          TableAlias = 'CAIXA'
+          TableName = 'CAIXA'
+          TableSQLAlias = 'CAIXA_1'
+          CalcType = dacaExpression
+          Expression = 
+            'SUM(case  when  (caixa_1.VALOR>0) then (caixa_1.VALOR) else (0) ' +
+            'end) '
+        end
+        object daCalculation3: TdaCalculation
+          ChildType = 8
+          Alias = 'SUM_case_when_caixa_1_V_2'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'VALOR'
+          FieldLength = 4
+          FieldName = 'VALOR'
+          Linkable = False
+          SQLFieldName = 'SUM_case_when_caixa_1_V_2'
+          TableAlias = 'CAIXA'
+          TableName = 'CAIXA'
+          TableSQLAlias = 'CAIXA_1'
+          CalcType = dacaExpression
+          Expression = 
+            'SUM(case  when  (caixa_1.VALOR<0) then (caixa_1.VALOR) else (0) ' +
+            'end) '
+        end
+        object daCriteria1: TdaCriteria
+          ChildType = 7
+          Level = 0
+          Value = 'True'
+          object TdaField
+            Alias = 'COMPENSADO'
+            DisplayWidth = 5
+            FieldAlias = 'COMPENSADO'
+            FieldLength = 5
+            FieldName = 'COMPENSADO'
+            SQLFieldName = 'COMPENSADO'
+            TableAlias = 'CAIXA'
+            TableName = 'CAIXA'
+            TableSQLAlias = 'CAIXA_1'
+          end
+        end
+        object daCriteria2: TdaCriteria
+          ChildType = 7
+          ContainsFieldName = True
+          Level = 0
+          Operator = dacoLessThanOrEqualTo
+          Value = 'CURRENT_DATE'
+          object TdaField
+            Alias = 'DATACOMPENSADO'
+            AutoSearch = True
+            DataType = dtDate
+            DisplayWidth = 10
+            FieldAlias = 'DATACOMPENSADO'
+            FieldLength = 0
+            FieldName = 'DATACOMPENSADO'
+            SQLFieldName = 'DATACOMPENSADO'
+            TableAlias = 'CAIXA'
+            TableName = 'CAIXA'
+            TableSQLAlias = 'CAIXA_1'
+          end
+        end
+        object daCriteria3: TdaCriteria
+          ChildType = 7
+          Level = 0
+          Operator = dacoInList
+          Value = 'GAVETA,HSBC,CAIXA ECONOMICA,ITAU,GAVETA SUPORTE'
+          object TdaField
+            Alias = 'CAIXA'
+            AutoSearch = True
+            DisplayWidth = 30
+            FieldAlias = 'CAIXA'
+            FieldLength = 30
+            FieldName = 'CAIXA'
+            SQLFieldName = 'CAIXA'
+            TableAlias = 'CAIXA'
+            TableName = 'CAIXA'
+            TableSQLAlias = 'CAIXA_1'
+          end
+        end
+        object daField1: TdaField
+          Alias = 'CAIXA'
+          DisplayWidth = 30
+          FieldAlias = 'CAIXA'
+          FieldLength = 30
+          FieldName = 'CAIXA'
+          SQLFieldName = 'CAIXA'
+          TableAlias = 'CAIXA'
+          TableName = 'CAIXA'
+          TableSQLAlias = 'CAIXA_1'
+        end
+        object daField2: TdaField
+          ChildType = 1
+          Alias = 'CAIXA'
+          DisplayWidth = 30
+          FieldAlias = 'CAIXA'
+          FieldLength = 30
+          FieldName = 'CAIXA'
+          SQLFieldName = 'CAIXA'
+          TableAlias = 'CAIXA'
+          TableName = 'CAIXA'
+          TableSQLAlias = 'CAIXA_1'
+        end
+        object daField3: TdaField
+          ChildType = 2
+          Alias = 'CAIXA'
+          DisplayWidth = 30
+          FieldAlias = 'CAIXA'
+          FieldLength = 30
+          FieldName = 'CAIXA'
+          SQLFieldName = 'CAIXA'
+          TableAlias = 'CAIXA'
+          TableName = 'CAIXA'
+          TableSQLAlias = 'CAIXA_1'
+        end
+        object daTable1: TdaTable
+          ChildType = 5
+          Alias = 'CAIXA'
+          JoinType = dajtNone
+          SQLAlias = 'CAIXA_1'
+          TableAlias = 'CAIXA'
+          TableName = 'CAIXA'
+        end
+      end
+    end
+    object daIBXQueryDataView2: TdaIBXQueryDataView
+      UserName = 'Query_RECEBER'
+      Height = 212
+      Left = 450
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 10
+      TypeColumnWidth = 52
+      Width = 291
+      AutoSearchTabOrder = 0
+      object RECEBER: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'RECEBER'
+        object ppField1: TppField
+          FieldAlias = 'SUM_RECEBER_1_VALOR_P'
+          FieldName = 'SUM_RECEBER_1_VALOR_P'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 0
+          TableName = 'RECEBER_1'
+        end
+      end
+      object daSQL2: TdaSQL
+        CollationType = ctASCII
+        DatabaseName = 'Ib'
+        DatabaseType = dtInterBase
+        DataPipelineName = 'RECEBER'
+        IsCaseSensitive = True
+        GroupByFieldsSynced = True
+        LinkColor = clNavy
+        LinkType = ltMagicSQL
+        MaxSQLFieldAliasLength = 25
+        SQLText.Strings = (
+          'SELECT '
+          '       SUM(RECEBER_1.VALOR_P) SUM_RECEBER_1_VALOR_P'
+          'FROM RECEBER RECEBER_1'
+          'WHERE '
+          
+            '      ( RECEBER_1.VECIMENTO BETWEEN CAST('#39'1.'#39' ||EXTRACT(MONTH FR' +
+            'OM CURRENT_DATE) || '#39'.'#39' ||EXTRACT(YEAR FROM CURRENT_DATE) AS DAT' +
+            'E) AND CAST(CURRENT_DATE AS DATE) - EXTRACT(DAY FROM CAST(CURREN' +
+            'T_DATE AS DATE)) + 32 -EXTRACT(DAY FROM CAST(CURRENT_DATE AS DAT' +
+            'E)-EXTRACT(DAY FROM CAST(CURRENT_DATE AS DATE)) + 32 ) )'
+          '       AND ( RECEBER_1.PAGO = '#39'False'#39' )')
+        SQLType = sqSQL2
+        object daCalculation1: TdaCalculation
+          ChildType = 8
+          Alias = 'SUM_RECEBER_1_VALOR_P'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'VALOR_P'
+          FieldLength = 4
+          FieldName = 'VALOR_P'
+          Linkable = False
+          SQLFieldName = 'SUM_RECEBER_1_VALOR_P'
+          TableAlias = 'RECEBER'
+          TableName = 'RECEBER'
+          TableSQLAlias = 'RECEBER_1'
+          CalcType = dacaSum
+        end
+        object daCriteria1: TdaCriteria
+          ChildType = 7
+          ContainsFieldName = True
+          Level = 0
+          Operator = dacoBetween
+          Value = 
+            'CAST('#39'1.'#39' ||EXTRACT(MONTH FROM CURRENT_DATE) || '#39'.'#39' ||EXTRACT(YE' +
+            'AR FROM CURRENT_DATE) AS DATE),CAST(CURRENT_DATE AS DATE) - EXTR' +
+            'ACT(DAY FROM CAST(CURRENT_DATE AS DATE)) + 32 -EXTRACT(DAY FROM ' +
+            'CAST(CURRENT_DATE AS DATE)-EXTRACT(DAY FROM CAST(CURRENT_DATE AS' +
+            ' DATE)) + 32 )'
+          object TdaField
+            Alias = 'VECIMENTO'
+            AutoSearch = True
+            DataType = dtDate
+            DisplayWidth = 10
+            FieldAlias = 'VECIMENTO'
+            FieldLength = 0
+            FieldName = 'VECIMENTO'
+            Mandatory = True
+            SQLFieldName = 'VECIMENTO'
+            TableAlias = 'RECEBER'
+            TableName = 'RECEBER'
+            TableSQLAlias = 'RECEBER_1'
+          end
+        end
+        object daCriteria2: TdaCriteria
+          ChildType = 7
+          Level = 0
+          Value = 'False'
+          object TdaField
+            Alias = 'PAGO'
+            DisplayWidth = 5
+            FieldAlias = 'PAGO'
+            FieldLength = 5
+            FieldName = 'PAGO'
+            SQLFieldName = 'PAGO'
+            TableAlias = 'RECEBER'
+            TableName = 'RECEBER'
+            TableSQLAlias = 'RECEBER_1'
+          end
+        end
+        object daTable1: TdaTable
+          ChildType = 5
+          Alias = 'RECEBER'
+          JoinType = dajtNone
+          SQLAlias = 'RECEBER_1'
+          TableAlias = 'RECEBER'
+          TableName = 'RECEBER'
+        end
+      end
+    end
+    object daIBXQueryDataView3: TdaIBXQueryDataView
+      UserName = 'Query_CONTAS'
+      Height = 212
+      Left = 791
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 10
+      TypeColumnWidth = 52
+      Width = 271
+      AutoSearchTabOrder = 0
+      object CONTAS: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'CONTAS'
+        object ppField1: TppField
+          FieldAlias = 'SUM_CONTAS_1_VALOR_P'
+          FieldName = 'SUM_CONTAS_1_VALOR_P'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 0
+          TableName = 'CONTAS_1'
+        end
+      end
+      object daSQL3: TdaSQL
+        CollationType = ctASCII
+        DatabaseName = 'Ib'
+        DatabaseType = dtInterBase
+        DataPipelineName = 'CONTAS'
+        IsCaseSensitive = True
+        GroupByFieldsSynced = True
+        LinkColor = clGreen
+        LinkType = ltMagicSQL
+        MaxSQLFieldAliasLength = 25
+        SQLText.Strings = (
+          'SELECT SUM(CONTAS_1.VALOR_P) SUM_CONTAS_1_VALOR_P'
+          'FROM CONTAS CONTAS_1'
+          'WHERE '
+          
+            '      ( CONTAS_1.VECIMENTO BETWEEN CAST('#39'1.'#39' ||EXTRACT(MONTH FRO' +
+            'M CURRENT_DATE) || '#39'.'#39' ||EXTRACT(YEAR FROM CURRENT_DATE) AS DATE' +
+            ') AND CAST(CURRENT_DATE AS DATE) - EXTRACT(DAY FROM CAST(CURRENT' +
+            '_DATE AS DATE)) + 32 -EXTRACT(DAY FROM CAST(CURRENT_DATE AS DATE' +
+            ')-EXTRACT(DAY FROM CAST(CURRENT_DATE AS DATE)) + 32 ) )'
+          '       AND ( CONTAS_1.PAGO = '#39'False'#39' )')
+        SQLType = sqSQL2
+        object daCalculation1: TdaCalculation
+          ChildType = 8
+          Alias = 'SUM_CONTAS_1_VALOR_P'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'VALOR_P'
+          FieldLength = 4
+          FieldName = 'VALOR_P'
+          Linkable = False
+          SQLFieldName = 'SUM_CONTAS_1_VALOR_P'
+          TableAlias = 'CONTAS'
+          TableName = 'CONTAS'
+          TableSQLAlias = 'CONTAS_1'
+          CalcType = dacaSum
+        end
+        object daCriteria1: TdaCriteria
+          ChildType = 7
+          ContainsFieldName = True
+          Level = 0
+          Operator = dacoBetween
+          Value = 
+            'CAST('#39'1.'#39' ||EXTRACT(MONTH FROM CURRENT_DATE) || '#39'.'#39' ||EXTRACT(YE' +
+            'AR FROM CURRENT_DATE) AS DATE),CAST(CURRENT_DATE AS DATE) - EXTR' +
+            'ACT(DAY FROM CAST(CURRENT_DATE AS DATE)) + 32 -EXTRACT(DAY FROM ' +
+            'CAST(CURRENT_DATE AS DATE)-EXTRACT(DAY FROM CAST(CURRENT_DATE AS' +
+            ' DATE)) + 32 )'
+          object TdaField
+            Alias = 'VECIMENTO'
+            AutoSearch = True
+            DataType = dtDate
+            DisplayWidth = 10
+            FieldAlias = 'VECIMENTO'
+            FieldLength = 0
+            FieldName = 'VECIMENTO'
+            Mandatory = True
+            SQLFieldName = 'VECIMENTO'
+            TableAlias = 'CONTAS'
+            TableName = 'CONTAS'
+            TableSQLAlias = 'CONTAS_1'
+          end
+        end
+        object daCriteria2: TdaCriteria
+          ChildType = 7
+          Level = 0
+          Value = 'False'
+          object TdaField
+            Alias = 'PAGO'
+            DisplayWidth = 5
+            FieldAlias = 'PAGO'
+            FieldLength = 5
+            FieldName = 'PAGO'
+            SQLFieldName = 'PAGO'
+            TableAlias = 'CONTAS'
+            TableName = 'CONTAS'
+            TableSQLAlias = 'CONTAS_1'
+          end
+        end
+        object daTable1: TdaTable
+          ChildType = 5
+          Alias = 'CONTAS'
+          JoinType = dajtNone
+          SQLAlias = 'CONTAS_1'
+          TableAlias = 'CONTAS'
+          TableName = 'CONTAS'
+        end
+      end
+    end
+  end
+  object ppParameterList1: TppParameterList
+  end
+end

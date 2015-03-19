@@ -1,0 +1,735 @@
+object ppReport1: TppReport
+  AutoStop = False
+  DataPipeline = daIBXQueryDataView1.REDUCAO_Z
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'DXS Printout'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PrinterName = 'Screen'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 6350
+  PrinterSetup.mmMarginLeft = 6350
+  PrinterSetup.mmMarginRight = 6350
+  PrinterSetup.mmMarginTop = 6350
+  PrinterSetup.mmPaperHeight = 297127
+  PrinterSetup.mmPaperWidth = 210079
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.DatabaseSettings.DataPipeline = plItem
+  Template.DatabaseSettings.Name = 'Cartao sped'
+  Template.DatabaseSettings.NameField = 'NAME'
+  Template.DatabaseSettings.TemplateField = 'TEMPLATE'
+  Template.FileName = 
+    'E:\All_Delphi\Em_Andamento\All_Instalacao_Sol\Controles_SQL\Rela' +
+    'torio.RTM\Reducao Z\Reducao Z.rtm'
+  Template.Format = ftASCII
+  Units = utPrinterPixels
+  AllowPrintToFile = True
+  CachePages = True
+  DeviceType = 'Screen'
+  EmailSettings.ReportFormat = 'PDF'
+  LanguageID = 'Default'
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.FontEncoding = feAnsi
+  PreviewFormSettings.WindowState = wsMaximized
+  PreviewFormSettings.ZoomSetting = zsPageWidth
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  ShowAutoSearchDialog = True
+  TextSearchSettings.DefaultString = '<Texto a localizar>'
+  TextSearchSettings.Enabled = True
+  TextSearchSettings.ShowAll = True
+  TextSearchSettings.Visible = True
+  TextSearchSettings.WholeWord = True
+  Left = 225
+  Top = 310
+  Version = '12.03'
+  mmColumnWidth = 0
+  DataPipelineName = 'REDUCAO_Z'
+  object ppTitleBand1: TppTitleBand
+    mmBottomOffset = 0
+    mmHeight = 9790
+    mmPrintPosition = 0
+    object ppLabel1: TppLabel
+      UserName = 'Label1'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'Redu'#231#227'o Z'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 18
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 7144
+      mmLeft = 1323
+      mmTop = 1323
+      mmWidth = 46302
+      BandType = 1
+    end
+    object ppVariable1: TppVariable
+      UserName = 'Variable1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      BlankWhenZero = False
+      CalcOrder = 0
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 140229
+      mmTop = 5027
+      mmWidth = 55827
+      BandType = 1
+    end
+    object ppSystemVariable3: TppSystemVariable
+      UserName = 'SystemVariable3'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPrintDateTime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 169863
+      mmTop = 0
+      mmWidth = 26194
+      BandType = 1
+    end
+  end
+  object ppHeaderBand1: TppHeaderBand
+    mmBottomOffset = 0
+    mmHeight = 6615
+    mmPrintPosition = 0
+    object ppLine1: TppLine
+      UserName = 'Line1'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Pen.Width = 2
+      Weight = 1.500000000000000000
+      mmHeight = 3969
+      mmLeft = 1323
+      mmTop = 5292
+      mmWidth = 194734
+      BandType = 0
+    end
+    object ppLabel2: TppLabel
+      UserName = 'Label2'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'CAIXA'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 1323
+      mmTop = 1323
+      mmWidth = 11642
+      BandType = 0
+    end
+    object ppLabel3: TppLabel
+      UserName = 'Label3'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'N'#186' ECF'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 35454
+      mmTop = 1323
+      mmWidth = 25929
+      BandType = 0
+    end
+    object ppLabel4: TppLabel
+      UserName = 'Label4'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'DATA'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 62706
+      mmTop = 1323
+      mmWidth = 10319
+      BandType = 0
+    end
+    object ppLabel5: TppLabel
+      UserName = 'Label5'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'VENDA BRUTA'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 80963
+      mmTop = 1323
+      mmWidth = 31221
+      BandType = 0
+    end
+    object ppLabel6: TppLabel
+      UserName = 'Label6'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'VENDA LIQ.'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 113506
+      mmTop = 1323
+      mmWidth = 31221
+      BandType = 0
+    end
+  end
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background1.Gradient.EndColor = clWhite
+    Background1.Gradient.StartColor = clWhite
+    Background1.Gradient.Style = gsNone
+    Background2.Brush.Style = bsClear
+    Background2.Gradient.EndColor = clWhite
+    Background2.Gradient.StartColor = clWhite
+    Background2.Gradient.Style = gsNone
+    mmBottomOffset = 0
+    mmHeight = 6085
+    mmPrintPosition = 0
+    object ppDBText1: TppDBText
+      UserName = 'DBText1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'CAIXA'
+      DataPipeline = daIBXQueryDataView1.REDUCAO_Z
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'REDUCAO_Z'
+      mmHeight = 3704
+      mmLeft = 1323
+      mmTop = 529
+      mmWidth = 32808
+      BandType = 4
+    end
+    object ppDBText2: TppDBText
+      UserName = 'DBText2'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'NUMEROCAIXA'
+      DataPipeline = daIBXQueryDataView1.REDUCAO_Z
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'REDUCAO_Z'
+      mmHeight = 3704
+      mmLeft = 35454
+      mmTop = 529
+      mmWidth = 25929
+      BandType = 4
+    end
+    object ppDBText3: TppDBText
+      UserName = 'DBText3'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'DATA'
+      DataPipeline = daIBXQueryDataView1.REDUCAO_Z
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'REDUCAO_Z'
+      mmHeight = 3704
+      mmLeft = 62706
+      mmTop = 529
+      mmWidth = 16933
+      BandType = 4
+    end
+    object ppDBText4: TppDBText
+      UserName = 'DBText4'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'VENDABRUTA'
+      DataPipeline = daIBXQueryDataView1.REDUCAO_Z
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'REDUCAO_Z'
+      mmHeight = 3704
+      mmLeft = 80963
+      mmTop = 529
+      mmWidth = 31221
+      BandType = 4
+    end
+    object ppDBText5: TppDBText
+      UserName = 'DBText5'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'BRUTODESCONTO'
+      DataPipeline = daIBXQueryDataView1.REDUCAO_Z
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'REDUCAO_Z'
+      mmHeight = 3704
+      mmLeft = 113506
+      mmTop = 529
+      mmWidth = 31221
+      BandType = 4
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    mmBottomOffset = 0
+    mmHeight = 6350
+    mmPrintPosition = 0
+    object ppLine2: TppLine
+      UserName = 'Line2'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Pen.Color = clGray
+      Weight = 0.750000000000000000
+      mmHeight = 3969
+      mmLeft = 1323
+      mmTop = 5027
+      mmWidth = 194734
+      BandType = 8
+    end
+    object ppSystemVariable1: TppSystemVariable
+      UserName = 'SystemVariable1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPrintDateTime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 1323
+      mmTop = 1323
+      mmWidth = 26194
+      BandType = 8
+    end
+    object ppSystemVariable2: TppSystemVariable
+      UserName = 'SystemVariable2'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPageNoDesc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 185473
+      mmTop = 1323
+      mmWidth = 10583
+      BandType = 8
+    end
+  end
+  object ppSummaryBand1: TppSummaryBand
+    AlignToBottom = False
+    mmBottomOffset = 0
+    mmHeight = 5027
+    mmPrintPosition = 0
+    object ppDBCalc1: TppDBCalc
+      UserName = 'DBCalc1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'BRUTODESCONTO'
+      DataPipeline = daIBXQueryDataView1.REDUCAO_Z
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'REDUCAO_Z'
+      mmHeight = 4233
+      mmLeft = 113506
+      mmTop = 265
+      mmWidth = 31221
+      BandType = 7
+    end
+    object ppLine3: TppLine
+      UserName = 'Line3'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Weight = 0.750000000000000000
+      mmHeight = 529
+      mmLeft = 1323
+      mmTop = 0
+      mmWidth = 143404
+      BandType = 7
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060F5472614576656E7448616E646C65720B50726F6772616D4E616D65060F
+      5661726961626C65314F6E43616C630B50726F6772616D54797065070B747450
+      726F63656475726506536F757263650C3501000070726F636564757265205661
+      726961626C65314F6E43616C63287661722056616C75653A2056617269616E74
+      293B0D0A626567696E0D0A0D0A20206966205265706F72742E4175746F536561
+      726368437269746572696142794E616D6528275245445543414F5F5A272C2027
+      4441544127292E76616C7565735B305D203C3E206E756C6C207468656E0D0A20
+      202076616C7565203A3D202744617461202027202B205265706F72742E417574
+      6F536561726368437269746572696142794E616D6528275245445543414F5F5A
+      272C20274441544127292E76616C7565735B305D202B202720612027202B2020
+      5265706F72742E4175746F536561726368437269746572696142794E616D6528
+      275245445543414F5F5A272C20274441544127292E76616C7565735B315D3B0D
+      0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506095661726961626C
+      6531094576656E744E616D6506064F6E43616C63074576656E74494402210000}
+  end
+  object daDataModule1: TdaDataModule
+    object daIBXQueryDataView1: TdaIBXQueryDataView
+      UserName = 'Query_REDUCAO_Z'
+      Height = 177
+      Left = 10
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 10
+      TypeColumnWidth = 52
+      Width = 224
+      AutoSearchTabOrder = 0
+      object REDUCAO_Z: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'REDUCAO_Z'
+        object ppField1: TppField
+          FieldAlias = 'CAIXA'
+          FieldName = 'CAIXA'
+          FieldLength = 20
+          DisplayWidth = 20
+          Position = 0
+          SelectOrder = 0
+          TableName = 'REDUCAO_Z_1'
+        end
+        object ppField2: TppField
+          FieldAlias = 'NUMEROCAIXA'
+          FieldName = 'NUMEROCAIXA'
+          FieldLength = 0
+          DataType = dtInteger
+          DisplayWidth = 10
+          Position = 1
+          SelectOrder = 1
+          TableName = 'REDUCAO_Z_1'
+        end
+        object ppField3: TppField
+          FieldAlias = 'DATA'
+          FieldName = 'DATA'
+          FieldLength = 0
+          DataType = dtDate
+          DisplayWidth = 10
+          Position = 2
+          SelectOrder = 2
+          TableName = 'REDUCAO_Z_1'
+        end
+        object ppField4: TppField
+          FieldAlias = 'VENDABRUTA'
+          FieldName = 'VENDABRUTA'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 3
+          SelectOrder = 3
+          TableName = 'REDUCAO_Z_1'
+        end
+        object ppField5: TppField
+          FieldAlias = 'BRUTODESCONTO'
+          FieldName = 'BRUTODESCONTO'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 4
+          SelectOrder = 4
+          TableName = 'REDUCAO_Z_1'
+        end
+      end
+      object daSQL1: TdaSQL
+        CollationType = ctASCII
+        DatabaseName = 'Ib'
+        DatabaseType = dtInterBase
+        DataPipelineName = 'REDUCAO_Z'
+        IsCaseSensitive = True
+        LinkColor = clMaroon
+        LinkType = ltMagicSQL
+        MaxSQLFieldAliasLength = 25
+        SQLText.Strings = (
+          'SELECT REDUCAO_Z_1.CAIXA, '
+          '       REDUCAO_Z_1.NUMEROCAIXA, REDUCAO_Z_1.DATA, '
+          '       REDUCAO_Z_1.VENDABRUTA, '
+          '       REDUCAO_Z_1.BRUTODESCONTO'
+          'FROM REDUCAO_Z REDUCAO_Z_1'
+          'ORDER BY REDUCAO_Z_1.DATA DESC')
+        SQLType = sqSQL2
+        object daCriteria1: TdaCriteria
+          ChildType = 7
+          Level = 0
+          Operator = dacoBetween
+          object TdaField
+            Alias = 'DATA'
+            AutoSearch = True
+            DataType = dtDate
+            DisplayWidth = 10
+            FieldAlias = 'DATA'
+            FieldLength = 0
+            FieldName = 'DATA'
+            Mandatory = True
+            SQLFieldName = 'DATA'
+            TableAlias = 'REDUCAO_Z'
+            TableName = 'REDUCAO_Z'
+            TableSQLAlias = 'REDUCAO_Z_1'
+          end
+        end
+        object daCriteria2: TdaCriteria
+          ChildType = 7
+          Level = 0
+          object TdaField
+            Alias = 'CAIXA'
+            AutoSearch = True
+            DisplayWidth = 20
+            FieldAlias = 'CAIXA'
+            FieldLength = 20
+            FieldName = 'CAIXA'
+            SQLFieldName = 'CAIXA'
+            TableAlias = 'REDUCAO_Z'
+            TableName = 'REDUCAO_Z'
+            TableSQLAlias = 'REDUCAO_Z_1'
+          end
+        end
+        object daCriteria3: TdaCriteria
+          ChildType = 7
+          Level = 0
+          object TdaField
+            Alias = 'NUMEROCAIXA'
+            AutoSearch = True
+            DataType = dtInteger
+            DisplayWidth = 10
+            FieldAlias = 'NUMEROCAIXA'
+            FieldLength = 0
+            FieldName = 'NUMEROCAIXA'
+            SQLFieldName = 'NUMEROCAIXA'
+            TableAlias = 'REDUCAO_Z'
+            TableName = 'REDUCAO_Z'
+            TableSQLAlias = 'REDUCAO_Z_1'
+          end
+        end
+        object daField1: TdaField
+          Alias = 'CAIXA'
+          DisplayWidth = 20
+          FieldAlias = 'CAIXA'
+          FieldLength = 20
+          FieldName = 'CAIXA'
+          SQLFieldName = 'CAIXA'
+          TableAlias = 'REDUCAO_Z'
+          TableName = 'REDUCAO_Z'
+          TableSQLAlias = 'REDUCAO_Z_1'
+        end
+        object daField2: TdaField
+          Alias = 'NUMEROCAIXA'
+          DataType = dtInteger
+          DisplayWidth = 10
+          FieldAlias = 'NUMEROCAIXA'
+          FieldLength = 0
+          FieldName = 'NUMEROCAIXA'
+          SQLFieldName = 'NUMEROCAIXA'
+          TableAlias = 'REDUCAO_Z'
+          TableName = 'REDUCAO_Z'
+          TableSQLAlias = 'REDUCAO_Z_1'
+        end
+        object daField3: TdaField
+          Alias = 'DATA'
+          DataType = dtDate
+          DisplayWidth = 10
+          FieldAlias = 'DATA'
+          FieldLength = 0
+          FieldName = 'DATA'
+          SQLFieldName = 'DATA'
+          TableAlias = 'REDUCAO_Z'
+          TableName = 'REDUCAO_Z'
+          TableSQLAlias = 'REDUCAO_Z_1'
+        end
+        object daField4: TdaField
+          Alias = 'VENDABRUTA'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'VENDABRUTA'
+          FieldLength = 4
+          FieldName = 'VENDABRUTA'
+          SQLFieldName = 'VENDABRUTA'
+          TableAlias = 'REDUCAO_Z'
+          TableName = 'REDUCAO_Z'
+          TableSQLAlias = 'REDUCAO_Z_1'
+        end
+        object daField5: TdaField
+          Alias = 'BRUTODESCONTO'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'BRUTODESCONTO'
+          FieldLength = 4
+          FieldName = 'BRUTODESCONTO'
+          SQLFieldName = 'BRUTODESCONTO'
+          TableAlias = 'REDUCAO_Z'
+          TableName = 'REDUCAO_Z'
+          TableSQLAlias = 'REDUCAO_Z_1'
+        end
+        object daField6: TdaField
+          ChildType = 2
+          Alias = 'DATA'
+          Ascending = False
+          DataType = dtDate
+          DisplayWidth = 10
+          FieldAlias = 'DATA'
+          FieldLength = 0
+          FieldName = 'DATA'
+          SQLFieldName = 'DATA'
+          TableAlias = 'REDUCAO_Z'
+          TableName = 'REDUCAO_Z'
+          TableSQLAlias = 'REDUCAO_Z_1'
+        end
+        object daTable1: TdaTable
+          ChildType = 5
+          Alias = 'REDUCAO_Z'
+          JoinType = dajtNone
+          SQLAlias = 'REDUCAO_Z_1'
+          TableAlias = 'REDUCAO_Z'
+          TableName = 'REDUCAO_Z'
+        end
+      end
+    end
+  end
+  object ppParameterList1: TppParameterList
+  end
+end

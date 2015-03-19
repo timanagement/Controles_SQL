@@ -1,0 +1,53 @@
+; Arquivo de Registro de Comandos da DLLG2.DLL
+; 03/12/2011 11:45:05.868 - Saída do software 
+03/12/2011 11:45:39.943 -> {20;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:39.943 <- {20;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:45:39.945 -> {21;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:39.945 <- {21;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:45:39.959 -> {22;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:39.959 <- {22;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:45:39.960 -> {23;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:39.961 <- {23;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:45:39.964 -> {24;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:39.964 <- {24;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:45:39.969 -> {25;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:39.969 <- {25;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:45:39.976 -> {26;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:39.976 <- {26;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:45:39.978 -> {27;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:39.978 <- {27;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:45:39.990 -> {28;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:39.990 <- {28;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:45:39.992 -> {29;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:39.992 <- {29;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:45:39.999 -> {30;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:39.999 <- {30;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+; 03/12/2011 11:45:40.001 - Nova conexão com o ECF da porta COM1
+03/12/2011 11:45:41.912 -> {31;EmiteLeituraX;;18}
+03/12/2011 11:45:41.912 <- {31;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+; 03/12/2011 11:45:47.615 - Desconexão com o ECF da porta COM1
+03/12/2011 11:45:49.662 -> {30;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:49.662 <- {30;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:45:49.664 -> {31;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:49.664 <- {31;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:45:49.678 -> {32;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:49.678 <- {32;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:45:49.679 -> {33;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:49.680 <- {33;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:45:49.682 -> {34;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:49.683 <- {34;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:45:49.687 -> {35;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:49.687 <- {35;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:45:49.694 -> {36;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:49.694 <- {36;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:45:49.696 -> {37;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:49.696 <- {37;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:45:49.708 -> {38;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:49.708 <- {38;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:45:49.710 -> {39;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:49.710 <- {39;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+03/12/2011 11:45:49.717 -> {40;LeTexto;NomeTexto="Marca";29}
+03/12/2011 11:45:49.717 <- {40;11010;NomeErro="ErroProtTimeout" Circunstancia="Sem sinal de CTS";}
+; 03/12/2011 11:45:49.719 - Nova conexão com o ECF da porta COM1
+; 03/12/2011 11:46:02.151 - Desconexão com o ECF da porta COM1
+; 03/12/2011 11:46:03.383 - Gravações de comandos suspensas neste arquivo.

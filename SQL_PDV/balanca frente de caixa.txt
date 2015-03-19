@@ -1,0 +1,8 @@
+
+
+
+
+Filizola - BP
+Serial
+COM2
+9600

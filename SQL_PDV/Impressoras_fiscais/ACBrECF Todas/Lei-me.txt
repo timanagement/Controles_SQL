@@ -1,0 +1,6 @@
+colocar libeay32.dll
+
+nas pastas
+
+C:\WINDOWS\system32\
+C:\WINDOWS\sysWOW64\

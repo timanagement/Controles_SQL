@@ -1,0 +1,1794 @@
+object ppReport1: TppReport
+  AutoStop = False
+  DataPipeline = daIBXQueryDataView1.CAIXA
+  PassSetting = psTwoPass
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'DXS Printout'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PrinterName = 'Screen'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 6350
+  PrinterSetup.mmMarginLeft = 6350
+  PrinterSetup.mmMarginRight = 6350
+  PrinterSetup.mmMarginTop = 6350
+  PrinterSetup.mmPaperHeight = 297127
+  PrinterSetup.mmPaperWidth = 210079
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.DatabaseSettings.DataPipeline = plItem
+  Template.DatabaseSettings.Name = 'Livro Caixa - Similar banco 2'
+  Template.DatabaseSettings.NameField = 'NAME'
+  Template.DatabaseSettings.TemplateField = 'TEMPLATE'
+  Template.FileName = 
+    'E:\All_Delphi\Em_Andamento\All_Instalacao_Sol\Controles_SQL\Rela' +
+    'torio.RTM\Caixa Geral\Livro caixa\Livro caixa - Similar banco 2.' +
+    'rtm'
+  Template.Format = ftASCII
+  Units = utPrinterPixels
+  AllowPrintToFile = True
+  CachePages = True
+  DeviceType = 'Screen'
+  EmailSettings.ReportFormat = 'PDF'
+  LanguageID = 'Default'
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.FontEncoding = feAnsi
+  PreviewFormSettings.WindowState = wsMaximized
+  PreviewFormSettings.ZoomSetting = zsPageWidth
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  ShowAutoSearchDialog = True
+  TextSearchSettings.DefaultString = '<FindText>'
+  TextSearchSettings.Enabled = True
+  TextSearchSettings.ShowAll = True
+  TextSearchSettings.Visible = True
+  TextSearchSettings.WholeWord = True
+  Left = 225
+  Top = 310
+  Version = '12.03'
+  mmColumnWidth = 0
+  DataPipelineName = 'CAIXA'
+  object ppTitleBand1: TppTitleBand
+    mmBottomOffset = 0
+    mmHeight = 18256
+    mmPrintPosition = 0
+    object ppLabel1: TppLabel
+      UserName = 'Label1'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'Livro Caixa'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 24
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 9525
+      mmLeft = 72496
+      mmTop = 0
+      mmWidth = 55827
+      BandType = 1
+    end
+    object ppVariable2: TppVariable
+      UserName = 'Variable2'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      BlankWhenZero = False
+      CalcOrder = 1
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      Visible = False
+      mmHeight = 4233
+      mmLeft = 155575
+      mmTop = 5027
+      mmWidth = 21167
+      BandType = 1
+    end
+    object ppDBText4: TppDBText
+      UserName = 'DBText4'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'CAIXA'
+      DataPipeline = daIBXQueryDataView1.CAIXA
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 12
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'CAIXA'
+      mmHeight = 5292
+      mmLeft = 17727
+      mmTop = 12171
+      mmWidth = 69056
+      BandType = 1
+    end
+    object ppLabel5: TppLabel
+      UserName = 'Label5'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'CAIXA:'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 12
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 5292
+      mmLeft = 1323
+      mmTop = 12171
+      mmWidth = 16404
+      BandType = 1
+    end
+    object ppVariable6: TppVariable
+      UserName = 'Variable6'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      BlankWhenZero = False
+      CalcOrder = 0
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 12
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 5292
+      mmLeft = 1323
+      mmTop = 5556
+      mmWidth = 69056
+      BandType = 1
+    end
+    object ppSystemVariable3: TppSystemVariable
+      UserName = 'SystemVariable3'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPrintDateTime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 155575
+      mmTop = 12171
+      mmWidth = 40481
+      BandType = 1
+    end
+    object ppSystemVariable4: TppSystemVariable
+      UserName = 'SystemVariable4'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPageSet
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 179123
+      mmTop = 5556
+      mmWidth = 16933
+      BandType = 1
+    end
+    object ppVariable13: TppVariable
+      UserName = 'Variable13'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      BlankWhenZero = False
+      CalcOrder = 2
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      Visible = False
+      mmHeight = 3440
+      mmLeft = 89165
+      mmTop = 14023
+      mmWidth = 14817
+      BandType = 1
+    end
+    object ppVariable14: TppVariable
+      UserName = 'Variable14'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      BlankWhenZero = False
+      CalcOrder = 3
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      Visible = False
+      mmHeight = 3440
+      mmLeft = 106363
+      mmTop = 14023
+      mmWidth = 14817
+      BandType = 1
+    end
+  end
+  object ppHeaderBand1: TppHeaderBand
+    mmBottomOffset = 0
+    mmHeight = 6615
+    mmPrintPosition = 0
+    object ppLine1: TppLine
+      UserName = 'Line1'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Pen.Width = 2
+      Weight = 1.500000000000000000
+      mmHeight = 1058
+      mmLeft = 1323
+      mmTop = 5556
+      mmWidth = 194734
+      BandType = 0
+    end
+    object ppLabel2: TppLabel
+      UserName = 'Label2'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'TIPO PAGAMENTO'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 1323
+      mmTop = 1323
+      mmWidth = 28046
+      BandType = 0
+    end
+    object ppLabel3: TppLabel
+      UserName = 'Label3'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'OPERADOR'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 119327
+      mmTop = 1323
+      mmWidth = 17992
+      BandType = 0
+    end
+    object ppLabel4: TppLabel
+      UserName = 'Label4'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'CENTRO DE CUSTO'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 30956
+      mmTop = 1323
+      mmWidth = 32808
+      BandType = 0
+    end
+    object ppLabel6: TppLabel
+      UserName = 'Label6'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'DATA'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 138907
+      mmTop = 1323
+      mmWidth = 8467
+      BandType = 0
+    end
+    object ppLabel8: TppLabel
+      UserName = 'Label8'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'VALOR'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 177800
+      mmTop = 1323
+      mmWidth = 12435
+      BandType = 0
+    end
+    object ppLabel7: TppLabel
+      UserName = 'Label7'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'COMPENSADO'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 155046
+      mmTop = 1323
+      mmWidth = 21696
+      BandType = 0
+    end
+    object ppLabel12: TppLabel
+      UserName = 'Label12'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'DESCRI'#199#195'O DA CONTA'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 65617
+      mmTop = 1323
+      mmWidth = 41010
+      BandType = 0
+    end
+    object ppLabel14: TppLabel
+      UserName = 'Label14'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'C/D'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 189707
+      mmTop = 1588
+      mmWidth = 6350
+      BandType = 0
+    end
+  end
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background1.Gradient.EndColor = clWhite
+    Background1.Gradient.StartColor = clWhite
+    Background1.Gradient.Style = gsNone
+    Background2.Brush.Style = bsClear
+    Background2.Gradient.EndColor = clWhite
+    Background2.Gradient.StartColor = clWhite
+    Background2.Gradient.Style = gsNone
+    mmBottomOffset = 0
+    mmHeight = 3969
+    mmPrintPosition = 0
+    object ppDBText1: TppDBText
+      UserName = 'DBText1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'DESCRICAO'
+      DataPipeline = daIBXQueryDataView1.CAIXA
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 7
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'CAIXA'
+      mmHeight = 3175
+      mmLeft = 1323
+      mmTop = 529
+      mmWidth = 28046
+      BandType = 4
+    end
+    object ppDBText2: TppDBText
+      UserName = 'DBText2'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'OPERADOR'
+      DataPipeline = daIBXQueryDataView1.CAIXA
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 7
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'CAIXA'
+      mmHeight = 3175
+      mmLeft = 119327
+      mmTop = 794
+      mmWidth = 19050
+      BandType = 4
+    end
+    object ppDBText3: TppDBText
+      UserName = 'DBText3'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'CENTRO'
+      DataPipeline = daIBXQueryDataView1.CAIXA
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 7
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'CAIXA'
+      mmHeight = 3175
+      mmLeft = 30956
+      mmTop = 529
+      mmWidth = 31221
+      BandType = 4
+    end
+    object ppDBText5: TppDBText
+      UserName = 'DBText5'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'DATA'
+      DataPipeline = daIBXQueryDataView1.CAIXA
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'CAIXA'
+      mmHeight = 3704
+      mmLeft = 138907
+      mmTop = 265
+      mmWidth = 14817
+      BandType = 4
+    end
+    object ppDBText7: TppDBText
+      UserName = 'DBText7'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'VALOR'
+      DataPipeline = daIBXQueryDataView1.CAIXA
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'CAIXA'
+      mmHeight = 3704
+      mmLeft = 170657
+      mmTop = 265
+      mmWidth = 19579
+      BandType = 4
+    end
+    object ppDBText6: TppDBText
+      UserName = 'DBText6'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'DATACOMPENSADO'
+      DataPipeline = daIBXQueryDataView1.CAIXA
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'CAIXA'
+      mmHeight = 3704
+      mmLeft = 155046
+      mmTop = 265
+      mmWidth = 14817
+      BandType = 4
+    end
+    object ppVariable5: TppVariable
+      UserName = 'Variable5'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      BlankWhenZero = False
+      CalcOrder = 0
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 7
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3175
+      mmLeft = 65617
+      mmTop = 529
+      mmWidth = 52123
+      BandType = 4
+    end
+    object ppVariable1: TppVariable
+      UserName = 'Variable1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      BlankWhenZero = False
+      CalcOrder = 1
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 191559
+      mmTop = 265
+      mmWidth = 4498
+      BandType = 4
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    mmBottomOffset = 0
+    mmHeight = 5292
+    mmPrintPosition = 0
+    object ppLine2: TppLine
+      UserName = 'Line2'
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Pen.Color = clGray
+      Weight = 0.750000000000000000
+      mmHeight = 265
+      mmLeft = 1323
+      mmTop = 5027
+      mmWidth = 194734
+      BandType = 8
+    end
+    object ppSystemVariable1: TppSystemVariable
+      UserName = 'SystemVariable1'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPrintDateTime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 1323
+      mmTop = 1323
+      mmWidth = 26194
+      BandType = 8
+    end
+    object ppSystemVariable2: TppSystemVariable
+      UserName = 'SystemVariable2'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      VarType = vtPageSet
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 179123
+      mmTop = 1323
+      mmWidth = 16933
+      BandType = 8
+    end
+  end
+  object ppSummaryBand1: TppSummaryBand
+    AlignToBottom = False
+    mmBottomOffset = 0
+    mmHeight = 23019
+    mmPrintPosition = 0
+    object ppLabel9: TppLabel
+      UserName = 'Label9'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'SALDO DATA'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 1323
+      mmTop = 2381
+      mmWidth = 19315
+      BandType = 7
+    end
+    object ppDBCalc2: TppDBCalc
+      UserName = 'DBCalc2'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      DataField = 'VALOR'
+      DataPipeline = daIBXQueryDataView1.CAIXA
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'CAIXA'
+      mmHeight = 3704
+      mmLeft = 21696
+      mmTop = 2381
+      mmWidth = 27517
+      BandType = 7
+    end
+    object ppLabel10: TppLabel
+      UserName = 'Label10'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'SALDO ANTERIOR'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 128059
+      mmTop = 2646
+      mmWidth = 44450
+      BandType = 7
+    end
+    object ppVariable3: TppVariable
+      UserName = 'Variable3'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      BlankWhenZero = False
+      CalcOrder = 0
+      DataType = dtDouble
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 174890
+      mmTop = 2910
+      mmWidth = 21167
+      BandType = 7
+    end
+    object ppVariable4: TppVariable
+      UserName = 'Variable4'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      BlankWhenZero = False
+      CalcOrder = 1
+      DataType = dtDouble
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 174890
+      mmTop = 18256
+      mmWidth = 21167
+      BandType = 7
+    end
+    object ppLabel11: TppLabel
+      UserName = 'Label101'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'SALDO ATUAL'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 128059
+      mmTop = 17992
+      mmWidth = 44450
+      BandType = 7
+    end
+    object ppLabel18: TppLabel
+      UserName = 'Label102'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'ENTRADAS'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 128059
+      mmTop = 7938
+      mmWidth = 44450
+      BandType = 7
+    end
+    object ppLabel19: TppLabel
+      UserName = 'Label19'
+      HyperlinkColor = clBlue
+      AutoSize = False
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      Caption = 'SAIDAS'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 128059
+      mmTop = 12965
+      mmWidth = 44450
+      BandType = 7
+    end
+    object ppVariable11: TppVariable
+      UserName = 'Variable11'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      BlankWhenZero = False
+      CalcOrder = 2
+      DataType = dtDouble
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 174890
+      mmTop = 7938
+      mmWidth = 21167
+      BandType = 7
+    end
+    object ppVariable12: TppVariable
+      UserName = 'Variable12'
+      HyperlinkColor = clBlue
+      Border.BorderPositions = []
+      Border.Color = clBlack
+      Border.Style = psSolid
+      Border.Visible = False
+      BlankWhenZero = False
+      CalcOrder = 3
+      DataType = dtDouble
+      DisplayFormat = '$#,0.00;-$#,0.00'
+      Ellipsis = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'TIMES NEW ROMAN'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 174890
+      mmTop = 12965
+      mmWidth = 21167
+      BandType = 7
+    end
+  end
+  object ppGroup1: TppGroup
+    BreakName = 'DATACOMPENSADO'
+    DataPipeline = daIBXQueryDataView1.CAIXA
+    GroupFileSettings.NewFile = False
+    GroupFileSettings.EmailFile = False
+    OutlineSettings.CreateNode = True
+    StartOnOddPage = False
+    UserName = 'Group1'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    DataPipelineName = 'CAIXA'
+    NewFile = False
+    object ppGroupHeaderBand1: TppGroupHeaderBand
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+    object ppGroupFooterBand1: TppGroupFooterBand
+      HideWhenOneDetail = False
+      mmBottomOffset = 0
+      mmHeight = 5292
+      mmPrintPosition = 0
+      object ppDBCalc1: TppDBCalc
+        UserName = 'DBCalc1'
+        HyperlinkColor = clBlue
+        Border.BorderPositions = []
+        Border.Color = clBlack
+        Border.Style = psSolid
+        Border.Visible = False
+        DataField = 'VALOR'
+        DataPipeline = daIBXQueryDataView1.CAIXA
+        DisplayFormat = '$#,0.00;-$#,0.00'
+        Ellipsis = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'TIMES NEW ROMAN'
+        Font.Size = 7
+        Font.Style = []
+        ResetGroup = ppGroup1
+        Transparent = True
+        DataPipelineName = 'CAIXA'
+        mmHeight = 3175
+        mmLeft = 80963
+        mmTop = 794
+        mmWidth = 26194
+        BandType = 5
+        GroupNo = 0
+      end
+      object ppLine4: TppLine
+        UserName = 'Line4'
+        Border.BorderPositions = []
+        Border.Color = clBlack
+        Border.Style = psSolid
+        Border.Visible = False
+        Weight = 0.750000000000000000
+        mmHeight = 794
+        mmLeft = 1323
+        mmTop = 4498
+        mmWidth = 194734
+        BandType = 5
+        GroupNo = 0
+      end
+      object ppLabel13: TppLabel
+        UserName = 'Label13'
+        HyperlinkColor = clBlue
+        AutoSize = False
+        Border.BorderPositions = []
+        Border.Color = clBlack
+        Border.Style = psSolid
+        Border.Visible = False
+        Caption = 'SOMA DIA'
+        Ellipsis = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'TIMES NEW ROMAN'
+        Font.Size = 7
+        Font.Style = []
+        Transparent = True
+        mmHeight = 3175
+        mmLeft = 65617
+        mmTop = 794
+        mmWidth = 13494
+        BandType = 5
+        GroupNo = 0
+      end
+      object ppVariable7: TppVariable
+        UserName = 'Variable7'
+        HyperlinkColor = clBlue
+        Border.BorderPositions = []
+        Border.Color = clBlack
+        Border.Style = psSolid
+        Border.Visible = False
+        BlankWhenZero = False
+        CalcOrder = 3
+        Ellipsis = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'TIMES NEW ROMAN'
+        Font.Size = 8
+        Font.Style = [fsBold]
+        TextAlignment = taRightJustified
+        Transparent = True
+        mmHeight = 3440
+        mmLeft = 191559
+        mmTop = 794
+        mmWidth = 4498
+        BandType = 5
+        GroupNo = 0
+      end
+      object ppLabel15: TppLabel
+        UserName = 'Label15'
+        HyperlinkColor = clBlue
+        AutoSize = False
+        Border.BorderPositions = []
+        Border.Color = clBlack
+        Border.Style = psSolid
+        Border.Visible = False
+        Caption = 'C:'
+        Ellipsis = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'TIMES NEW ROMAN'
+        Font.Size = 7
+        Font.Style = []
+        Transparent = True
+        mmHeight = 3175
+        mmLeft = 1323
+        mmTop = 794
+        mmWidth = 3175
+        BandType = 5
+        GroupNo = 0
+      end
+      object ppLabel16: TppLabel
+        UserName = 'Label16'
+        HyperlinkColor = clBlue
+        AutoSize = False
+        Border.BorderPositions = []
+        Border.Color = clBlack
+        Border.Style = psSolid
+        Border.Visible = False
+        Caption = 'D:'
+        Ellipsis = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'TIMES NEW ROMAN'
+        Font.Size = 7
+        Font.Style = []
+        Transparent = True
+        mmHeight = 3175
+        mmLeft = 30956
+        mmTop = 794
+        mmWidth = 3175
+        BandType = 5
+        GroupNo = 0
+      end
+      object ppVariable8: TppVariable
+        UserName = 'Variable8'
+        HyperlinkColor = clBlue
+        Border.BorderPositions = []
+        Border.Color = clBlack
+        Border.Style = psSolid
+        Border.Visible = False
+        BlankWhenZero = False
+        CalcOrder = 0
+        DataType = dtDouble
+        DisplayFormat = '$#,0.00;-$#,0.00'
+        Ellipsis = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'TIMES NEW ROMAN'
+        Font.Size = 7
+        Font.Style = []
+        Transparent = True
+        mmHeight = 3175
+        mmLeft = 5027
+        mmTop = 794
+        mmWidth = 24342
+        BandType = 5
+        GroupNo = 0
+      end
+      object ppVariable9: TppVariable
+        UserName = 'Variable9'
+        HyperlinkColor = clBlue
+        Border.BorderPositions = []
+        Border.Color = clBlack
+        Border.Style = psSolid
+        Border.Visible = False
+        BlankWhenZero = False
+        CalcOrder = 1
+        DataType = dtDouble
+        DisplayFormat = '$#,0.00;-$#,0.00'
+        Ellipsis = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'TIMES NEW ROMAN'
+        Font.Size = 7
+        Font.Style = []
+        Transparent = True
+        mmHeight = 3175
+        mmLeft = 34925
+        mmTop = 794
+        mmWidth = 27252
+        BandType = 5
+        GroupNo = 0
+      end
+      object ppVariable10: TppVariable
+        UserName = 'Variable10'
+        HyperlinkColor = clBlue
+        Border.BorderPositions = []
+        Border.Color = clBlack
+        Border.Style = psSolid
+        Border.Visible = False
+        BlankWhenZero = False
+        CalcOrder = 2
+        DataType = dtDouble
+        DisplayFormat = '$#,0.00;-$#,0.00'
+        Ellipsis = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'TIMES NEW ROMAN'
+        Font.Size = 8
+        Font.Style = []
+        TextAlignment = taRightJustified
+        Transparent = True
+        mmHeight = 3704
+        mmLeft = 155575
+        mmTop = 794
+        mmWidth = 34660
+        BandType = 5
+        GroupNo = 0
+      end
+      object ppLabel17: TppLabel
+        UserName = 'Label17'
+        HyperlinkColor = clBlue
+        AutoSize = False
+        Border.BorderPositions = []
+        Border.Color = clBlack
+        Border.Style = psSolid
+        Border.Visible = False
+        Caption = 'SALDO DIA'
+        Ellipsis = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'TIMES NEW ROMAN'
+        Font.Size = 7
+        Font.Style = [fsBold]
+        Transparent = True
+        mmHeight = 3175
+        mmLeft = 138907
+        mmTop = 794
+        mmWidth = 14288
+        BandType = 5
+        GroupNo = 0
+      end
+    end
+  end
+  object daDataModule1: TdaDataModule
+    object daIBXQueryDataView1: TdaIBXQueryDataView
+      UserName = 'Query_CAIXA'
+      Height = 527
+      Left = 10
+      NameColumnWidth = 136
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 10
+      TypeColumnWidth = 52
+      Width = 468
+      AutoSearchTabOrder = 0
+      object CAIXA: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'CAIXA'
+        object ppField1: TppField
+          FieldAlias = 'DESCRICAO'
+          FieldName = 'DESCRICAO'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 0
+          TableName = 'CAIXA_1'
+        end
+        object ppField2: TppField
+          FieldAlias = 'CENTRO'
+          FieldName = 'CENTRO'
+          FieldLength = 100
+          DisplayWidth = 100
+          Position = 1
+          TableName = 'CAIXA_1'
+        end
+        object ppField3: TppField
+          FieldAlias = 'OPERADOR'
+          FieldName = 'OPERADOR'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 2
+          TableName = 'CAIXA_1'
+        end
+        object ppField4: TppField
+          FieldAlias = 'DATA'
+          FieldName = 'DATA'
+          FieldLength = 0
+          DataType = dtDate
+          DisplayWidth = 10
+          Position = 3
+          TableName = 'CAIXA_1'
+        end
+        object ppField5: TppField
+          FieldAlias = 'COMPENSADO'
+          FieldName = 'COMPENSADO'
+          FieldLength = 5
+          DisplayWidth = 5
+          Position = 4
+          TableName = 'CAIXA_1'
+        end
+        object ppField6: TppField
+          FieldAlias = 'CAIXA'
+          FieldName = 'CAIXA'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 5
+          TableName = 'CAIXA_1'
+        end
+        object ppField7: TppField
+          FieldAlias = 'VALOR'
+          FieldName = 'VALOR'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 19
+          Position = 6
+          TableName = 'CAIXA_1'
+        end
+        object ppField8: TppField
+          FieldAlias = 'DATACOMPENSADO'
+          FieldName = 'DATACOMPENSADO'
+          FieldLength = 0
+          DataType = dtDate
+          DisplayWidth = 10
+          Position = 7
+          TableName = 'CAIXA_1'
+        end
+        object ppField9: TppField
+          FieldAlias = 'IDPAI'
+          FieldName = 'IDPAI'
+          FieldLength = 0
+          DataType = dtInteger
+          DisplayWidth = 10
+          Position = 8
+          TableName = 'CAIXA_1'
+        end
+        object ppField10: TppField
+          FieldAlias = 'IDTAB'
+          FieldName = 'IDTAB'
+          FieldLength = 3
+          DisplayWidth = 3
+          Position = 9
+          TableName = 'CAIXA_1'
+        end
+        object ppField11: TppField
+          FieldAlias = 'case_when_caixa_1_valor'
+          FieldName = 'case_when_caixa_1_valor'
+          FieldLength = 0
+          DisplayWidth = 10
+          Position = 10
+          TableName = 'CAIXA_1'
+        end
+      end
+      object daSQL1: TdaSQL
+        CollationType = ctASCII
+        DatabaseName = 'Ib'
+        DatabaseType = dtInterBase
+        DataPipelineName = 'CAIXA'
+        IsCaseSensitive = True
+        LinkColor = clMaroon
+        LinkType = ltMagicSQL
+        MaxSQLFieldAliasLength = 25
+        SQLText.Strings = (
+          'SELECT CAIXA_1.DESCRICAO, CAIXA_1.CENTRO, '
+          '       CAIXA_1.OPERADOR, CAIXA_1.DATA, '
+          '       CAIXA_1.COMPENSADO, CAIXA_1.CAIXA, '
+          '       CAIXA_1.VALOR, CAIXA_1.DATACOMPENSADO, '
+          '       CAIXA_1.IDPAI, CAIXA_1.IDTAB, '
+          
+            '       (case when caixa_1.valor < 0 then '#39'N'#39' else '#39'P'#39' end) case_' +
+            'when_caixa_1_valor'
+          'FROM CAIXA CAIXA_1'
+          'WHERE '
+          
+            '      ( CAIXA_1.DATACOMPENSADO BETWEEN CURRENT_DATE AND CURRENT_' +
+            'DATE )'
+          '       AND ( CAIXA_1.CAIXA = '#39'GAVETA'#39' )'
+          'ORDER BY CAIXA_1.DATACOMPENSADO, CAIXA_1.COD')
+        SQLType = sqSQL2
+        object daCalculation1: TdaCalculation
+          ChildType = 8
+          Alias = 'case_when_caixa_1_valor'
+          DisplayWidth = 10
+          FieldAlias = 'COD'
+          FieldLength = 0
+          FieldName = 'COD'
+          SQLFieldName = 'case_when_caixa_1_valor'
+          TableAlias = 'CAIXA'
+          TableName = 'CAIXA'
+          TableSQLAlias = 'CAIXA_1'
+          CalcType = dacaExpression
+          Expression = '(case when caixa_1.valor < 0 then '#39'N'#39' else '#39'P'#39' end)'
+        end
+        object daCriteria1: TdaCriteria
+          ChildType = 7
+          ContainsFieldName = True
+          Level = 0
+          Operator = dacoBetween
+          Value = 'CURRENT_DATE,CURRENT_DATE'
+          object TdaField
+            Alias = 'DATACOMPENSADO'
+            AutoSearch = True
+            DataType = dtDate
+            DisplayWidth = 10
+            FieldAlias = 'DATACOMPENSADO'
+            FieldLength = 0
+            FieldName = 'DATACOMPENSADO'
+            Mandatory = True
+            SQLFieldName = 'DATACOMPENSADO'
+            TableAlias = 'CAIXA'
+            TableName = 'CAIXA'
+            TableSQLAlias = 'CAIXA_1'
+          end
+        end
+        object daCriteria2: TdaCriteria
+          ChildType = 7
+          Level = 0
+          Value = 'GAVETA'
+          object TdaField
+            Alias = 'CAIXA'
+            AutoSearch = True
+            DisplayWidth = 30
+            FieldAlias = 'CAIXA'
+            FieldLength = 30
+            FieldName = 'CAIXA'
+            SQLFieldName = 'CAIXA'
+            TableAlias = 'CAIXA'
+            TableName = 'CAIXA'
+            TableSQLAlias = 'CAIXA_1'
+          end
+        end
+        object daField1: TdaField
+          Alias = 'DESCRICAO'
+          DisplayWidth = 30
+          FieldAlias = 'DESCRICAO'
+          FieldLength = 30
+          FieldName = 'DESCRICAO'
+          SQLFieldName = 'DESCRICAO'
+          TableAlias = 'CAIXA'
+          TableName = 'CAIXA'
+          TableSQLAlias = 'CAIXA_1'
+        end
+        object daField2: TdaField
+          Alias = 'CENTRO'
+          DisplayWidth = 100
+          FieldAlias = 'CENTRO'
+          FieldLength = 100
+          FieldName = 'CENTRO'
+          SQLFieldName = 'CENTRO'
+          TableAlias = 'CAIXA'
+          TableName = 'CAIXA'
+          TableSQLAlias = 'CAIXA_1'
+        end
+        object daField3: TdaField
+          Alias = 'OPERADOR'
+          DisplayWidth = 30
+          FieldAlias = 'OPERADOR'
+          FieldLength = 30
+          FieldName = 'OPERADOR'
+          SQLFieldName = 'OPERADOR'
+          TableAlias = 'CAIXA'
+          TableName = 'CAIXA'
+          TableSQLAlias = 'CAIXA_1'
+        end
+        object daField4: TdaField
+          Alias = 'DATA'
+          DataType = dtDate
+          DisplayWidth = 10
+          FieldAlias = 'DATA'
+          FieldLength = 0
+          FieldName = 'DATA'
+          SQLFieldName = 'DATA'
+          TableAlias = 'CAIXA'
+          TableName = 'CAIXA'
+          TableSQLAlias = 'CAIXA_1'
+        end
+        object daField5: TdaField
+          Alias = 'COMPENSADO'
+          DisplayWidth = 5
+          FieldAlias = 'COMPENSADO'
+          FieldLength = 5
+          FieldName = 'COMPENSADO'
+          SQLFieldName = 'COMPENSADO'
+          TableAlias = 'CAIXA'
+          TableName = 'CAIXA'
+          TableSQLAlias = 'CAIXA_1'
+        end
+        object daField6: TdaField
+          Alias = 'CAIXA'
+          DisplayWidth = 30
+          FieldAlias = 'CAIXA'
+          FieldLength = 30
+          FieldName = 'CAIXA'
+          SQLFieldName = 'CAIXA'
+          TableAlias = 'CAIXA'
+          TableName = 'CAIXA'
+          TableSQLAlias = 'CAIXA_1'
+        end
+        object daField7: TdaField
+          Alias = 'VALOR'
+          DataType = dtDouble
+          DisplayWidth = 19
+          FieldAlias = 'VALOR'
+          FieldLength = 4
+          FieldName = 'VALOR'
+          SQLFieldName = 'VALOR'
+          TableAlias = 'CAIXA'
+          TableName = 'CAIXA'
+          TableSQLAlias = 'CAIXA_1'
+        end
+        object daField8: TdaField
+          Alias = 'DATACOMPENSADO'
+          DataType = dtDate
+          DisplayWidth = 10
+          FieldAlias = 'DATACOMPENSADO'
+          FieldLength = 0
+          FieldName = 'DATACOMPENSADO'
+          SQLFieldName = 'DATACOMPENSADO'
+          TableAlias = 'CAIXA'
+          TableName = 'CAIXA'
+          TableSQLAlias = 'CAIXA_1'
+        end
+        object daField9: TdaField
+          Alias = 'IDPAI'
+          DataType = dtInteger
+          DisplayWidth = 10
+          FieldAlias = 'IDPAI'
+          FieldLength = 0
+          FieldName = 'IDPAI'
+          SQLFieldName = 'IDPAI'
+          TableAlias = 'CAIXA'
+          TableName = 'CAIXA'
+          TableSQLAlias = 'CAIXA_1'
+        end
+        object daField10: TdaField
+          Alias = 'IDTAB'
+          DisplayWidth = 3
+          FieldAlias = 'IDTAB'
+          FieldLength = 3
+          FieldName = 'IDTAB'
+          SQLFieldName = 'IDTAB'
+          TableAlias = 'CAIXA'
+          TableName = 'CAIXA'
+          TableSQLAlias = 'CAIXA_1'
+        end
+        object daField11: TdaField
+          ChildType = 2
+          Alias = 'DATACOMPENSADO'
+          DataType = dtDate
+          DisplayWidth = 10
+          FieldAlias = 'DATACOMPENSADO'
+          FieldLength = 0
+          FieldName = 'DATACOMPENSADO'
+          SQLFieldName = 'DATACOMPENSADO'
+          TableAlias = 'CAIXA'
+          TableName = 'CAIXA'
+          TableSQLAlias = 'CAIXA_1'
+        end
+        object daField12: TdaField
+          ChildType = 2
+          Alias = 'COD'
+          DataType = dtInteger
+          DisplayWidth = 10
+          FieldAlias = 'COD'
+          FieldLength = 0
+          FieldName = 'COD'
+          SQLFieldName = 'COD'
+          TableAlias = 'CAIXA'
+          TableName = 'CAIXA'
+          TableSQLAlias = 'CAIXA_1'
+        end
+        object daTable1: TdaTable
+          ChildType = 5
+          Alias = 'CAIXA'
+          JoinType = dajtNone
+          SQLAlias = 'CAIXA_1'
+          TableAlias = 'CAIXA'
+          TableName = 'CAIXA'
+        end
+      end
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060F5472614576656E7448616E646C65720B50726F6772616D4E616D65060F
+      5661726961626C65324F6E43616C630B50726F6772616D54797065070B747450
+      726F63656475726506536F75726365069170726F636564757265205661726961
+      626C65324F6E43616C63287661722056616C75653A2056617269616E74293B0D
+      0A626567696E0D0A0D0A76616C7565203A3D205265706F72742E4175746F5365
+      61726368437269746572696142794E616D6528274341495841272C2027444154
+      41434F4D50454E5341444F27292E76616C7565735B305D3B0D0A0D0A656E643B
+      0D0A0D436F6D706F6E656E744E616D6506095661726961626C6532094576656E
+      744E616D6506064F6E43616C63074576656E74494402210001060F5472614576
+      656E7448616E646C65720B50726F6772616D4E616D65060F5661726961626C65
+      334F6E43616C630B50726F6772616D54797065070B747450726F636564757265
+      06536F757263650CAA01000070726F636564757265205661726961626C65334F
+      6E43616C63287661722056616C75653A2056617269616E74293B0D0A62656769
+      6E0D0A0D0A0D0A20206966207661726961626C65322E76616C75653C3E272720
+      7468656E0D0A2020626567696E0D0A0D0A202056616C7565203A3D202020536F
+      6C537472696E6750617261446F75626C65282020536F6C457865637574617253
+      514C53656C656374280D0A0D0A20202753454C4543542053554D2856414C4F52
+      2920415320544F54414C2046524F4D20434149584120574845524520272B0D0A
+      202027202844415441434F4D50454E5341444F3C2727272B205374725472616E
+      287661726961626C65322E76616C75652C20272F272C20272E2729202B272727
+      2920272B0D0A20202720414E442043414958413D2727272B444254657874342E
+      746578742B272727202020272B0D0A20202720414E4420434F4D50454E534144
+      4F3D2727547275652727202020270D0A0D0A20202C2027544F54414C27292020
+      202920203B0D0A0D0A2020656E6420656C73650D0A202056616C7565203A3D20
+      2076616C7565202B2030203B0D0A0D0A656E643B0D0A0D436F6D706F6E656E74
+      4E616D6506095661726961626C6533094576656E744E616D6506064F6E43616C
+      63074576656E74494402210001060F5472614576656E7448616E646C65720B50
+      726F6772616D4E616D65060F5661726961626C65344F6E43616C630B50726F67
+      72616D54797065070B747450726F63656475726506536F75726365067170726F
+      636564757265205661726961626C65344F6E43616C63287661722056616C7565
+      3A2056617269616E74293B0D0A626567696E0D0A0D0A0D0A56616C7565203A3D
+      20207661726961626C65332E76616C7565202B20444243616C63322E76616C75
+      653B0D0A0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506095661
+      726961626C6534094576656E744E616D6506064F6E43616C63074576656E7449
+      4402210001060F5472614576656E7448616E646C65720B50726F6772616D4E61
+      6D65060F5661726961626C65364F6E43616C630B50726F6772616D5479706507
+      0B747450726F63656475726506536F757263650C8D02000070726F6365647572
+      65205661726961626C65364F6E43616C63287661722056616C75653A20566172
+      69616E74293B0D0A626567696E0D0A0D0A206966205265706F72742E4175746F
+      536561726368437269746572696142794E616D6528274341495841272C202744
+      415441434F4D50454E5341444F27292E76616C7565735B305D203C3E206E756C
+      6C207468656E0D0A20626567696E0D0A200D0A20206966205265706F72742E41
+      75746F536561726368437269746572696142794E616D6528274341495841272C
+      202744415441434F4D50454E5341444F27292E76616C7565735B305D203C3E0D
+      0A20202020205265706F72742E4175746F536561726368437269746572696142
+      794E616D6528274341495841272C202744415441434F4D50454E5341444F2729
+      2E76616C7565735B315D207468656E0D0A2020626567696E0D0A202020202076
+      616C7565203A3D202744617461202027202B205265706F72742E4175746F5365
+      61726368437269746572696142794E616D6528274341495841272C2027444154
+      41434F4D50454E5341444F27292E76616C7565735B305D202B0D0A2020202020
+      27202061202027202B20205265706F72742E4175746F53656172636843726974
+      6572696142794E616D6528274341495841272C202744415441434F4D50454E53
+      41444F27292E76616C7565735B315D3B0D0A2020656E6420656C73650D0A2020
+      626567696E0D0A2020202076616C7565203A3D202744617461202027202B2052
+      65706F72742E4175746F536561726368437269746572696142794E616D652827
+      4341495841272C202744415441434F4D50454E5341444F27292E76616C756573
+      5B305D3B0D0A2020656E643B0D0A20200D0A20656E643B0D0A0D0A0D0A0D0A65
+      6E643B0D0A0D436F6D706F6E656E744E616D6506095661726961626C65360945
+      76656E744E616D6506064F6E43616C63074576656E74494402210001060F5472
+      614576656E7448616E646C65720B50726F6772616D4E616D65060F5661726961
+      626C65354F6E43616C630B50726F6772616D54797065070B747450726F636564
+      75726506536F757263650C4703000070726F636564757265205661726961626C
+      65354F6E43616C63287661722056616C75653A2056617269616E74293B0D0A62
+      6567696E0D0A0D0A76616C7565203A3D2027273B0D0A0D0A0D0A0D0A49462020
+      43414958415B2743454E54524F275D3C3E2756454E4441204543462720544845
+      4E0D0A424547494E0D0A0D0A696620202043414958415B274944544142275D3D
+      2752454327207468656E0D0A626567696E0D0A0D0A202056616C7565203A3D20
+      2020536F6C457865637574617253514C53656C656374280D0A0D0A2020275345
+      4C45435420434C49454E54455320415320434C49454E5445532046524F4D2052
+      45434542455220574845524520272B0D0A20202720434F443D2727272B434149
+      58415B274944504149275D2B27272720270D0A0D0A20202C2027434C49454E54
+      455327292020203B0D0A0D0A656E643B0D0A0D0A696620202043414958415B27
+      4944544142275D3D2750414727207468656E0D0A626567696E0D0A0D0A202056
+      616C7565203A3D202020536F6C457865637574617253514C53656C656374280D
+      0A0D0A20202753454C45435420434C49454E54455320415320434C49454E5445
+      532046524F4D20434F4E54415320574845524520272B0D0A20202720434F443D
+      2727272B43414958415B274944504149275D2B27272720270D0A0D0A20202C20
+      27434C49454E54455327292020203B0D0A0D0A656E643B0D0A0D0A0D0A696620
+      202043414958415B274944544142275D3D2744455327207468656E0D0A626567
+      696E0D0A0D0A202056616C7565203A3D202020536F6C45786563757461725351
+      4C53656C656374280D0A0D0A20202753454C45435420444953505F4E4F4D4520
+      415320444953505F4E4F4D452046524F4D20444953505F544F444F5320574845
+      524520272B0D0A20202720444953505F434F443D2727272B43414958415B2749
+      44504149275D2B27272720270D0A0D0A20202C2027444953505F4E4F4D452729
+      2020203B0D0A0D0A656E643B0D0A0D0A0D0A2069662076616C75653C3E272720
+      7468656E0D0A2056414C55453A3D2043414958415B274944544142275D2B2720
+      2D20272B20536F6C436F70696172546578746F2856414C55452C20302C203335
+      293B0D0A0D0A454E443B0D0A0D0A0D0A656E643B0D0A0D436F6D706F6E656E74
+      4E616D6506095661726961626C6535094576656E744E616D6506064F6E43616C
+      63074576656E74494402210001060F5472614576656E7448616E646C65720B50
+      726F6772616D4E616D65060F5661726961626C65314F6E43616C630B50726F67
+      72616D54797065070B747450726F63656475726506536F75726365069B70726F
+      636564757265205661726961626C65314F6E43616C63287661722056616C7565
+      3A2056617269616E74293B0D0A626567696E0D0A0D0A0D0A0D0A202069662020
+      43414958415B27636173655F7768656E5F63616978615F315F76616C6F72275D
+      203D20274E27207468656E0D0A202056616C7565203A3D2027442720656C7365
+      2056616C7565203A3D202743273B0D0A0D0A656E643B0D0A0D436F6D706F6E65
+      6E744E616D6506095661726961626C6531094576656E744E616D6506064F6E43
+      616C63074576656E74494402210001060F5472614576656E7448616E646C6572
+      0B50726F6772616D4E616D65060F5661726961626C65374F6E43616C630B5072
+      6F6772616D54797065070B747450726F63656475726506536F75726365068270
+      726F636564757265205661726961626C65374F6E43616C63287661722056616C
+      75653A2056617269616E74293B0D0A626567696E0D0A0D0A0D0A202069662056
+      61726961626C6531302E76616C75653C30207468656E0D0A202056616C756520
+      3A3D27442720656C73652056616C7565203A3D2743273B0D0A0D0A656E643B0D
+      0A0D436F6D706F6E656E744E616D6506095661726961626C6537094576656E74
+      4E616D6506064F6E43616C63074576656E74494402210001060F547261457665
+      6E7448616E646C65720B50726F6772616D4E616D65060F5661726961626C6538
+      4F6E43616C630B50726F6772616D54797065070B747450726F63656475726506
+      536F757263650CCA01000070726F636564757265205661726961626C65384F6E
+      43616C63287661722056616C75653A2056617269616E74293B0D0A626567696E
+      0D0A0D0A0D0A202069662043414958415B2744415441434F4D50454E5341444F
+      275D3C3E4E554C4C207468656E0D0A2020626567696E0D0A0D0A202056616C75
+      65203A3D202020536F6C537472696E6750617261446F75626C65282020536F6C
+      457865637574617253514C53656C656374280D0A0D0A20202753454C45435420
+      53554D2856414C4F522920415320544F54414C2046524F4D2043414958412057
+      484552452056414C4F52203E203020414E4420272B0D0A202027202844415441
+      434F4D50454E5341444F3D2727272B205374725472616E2843414958415B2744
+      415441434F4D50454E5341444F275D2C20272F272C20272E2729202B27272729
+      20272B0D0A20202720414E442043414958413D2727272B444254657874342E74
+      6578742B272727202020272B0D0A20202720414E4420434F4D50454E5341444F
+      3D2727547275652727202020270D0A0D0A20202C2027544F54414C2729202020
+      2920203B0D0A0D0A2020656E6420656C73650D0A202056616C7565203A3D2020
+      76616C7565202B2030203B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E
+      616D6506095661726961626C6538094576656E744E616D6506064F6E43616C63
+      074576656E74494402210001060F5472614576656E7448616E646C65720B5072
+      6F6772616D4E616D65060F5661726961626C65394F6E43616C630B50726F6772
+      616D54797065070B747450726F63656475726506536F757263650CC801000070
+      726F636564757265205661726961626C65394F6E43616C63287661722056616C
+      75653A2056617269616E74293B0D0A626567696E0D0A0D0A2020696620434149
+      58415B2744415441434F4D50454E5341444F275D3C3E4E554C4C207468656E0D
+      0A2020626567696E0D0A0D0A202056616C7565203A3D202020536F6C53747269
+      6E6750617261446F75626C65282020536F6C457865637574617253514C53656C
+      656374280D0A0D0A20202753454C4543542053554D2856414C4F522920415320
+      544F54414C2046524F4D2043414958412057484552452056414C4F52203C2030
+      20414E4420272B0D0A202027202844415441434F4D50454E5341444F3D272727
+      2B205374725472616E2843414958415B2744415441434F4D50454E5341444F27
+      5D2C20272F272C20272E2729202B2727272920272B0D0A20202720414E442043
+      414958413D2727272B444254657874342E746578742B272727202020272B0D0A
+      20202720414E4420434F4D50454E5341444F3D2727547275652727202020270D
+      0A0D0A20202C2027544F54414C27292020202920203B0D0A0D0A2020656E6420
+      656C73650D0A202056616C7565203A3D202076616C7565202B2030203B0D0A0D
+      0A656E643B0D0A0D436F6D706F6E656E744E616D6506095661726961626C6539
+      094576656E744E616D6506064F6E43616C63074576656E74494402210001060F
+      5472614576656E7448616E646C65720B50726F6772616D4E616D650610566172
+      6961626C6531304F6E43616C630B50726F6772616D54797065070B747450726F
+      63656475726506536F757263650CEE01000070726F6365647572652056617269
+      61626C6531304F6E43616C63287661722056616C75653A2056617269616E7429
+      3B0D0A626567696E0D0A0D0A0D0A0D0A202069662043414958415B2744415441
+      434F4D50454E5341444F275D3C3E4E554C4C207468656E0D0A2020626567696E
+      0D0A0D0A202056616C7565203A3D202020536F6C537472696E6750617261446F
+      75626C65282020536F6C457865637574617253514C53656C656374280D0A0D0A
+      20202753454C4543542053554D2856414C4F522920415320544F54414C204652
+      4F4D20434149584120574845524520272B0D0A202027202844415441434F4D50
+      454E5341444F3C2727272B205374725472616E2843414958415B274441544143
+      4F4D50454E5341444F275D2C20272F272C20272E2729202B2727272920272B0D
+      0A20202720414E442043414958413D2727272B444254657874342E746578742B
+      272727202020272B0D0A20202720414E4420434F4D50454E5341444F3D272754
+      7275652727202020270D0A0D0A20202C2027544F54414C27292020202920203B
+      0D0A0D0A2020656E6420656C73650D0A202056616C7565203A3D202076616C75
+      65202B2030203B0D0A20200D0A20200D0A20200D0A202056616C7565203A3D20
+      56616C7565202B20444243616C63312E76616C75653B0D0A0D0A656E643B0D0A
+      0D436F6D706F6E656E744E616D65060A5661726961626C653130094576656E74
+      4E616D6506064F6E43616C63074576656E74494402210001060F547261457665
+      6E7448616E646C65720B50726F6772616D4E616D6506105661726961626C6531
+      334F6E43616C630B50726F6772616D54797065070B747450726F636564757265
+      06536F7572636506EC70726F636564757265205661726961626C6531334F6E43
+      616C63287661722056616C75653A2056617269616E74293B0D0A626567696E0D
+      0A0D0A206966205265706F72742E4175746F5365617263684372697465726961
+      42794E616D6528274341495841272C202744415441434F4D50454E5341444F27
+      292E76616C7565735B305D203C3E206E756C6C207468656E0D0A20202076616C
+      7565203A3D205265706F72742E4175746F536561726368437269746572696142
+      794E616D6528274341495841272C202744415441434F4D50454E5341444F2729
+      2E76616C7565735B305D3B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E
+      616D65060A5661726961626C653133094576656E744E616D6506064F6E43616C
+      63074576656E74494402210001060F5472614576656E7448616E646C65720B50
+      726F6772616D4E616D6506105661726961626C6531344F6E43616C630B50726F
+      6772616D54797065070B747450726F63656475726506536F7572636506EC7072
+      6F636564757265205661726961626C6531344F6E43616C63287661722056616C
+      75653A2056617269616E74293B0D0A626567696E0D0A0D0A206966205265706F
+      72742E4175746F536561726368437269746572696142794E616D652827434149
+      5841272C202744415441434F4D50454E5341444F27292E76616C7565735B315D
+      203C3E206E756C6C207468656E0D0A20202076616C7565203A3D205265706F72
+      742E4175746F536561726368437269746572696142794E616D65282743414958
+      41272C202744415441434F4D50454E5341444F27292E76616C7565735B315D3B
+      0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060A566172696162
+      6C653134094576656E744E616D6506064F6E43616C63074576656E7449440221
+      0001060F5472614576656E7448616E646C65720B50726F6772616D4E616D6506
+      105661726961626C6531314F6E43616C630B50726F6772616D54797065070B74
+      7450726F63656475726506536F757263650C0D02000070726F63656475726520
+      5661726961626C6531314F6E43616C63287661722056616C75653A2056617269
+      616E74293B0D0A626567696E0D0A0D0A202069662043414958415B2744415441
+      434F4D50454E5341444F275D3C3E4E554C4C207468656E0D0A2020626567696E
+      0D0A0D0A202056616C7565203A3D202020536F6C537472696E6750617261446F
+      75626C65282020536F6C457865637574617253514C53656C656374280D0A0D0A
+      20202753454C4543542053554D2856414C4F522920415320544F54414C204652
+      4F4D2043414958412057484552452056414C4F52203E203020414E4420272B0D
+      0A202027202844415441434F4D50454E5341444F3E3D2727272B205374725472
+      616E285661726961626C6531332E546578742C20272F272C20272E2729202B27
+      27272920414E4420272B0D0A202027202844415441434F4D50454E5341444F3C
+      3D2727272B205374725472616E285661726961626C6531342E546578742C2027
+      2F272C20272E2729202B2727272920272B0D0A20202720414E44204341495841
+      3D2727272B444254657874342E746578742B272727202020272B0D0A20202720
+      414E4420434F4D50454E5341444F3D2727547275652727202020270D0A0D0A20
+      202C2027544F54414C27292020202920203B0D0A0D0A2020656E6420656C7365
+      0D0A202056616C7565203A3D202076616C7565202B2030203B0D0A0D0A656E64
+      3B0D0A0D436F6D706F6E656E744E616D65060A5661726961626C653131094576
+      656E744E616D6506064F6E43616C63074576656E74494402210001060F547261
+      4576656E7448616E646C65720B50726F6772616D4E616D650610566172696162
+      6C6531324F6E43616C630B50726F6772616D54797065070B747450726F636564
+      75726506536F757263650C0D02000070726F636564757265205661726961626C
+      6531324F6E43616C63287661722056616C75653A2056617269616E74293B0D0A
+      626567696E0D0A0D0A202069662043414958415B2744415441434F4D50454E53
+      41444F275D3C3E4E554C4C207468656E0D0A2020626567696E0D0A0D0A202056
+      616C7565203A3D202020536F6C537472696E6750617261446F75626C65282020
+      536F6C457865637574617253514C53656C656374280D0A0D0A20202753454C45
+      43542053554D2856414C4F522920415320544F54414C2046524F4D2043414958
+      412057484552452056414C4F52203C203020414E4420272B0D0A202027202844
+      415441434F4D50454E5341444F3E3D2727272B205374725472616E2856617269
+      61626C6531332E546578742C20272F272C20272E2729202B2727272920414E44
+      20272B0D0A202027202844415441434F4D50454E5341444F3C3D2727272B2053
+      74725472616E285661726961626C6531342E546578742C20272F272C20272E27
+      29202B2727272920272B0D0A20202720414E442043414958413D2727272B4442
+      54657874342E746578742B272727202020272B0D0A20202720414E4420434F4D
+      50454E5341444F3D2727547275652727202020270D0A0D0A20202C2027544F54
+      414C27292020202920203B0D0A0D0A2020656E6420656C73650D0A202056616C
+      7565203A3D202076616C7565202B2030203B0D0A0D0A656E643B0D0A0D436F6D
+      706F6E656E744E616D65060A5661726961626C653132094576656E744E616D65
+      06064F6E43616C63074576656E74494402210000}
+  end
+  object ppParameterList1: TppParameterList
+  end
+end

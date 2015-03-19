@@ -1,0 +1,1 @@
+(case when caixa_1.valor < 0 then 'N' else 'P' end)

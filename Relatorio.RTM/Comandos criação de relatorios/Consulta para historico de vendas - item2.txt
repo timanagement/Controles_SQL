@@ -1,0 +1,52 @@
+     //todas as vendas
+     if ComboBox1.ItemIndex=-1 then
+     ConsultaSQL:=' AND I.CAIXA<>''PDVNF'' ' else
+     if ComboBox1.ItemIndex=0 then
+     ConsultaSQL:=' AND I.CAIXA<>''PDVNF'' ' else
+
+
+     if ComboBox1.ItemIndex=1 then
+     ConsultaSQL:=' AND I.ECF=''True'' AND I.CAIXA<>''PDVNF'' ' else
+     if ComboBox1.ItemIndex=2 then
+     ConsultaSQL:=' AND I.ECF=''False'' AND I.CAIXA<>''PDVNF'' ' else
+     if ComboBox1.ItemIndex=4 then
+     begin
+     DBLookupComboBox4.KeyValue:='';
+     ConsultaSQL:=' AND I.CAIXA=''PDVNF'' AND I.Z=''NF''' ;  // AND Z=NF
+     end else
+     if ComboBox1.ItemIndex=5 then
+     begin
+     DBLookupComboBox4.KeyValue:='';
+     ConsultaSQL:=' AND I.CAIXA=''PDVNF'' AND I.Z=''PD''' ; // AND Z=PD
+     end else
+     if ComboBox1.ItemIndex=7 then
+     begin
+     DBLookupComboBox4.KeyValue:='';
+     ConsultaSQL:=' AND (  ( I.ECF=''True'' AND I.CAIXA<>''PDVNF'' )  OR  ( I.CAIXA=''PDVNF'' AND I.Z=''NF'' )   )';
+     end else
+     if ComboBox1.ItemIndex=8 then
+     begin
+     DBLookupComboBox4.KeyValue:='';
+     ConsultaSQL:=' AND (  ( I.ECF=''False'' AND I.CAIXA<>''PDVNF'' )  OR  ( I.CAIXA=''PDVNF'' AND I.Z=''PD'' ) )';
+     end else
+     if ComboBox1.ItemIndex=10 then
+     ConsultaSQL:='  ';
+
+
+
+
+
+
+  'SELECT I.PRODUTO , '+
+  StrTipoVenda +
+  'SUM(I.QUANT)AS QUANT, '+
+  'SUM(I.CUSTOINICIAL) AS CUSTOINICIAL, '+
+  'SUM(I.CUSTO) AS CUSTO, SUM(I.TOTALF)AS TOTAL, '+
+  'SUM(I.TOTALF)/SUM(I.QUANT) AS MEDIA , '+
+  'SUM(I.TOTALF)-(SUM(I.CUSTO)) AS BRUTO '+
+  'FROM ITEM2 I '+
+  StrInnerJoin +
+  'WHERE I.DATA BETWEEN :A AND :B '+
+  ConsultaSQL+
+  'GROUP BY I.PRODUTO '+StrTipoVendaV+' HAVING SUM(I.QUANT)>0 '+
+  'ORDER BY I.PRODUTO '+StrTipoVendaDesc+' ';

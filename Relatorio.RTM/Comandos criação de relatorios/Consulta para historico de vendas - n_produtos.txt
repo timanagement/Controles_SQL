@@ -1,0 +1,27 @@
+   Entrada_iqual_Fiscal:=' n.COD_TIPO_NOTA=''55'' OR n.COD_TIPO_NOTA=''01'' OR  '+
+                  ' n.COD_TIPO_NOTA=''1B'' OR n.COD_TIPO_NOTA=''04'' OR  '+
+                  ' n.COD_TIPO_NOTA=''06'' OR n.COD_TIPO_NOTA=''28'' OR n.COD_TIPO_NOTA=''29''    ';
+
+   Entrada_iqual_Pedido:=' n.COD_TIPO_NOTA<>''55'' AND n.COD_TIPO_NOTA<>''01'' AND '+
+                  ' n.COD_TIPO_NOTA<>''1B'' AND n.COD_TIPO_NOTA<>''04'' AND  '+
+                  ' n.COD_TIPO_NOTA<>''06'' AND n.COD_TIPO_NOTA<>''28'' AND n.COD_TIPO_NOTA<>''29''    ';
+
+
+
+
+
+AND N.ESTOQUE=''True''
+
+
+
+
+
+
+
+    ' SELECT P.PRODUTO, '+
+    ' P.TRIBUTADO, SUM(P.QUANT)AS QUANT, SUM(P.TOTAL)AS TOTAL '+
+    ' FROM N_PRODUTOS P '+
+    ' LEFT OUTER join n_nota N on ( n.cod = p.cod ) '+
+    ' WHERE  N.DATAENTRADA BETWEEN :A AND :B AND P.ESTOQUE=''True''  '+ConsultaSQL+' '+
+    ' GROUP BY P.PRODUTO, P.TRIBUTADO '+
+    ' ORDER BY P.PRODUTO, P.TRIBUTADO';

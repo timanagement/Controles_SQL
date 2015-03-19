@@ -1,0 +1,58 @@
+     //fiscal
+     if ComboBox4.ItemIndex=1 then
+     begin
+
+        SQLCompra:=' n.COD_TIPO_NOTA=''55'' OR n.COD_TIPO_NOTA=''01'' OR  '+
+                   ' n.COD_TIPO_NOTA=''1B'' OR n.COD_TIPO_NOTA=''04'' OR  '+
+                   ' n.COD_TIPO_NOTA=''06'' OR n.COD_TIPO_NOTA=''28'' OR n.COD_TIPO_NOTA=''29''    ';
+
+        SQLCompra:=' AND ('+SQLCompra+') ';
+
+
+        SQLVenda:=' AND ( ( ecf.ECF=''True'' AND ecf.CAIXA<>''PDVNF'' )  OR  ( ecf.CAIXA=''PDVNF'' AND ecf.Z=''NF'' )  )';
+
+     end else
+     //nao fiscal
+     if ComboBox4.ItemIndex=2 then
+     begin
+
+        SQLCompra:=' n.COD_TIPO_NOTA<>''55'' AND n.COD_TIPO_NOTA<>''01'' AND '+
+                   ' n.COD_TIPO_NOTA<>''1B'' AND n.COD_TIPO_NOTA<>''04'' AND  '+
+                   ' n.COD_TIPO_NOTA<>''06'' AND n.COD_TIPO_NOTA<>''28'' AND n.COD_TIPO_NOTA<>''29''    ';
+
+        SQLCompra:=' AND ('+SQLCompra+') ';
+
+
+        SQLVenda:=' AND ( ( ecf.ECF=''False'' AND ecf.CAIXA<>''PDVNF'' )  OR  ( ecf.CAIXA=''PDVNF'' AND ecf.Z=''PD'' )  )';
+
+     end;
+
+
+
+
+
+
+
+'select     '+
+'  c.nome , c.cod, c.custo, c.preco , '+
+//Compras
+'  (     '+
+'    select sum(pc.quant)  '+
+'    from n_produtos pc     '+
+'    left outer join n_nota N on (n.cod = pc.cod)   '+
+'    where ( n.dataentrada>=:A and n.dataentrada<=:B ) AND pc.ESTOQUE=''True'' '+SQLCompra+' and pc.codigo = c.cod '+
+'  ) '+
+'   as compra,  '+
+//Vendas
+'  (    '+
+'    select sum(ecf.quant)  '+
+'    from item2 ecf    '+
+'    where ( ecf.data>=:C and ecf.data<=:D ) '+SQLVenda+' and ecf.cod_produto = c.cod  '+
+'  )  '+
+'   as vendaECF, '+
+//Final
+'  c.fisico as estoque '+
+'from produtos c  '+
+'where c.cod<>'''' '+ConsultaSQL+' '+
+'group by c.nome, c.cod, c.custo , c.preco, c.fisico  '+  //HAVING ( compra>0 or vendaECF>0 )  
+'order by c.nome, c.cod ';
