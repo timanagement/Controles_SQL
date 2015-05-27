@@ -1,9 +1,0 @@
-Instalar a versão trial, versão 2008.08.08, ir a pasta hk software\ibexpert,
- substituir o arquivo ibexpert.exe da versão trial pelo 
-outro que consta na pasta ibexpert_licenciado.
-
-
-
-obs.: Este arquivo executável é parte do ibexpert russo, 
-observar quando criar a base de dados mudar para o sistema de caracteres ANSI. 
-Pois já vem selecionado para caracteres russo.
