@@ -37,11 +37,24 @@
     <xs:annotation>
       <xs:documentation>Tipo padrão referente a inscrição municipal.</xs:documentation>
     </xs:annotation>
-    <xs:restriction base="xs:long">
-      <xs:pattern value="[0-9]{1,20}" />
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="15" />
+      <xs:whiteSpace value="collapse" />
     </xs:restriction>
   </xs:simpleType>
 
+  <xs:simpleType name="tsInscricaoEstadual">
+    <xs:annotation>
+      <xs:documentation>Tipo padrão referente a inscrição estadual.</xs:documentation>
+    </xs:annotation>
+	<xs:restriction base="xs:string">
+		<xs:maxLength value="20" />
+		<xs:minLength value="0" />
+		<xs:whiteSpace value="collapse" />
+    </xs:restriction>
+  </xs:simpleType>
+  
   <xs:simpleType name="tsRazaoSocial">
     <xs:annotation>
       <xs:documentation>Razão Social do Contribuinte</xs:documentation>
@@ -360,6 +373,46 @@
     </xs:restriction>
   </xs:simpleType>
 
+  <xs:simpleType name="tsOutrasInformacoes">
+    <xs:annotation>
+      <xs:documentation>Dados adicionais NFS-e.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="255" />
+      <xs:whiteSpace value="collapse" />
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="tsCondicao">
+    <xs:annotation>
+      <xs:documentation>Condição de pagamento.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="20" />
+      <xs:whiteSpace value="collapse" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tsQtdParcela">
+    <xs:annotation>
+      <xs:documentation>Quantidade de parcelas.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:long">
+      <xs:pattern value="[0-9]{1,15}" />
+    </xs:restriction>
+  </xs:simpleType>
+    
+  <xs:simpleType name="tsParcela">
+    <xs:annotation>
+      <xs:documentation>Número da parcela.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:long">
+      <xs:pattern value="[0-9]{1,15}" />
+    </xs:restriction>
+  </xs:simpleType>
+
   <!-- Tipos Complexos-->
   <xs:complexType name="tcIdentificacaoPrestador">
     <xs:annotation>
@@ -378,6 +431,7 @@
     <xs:sequence>
       <xs:element name="CpfCnpj" type="tipos:TcCpfCnpj" minOccurs="0" maxOccurs="1" />
       <xs:element name="InscricaoMunicipal" type="tipos:tsInscricaoMunicipal" minOccurs="0" maxOccurs="1" />
+      <xs:element name="InscricaoEstadual" type="tipos:tsInscricaoEstadual" minOccurs="0" maxOccurs="1" />
     </xs:sequence>
   </xs:complexType>
 
@@ -402,6 +456,28 @@
     </xs:choice>
   </xs:complexType>
   
+  <xs:complexType name="tcParcelas">
+    <xs:annotation>
+      <xs:documentation>Representa os dados de pagamento.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Parcela" type="tipos:tsParcela" minOccurs="1" maxOccurs="1" />
+	  <xs:element name="DataVencimento" type="xs:string" minOccurs="1" maxOccurs="1" />
+	  <xs:element name="Valor" type="tipos:TsValor" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="tcDadosCondicaoPagamento">
+    <xs:annotation>
+      <xs:documentation>Representa os dados de pagamento.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Condicao" type="tipos:tsCondicao" minOccurs="1" maxOccurs="1" />
+      <xs:element name="QtdParcela" type="tipos:tsQtdParcela" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Parcelas" type="tipos:tcParcelas" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
   <xs:complexType name="tcLoteRps">
     <xs:annotation>
       <xs:documentation>Lote dp RPS</xs:documentation>
@@ -445,12 +521,14 @@
       <xs:element name="OptanteSimplesNacional" type="tipos:TsSimNao" minOccurs="1" maxOccurs="1" />
       <xs:element name="IncentivadorCultural" type="tipos:TsSimNao" minOccurs="1" maxOccurs="1" />
       <xs:element name="Status" type="tipos:TsStatusRps" minOccurs="1" maxOccurs="1" />
+      <xs:element name="OutrasInformacoes" type="tipos:tsOutrasInformacoes" minOccurs="0" maxOccurs="1" />
       <xs:element name="RpsSubstituido" type="tipos:tcIdentificacaoRps" minOccurs="0" maxOccurs="1" />
       <xs:element name="Servico" type="tipos:TcDadosServico" minOccurs="1" maxOccurs="1" />
       <xs:element name="Prestador" type="tipos:tcIdentificacaoPrestador" minOccurs="1" maxOccurs="1" />
       <xs:element name="Tomador" type="tipos:tcDadosTomador" minOccurs="1" maxOccurs="1" />
       <xs:element name="IntermediarioServico" type="tipos:TcIdentificacaoIntermediarioServico" minOccurs="0" maxOccurs="1" />
       <xs:element name="ConstrucaoCivil" type="tipos:tcDadosConstrucaoCivil" minOccurs="0" maxOccurs="1" />
+      <xs:element name="CondicaoPagamento" type="tipos:tcDadosCondicaoPagamento" minOccurs="0" maxOccurs="1" />
     </xs:sequence>
     <xs:attribute name="Id" type="xs:string"/>
   </xs:complexType>
